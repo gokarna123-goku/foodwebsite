@@ -21,4 +21,7 @@ def blog(request):
 def allVendors(request):
     return render(request, 'landingpage/all-vendor.html')
 
+
+def singleRestaurant(request):
+    return render(request, 'landingpage/single-restaurant.html')
 # 
