@@ -1,0 +1,1366 @@
+{% extends 'landingpage/base.html' %}
+<!-- index page -->
+
+{% block body %}
+
+<!--  -->
+<div class="clearfix"></div>
+<section class="bg-color res-container-inline">
+    <div class="res-sidebar-container">
+        <div class="res-sidebar food_cat_filter">
+            <div id="food_filter_widget-2" class="widget res-sidebar-box">
+                <div class="heading-panel-simple">
+                    <div class="my-heading-style">
+                        <h3>Filters</h3>
+                    </div>
+                    <div class="res-sidebar-style" id="reloader-fun"><span><i class="fa fa-refresh"></i>Refresh</span>
+                    </div>
+                    <div class="bottom-dots  clearfix">
+                        <span class="dot line-dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <div class=" res-sidebar-box3 ">
+
+                    <ul class="list-group near-btn-ul">
+                        <li class="near-btn-li">
+                            <label class="switch" id="near-by">
+                                <input type="checkbox" id="near-input" class="default">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="text-data-style"> Near By Me </span>
+                        </li>
+                    </ul>
+
+
+                    <ul>
+                        <li>
+                            <div class="pretty p-switch p-fill" id="check-delivery"><input type="radio" id="delivery"
+                                    name="checkmate" value="delivery">
+                                <div class="state"><label></label></div>
+                            </div>
+                            <span class="text-data-style"> Delivery</span>
+                        </li>
+                        <li>
+                            <div class="pretty p-switch p-fill" id="check-pickup"><input type="radio" id="pickup"
+                                    name="checkmate" value="pickup">
+                                <div class="state"><label></label></div>
+                            </div>
+                            <span class="text-data-style">Pickup</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="food_categories_filter_widget-2" class="widget res-sidebar-box">
+                <div class="heading-panel-simple">
+                    <div class="my-heading-style">
+                        <h3>Food Categories</h3>
+                    </div>
+                    <div class="bottom-dots  clearfix">
+                        <span class="dot line-dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <ul class="element mCustomScrollbar">
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="102" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Sauces</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(13)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="115" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Salads</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(11)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="92" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Paratha</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(10)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="103" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Desserts</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(15)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="111" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Shakes</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(22)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="85" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Burgers</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(19)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="98" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Pasta</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(10)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="95" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Appetizers</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(19)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="99" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Rolls</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(11)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="82" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Pizza</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(14)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="93" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Beverages</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(16)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="120" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Deals</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(4)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="122" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Casa Deals</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(1)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="121" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Nuggets</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(2)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="107" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Specialities</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(7)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="100" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Chicken</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(5)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="97" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Steaks</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(5)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="106" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>New Arrival</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(9)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="119" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Hot Drinks</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(3)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="118" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Happy Meal</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(3)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="117" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Breakfast</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(3)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="116" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Broast</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(4)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="96" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Sandwiches</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(6)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="101" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Chow Mein</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(5)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="114" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Side Order</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(4)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="89" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Rice</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(7)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="113" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Vegetarian Dishes</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(3)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="112" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Starters</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(4)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="110" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Sea Food</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(4)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="109" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Sunday Brunch</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(1)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="108" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Hi Tea</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(1)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="91" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Continental</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(4)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="104" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Dinner Buffet</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(2)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="105" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Calzone</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(2)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="94" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Wraps</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(2)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="86" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>BBQ</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(3)</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="res-sb-categories">
+                            <div class="pretty p-default p-round p-thick pretty-custom food_cat_filter">
+                                <input type="checkbox" name="sport" value="88" />
+                                <div class="state">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <span>Karahi</span>
+                        </div>
+                        <div class="res-sb-product">
+                            <p>(2)</p>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div id="media_image-4" class="widget widget_media_image">
+                <div class="my-heading-style">
+                    <h3>Advertisement</h3>
+                </div><a href="#"><img width="300" height="533"
+                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/BuffetFood.jpg"
+                        class="image wp-image-1519  attachment-full size-full" alt="" loading="lazy"
+                        style="max-width: 100%; height: auto;" title="Advertisement"
+                        srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/BuffetFood.jpg 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/BuffetFood-169x300.jpg 169w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/BuffetFood-118x210.jpg 118w"
+                        sizes="(max-width: 300px) 100vw, 300px" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="res-main-panel section-padding" id="result">
+        <div class="">
+            <div class="row">
+                <div class="col-xl-12 col-sm-12 col-md-12">
+                    <div class="res-theme-banner">
+                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/top-banner_.png" alt=""
+                            class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-xl-12 col-sm-12 col-lg-12 col-xs-12">
+                    <div class="heading-panel-simple">
+                        <h3>
+                            <span id="number-res">12</span> + Restaurants
+                        </h3>
+                        <div class="bottom-dots  clearfix">
+                            <span class="dot line-dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12 col-sm-12 col-lg-12 col-xs-12">
+                    <div class="row" id="restaurant-container">
+                        <div class="eq-height col-xxl-4 col-xl-6 col-lg-12 col-md-12">
+                            <div class="res-3-box ">
+                                <div class="res-2-img parallex-new"><a
+                                        href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/Arcadian.jpg"
+                                            alt="" class="img-fluid"> </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast active"></i></div>
+                                    <div class="new-stars-main">
+                                        <div class="stars"><i class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i></div>
+                                        <div class="rating-number"></div>
+                                    </div>
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text">
+                                            <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                                <div class="text-s1">Organic Arcadian Food</div>
+                                            </a>
+                                            <div class="food_cats"><span class="cat_names"><a
+                                                        href="https://marketplace.foodotawp.com/store/arcadian-cafe/"
+                                                        class="badge bg-light" title="Shakes">Shakes</a><a
+                                                        href="https://marketplace.foodotawp.com/store/arcadian-cafe/"
+                                                        class="badge bg-light" title="Steaks">Steaks</a><a
+                                                        href="https://marketplace.foodotawp.com/store/arcadian-cafe/"
+                                                        class="badge bg-light" title="Sea Food">Sea Food</a><a
+                                                        href="https://marketplace.foodotawp.com/store/arcadian-cafe/"
+                                                        class="badge bg-light" title="Chicken">Chicken</a><a
+                                                        href="https://marketplace.foodotawp.com/store/arcadian-cafe/"
+                                                        class="badge bg-light" title="Appetizers">Appetizers</a><a
+                                                        href="https://marketplace.foodotawp.com/store/arcadian-cafe/"
+                                                        class="badge bg-light" title="Rolls">Rolls</a></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <ul>
+                                            <li>
+                                                <div class="res-3-logo-img-container">
+                                                    <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/066-50x50.jpg"
+                                                            alt="" class="img-fluid"></a>
+                                                </div>
+                                                <p> <span class="wcfmfa fa-clock"></span><span
+                                                        class="today-status"></span><span class="today-timing">12:01 am
+                                                        - 11:59 pm</span></p>
+                                                <div class="res-2-map-product"><span class="location-png">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/map.png"
+                                                            alt="" class="img-fluid"></span>
+                                                    <span>Main Boulevard, Lahore,</span>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eq-height col-xxl-4 col-xl-6 col-lg-12 col-md-12">
+                            <div class="res-3-box ">
+                                <div class="res-2-img parallex-new"><a
+                                        href="https://marketplace.foodotawp.com/store/broadway-pizza/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/broadway.jpg"
+                                            alt="" class="img-fluid"> </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast"></i></div>
+                                    <div class="new-stars-main">
+                                        <div class="stars"><i class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i></div>
+                                        <div class="rating-number"></div>
+                                    </div>
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text">
+                                            <a href="https://marketplace.foodotawp.com/store/broadway-pizza/">
+                                                <div class="text-s1">Tasty Food Pizza</div>
+                                            </a>
+                                            <div class="food_cats"><span class="cat_names"><a
+                                                        href="https://marketplace.foodotawp.com/store/broadway-pizza/"
+                                                        class="badge bg-light" title="Pizza">Pizza</a><a
+                                                        href="https://marketplace.foodotawp.com/store/broadway-pizza/"
+                                                        class="badge bg-light" title="Deals">Deals</a><a
+                                                        href="https://marketplace.foodotawp.com/store/broadway-pizza/"
+                                                        class="badge bg-light" title="Sauces">Sauces</a><a
+                                                        href="https://marketplace.foodotawp.com/store/broadway-pizza/"
+                                                        class="badge bg-light" title="Specialities">Specialities</a><a
+                                                        href="https://marketplace.foodotawp.com/store/broadway-pizza/"
+                                                        class="badge bg-light" title="Calzone">Calzone</a><a
+                                                        href="https://marketplace.foodotawp.com/store/broadway-pizza/"
+                                                        class="badge bg-light" title="New Arrival">New
+                                                        Arrival</a></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <ul>
+                                            <li>
+                                                <div class="res-3-logo-img-container">
+                                                    <a href="https://marketplace.foodotawp.com/store/broadway-pizza/">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/022-50x50.jpg"
+                                                            alt="" class="img-fluid"></a>
+                                                </div>
+                                                <p> <span class="wcfmfa fa-clock"></span><span
+                                                        class="today-status"></span><span class="today-timing">12:01 am
+                                                        - 11:59 pm</span></p>
+                                                <div class="res-2-map-product"><span class="location-png">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/map.png"
+                                                            alt="" class="img-fluid"></span>
+                                                    <span>1157 Broadway, New York</span>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eq-height col-xxl-4 col-xl-6 col-lg-12 col-md-12">
+                            <div class="res-3-box ">
+                                <div class="res-2-img parallex-new"><a
+                                        href="https://marketplace.foodotawp.com/store/down-town/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/downtown.jpg"
+                                            alt="" class="img-fluid"> </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast"></i></div>
+                                    <div class="new-stars-main">
+                                        <div class="stars"><i class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i></div>
+                                        <div class="rating-number"></div>
+                                    </div>
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text">
+                                            <a href="https://marketplace.foodotawp.com/store/down-town/">
+                                                <div class="text-s1">Food Chef Italian</div>
+                                            </a>
+                                            <div class="food_cats"><span class="cat_names"><a
+                                                        href="https://marketplace.foodotawp.com/store/down-town/"
+                                                        class="badge bg-light" title="Pasta">Pasta</a><a
+                                                        href="https://marketplace.foodotawp.com/store/down-town/"
+                                                        class="badge bg-light" title="Beverages">Beverages</a><a
+                                                        href="https://marketplace.foodotawp.com/store/down-town/"
+                                                        class="badge bg-light" title="Rice">Rice</a><a
+                                                        href="https://marketplace.foodotawp.com/store/down-town/"
+                                                        class="badge bg-light" title="Vegetarian Dishes">Vegetarian
+                                                        Dishes</a><a
+                                                        href="https://marketplace.foodotawp.com/store/down-town/"
+                                                        class="badge bg-light" title="Starters">Starters</a><a
+                                                        href="https://marketplace.foodotawp.com/store/down-town/"
+                                                        class="badge bg-light" title="New Arrival">New
+                                                        Arrival</a></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <ul>
+                                            <li>
+                                                <div class="res-3-logo-img-container">
+                                                    <a href="https://marketplace.foodotawp.com/store/down-town/">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/downtown-50x50.jpg"
+                                                            alt="" class="img-fluid"></a>
+                                                </div>
+                                                <p> <span class="wcfmfa fa-clock"></span><span
+                                                        class="today-status"></span><span class="today-timing">11:58 pm
+                                                        - 11:55 pm</span></p>
+                                                <div class="res-2-map-product"><span class="location-png">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/map.png"
+                                                            alt="" class="img-fluid"></span>
+                                                    <span>Suite# 3, Abu Dhabi, </span>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eq-height col-xxl-4 col-xl-6 col-lg-12 col-md-12">
+                            <div class="res-3-box ">
+                                <div class="res-2-img parallex-new"><a
+                                        href="https://marketplace.foodotawp.com/store/hardees/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/hardees.jpg"
+                                            alt="" class="img-fluid"> </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast"></i></div>
+                                    <div class="new-stars-main">
+                                        <div class="stars"><i class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i></div>
+                                        <div class="rating-number"></div>
+                                    </div>
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text">
+                                            <a href="https://marketplace.foodotawp.com/store/hardees/">
+                                                <div class="text-s1">Toni Food Hub</div>
+                                            </a>
+                                            <div class="food_cats"><span class="cat_names"><a
+                                                        href="https://marketplace.foodotawp.com/store/hardees/"
+                                                        class="badge bg-light" title="Beverages">Beverages</a><a
+                                                        href="https://marketplace.foodotawp.com/store/hardees/"
+                                                        class="badge bg-light" title="Desserts">Desserts</a><a
+                                                        href="https://marketplace.foodotawp.com/store/hardees/"
+                                                        class="badge bg-light" title="Sauces">Sauces</a><a
+                                                        href="https://marketplace.foodotawp.com/store/hardees/"
+                                                        class="badge bg-light" title="Wraps">Wraps</a><a
+                                                        href="https://marketplace.foodotawp.com/store/hardees/"
+                                                        class="badge bg-light" title="Sandwiches">Sandwiches</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <ul>
+                                            <li>
+                                                <div class="res-3-logo-img-container">
+                                                    <a href="https://marketplace.foodotawp.com/store/hardees/">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/088-50x50.jpg"
+                                                            alt="" class="img-fluid"></a>
+                                                </div>
+                                                <p> <span class="wcfmfa fa-clock"></span><span
+                                                        class="today-status"></span><span class="today-timing">12:05 am
+                                                        - 11:58 pm</span></p>
+                                                <div class="res-2-map-product"><span class="location-png">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/map.png"
+                                                            alt="" class="img-fluid"></span>
+                                                    <span>Street 5, Oaxaca, Sonora</span>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eq-height col-xxl-4 col-xl-6 col-lg-12 col-md-12">
+                            <div class="res-3-box ">
+                                <div class="res-2-img parallex-new"><a
+                                        href="https://marketplace.foodotawp.com/store/howdy/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/Howdy.jpg"
+                                            alt="" class="img-fluid"> </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast"></i></div>
+                                    <div class="new-stars-main">
+                                        <div class="stars"><i class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i></div>
+                                        <div class="rating-number"></div>
+                                    </div>
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text">
+                                            <a href="https://marketplace.foodotawp.com/store/howdy/">
+                                                <div class="text-s1">Masterchef Chinese Food</div>
+                                            </a>
+                                            <div class="food_cats"><span class="cat_names"><a
+                                                        href="https://marketplace.foodotawp.com/store/howdy/"
+                                                        class="badge bg-light" title="Burgers">Burgers</a><a
+                                                        href="https://marketplace.foodotawp.com/store/howdy/"
+                                                        class="badge bg-light" title="Beverages">Beverages</a><a
+                                                        href="https://marketplace.foodotawp.com/store/howdy/"
+                                                        class="badge bg-light" title="Chicken">Chicken</a><a
+                                                        href="https://marketplace.foodotawp.com/store/howdy/"
+                                                        class="badge bg-light" title="Steaks">Steaks</a><a
+                                                        href="https://marketplace.foodotawp.com/store/howdy/"
+                                                        class="badge bg-light" title="New Arrival">New
+                                                        Arrival</a></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <ul>
+                                            <li>
+                                                <div class="res-3-logo-img-container">
+                                                    <a href="https://marketplace.foodotawp.com/store/howdy/">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/077-50x50.jpg"
+                                                            alt="" class="img-fluid"></a>
+                                                </div>
+                                                <p> <span class="wcfmfa fa-clock"></span><span
+                                                        class="today-status"></span><span class="today-timing">12:05 am
+                                                        - 11:50 pm</span></p>
+                                                <div class="res-2-map-product"><span class="location-png">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/map.png"
+                                                            alt="" class="img-fluid"></span>
+                                                    <span>Suite# 2 Street 5 Main</span>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eq-height col-xxl-4 col-xl-6 col-lg-12 col-md-12">
+                            <div class="res-3-box ">
+                                <div class="res-2-img parallex-new"><a
+                                        href="https://marketplace.foodotawp.com/store/mcdonalds/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/mcdonalds.jpg"
+                                            alt="" class="img-fluid"> </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast"></i></div>
+                                    <div class="new-stars-main">
+                                        <div class="stars"><i class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i></div>
+                                        <div class="rating-number"></div>
+                                    </div>
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text">
+                                            <a href="https://marketplace.foodotawp.com/store/mcdonalds/">
+                                                <div class="text-s1">Fun Chicken Meals</div>
+                                            </a>
+                                            <div class="food_cats"><span class="cat_names"><a
+                                                        href="https://marketplace.foodotawp.com/store/mcdonalds/"
+                                                        class="badge bg-light" title="Shakes">Shakes</a><a
+                                                        href="https://marketplace.foodotawp.com/store/mcdonalds/"
+                                                        class="badge bg-light" title="Hot Drinks">Hot Drinks</a><a
+                                                        href="https://marketplace.foodotawp.com/store/mcdonalds/"
+                                                        class="badge bg-light" title="Happy Meal">Happy Meal</a><a
+                                                        href="https://marketplace.foodotawp.com/store/mcdonalds/"
+                                                        class="badge bg-light" title="Burgers">Burgers</a><a
+                                                        href="https://marketplace.foodotawp.com/store/mcdonalds/"
+                                                        class="badge bg-light" title="Breakfast">Breakfast</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <ul>
+                                            <li>
+                                                <div class="res-3-logo-img-container">
+                                                    <a href="https://marketplace.foodotawp.com/store/mcdonalds/">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/0011-50x50.jpg"
+                                                            alt="" class="img-fluid"></a>
+                                                </div>
+                                                <p> <span class="wcfmfa fa-clock"></span><span
+                                                        class="today-status"></span><span class="today-timing">12:07 am
+                                                        - 11:59 pm</span></p>
+                                                <div class="res-2-map-product"><span class="location-png">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/map.png"
+                                                            alt="" class="img-fluid"></span>
+                                                    <span>Street 6 Park Avenue,</span>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eq-height col-xxl-4 col-xl-6 col-lg-12 col-md-12">
+                            <div class="res-3-box ">
+                                <div class="res-2-img parallex-new"><a
+                                        href="https://marketplace.foodotawp.com/store/monal-restaurant/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/monal.jpg"
+                                            alt="" class="img-fluid"> </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast"></i></div>
+                                    <div class="new-stars-main">
+                                        <div class="stars"><i class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i></div>
+                                        <div class="rating-number"></div>
+                                    </div>
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text">
+                                            <a href="https://marketplace.foodotawp.com/store/monal-restaurant/">
+                                                <div class="text-s1">Chef Ganteng Restaurant</div>
+                                            </a>
+                                            <div class="food_cats"><span class="cat_names"><a
+                                                        href="https://marketplace.foodotawp.com/store/monal-restaurant/"
+                                                        class="badge bg-light" title="Desserts">Desserts</a><a
+                                                        href="https://marketplace.foodotawp.com/store/monal-restaurant/"
+                                                        class="badge bg-light" title="Sunday Brunch">Sunday Brunch</a><a
+                                                        href="https://marketplace.foodotawp.com/store/monal-restaurant/"
+                                                        class="badge bg-light" title="Hi Tea">Hi Tea</a><a
+                                                        href="https://marketplace.foodotawp.com/store/monal-restaurant/"
+                                                        class="badge bg-light" title="Pizza">Pizza</a><a
+                                                        href="https://marketplace.foodotawp.com/store/monal-restaurant/"
+                                                        class="badge bg-light" title="Continental">Continental</a><a
+                                                        href="https://marketplace.foodotawp.com/store/monal-restaurant/"
+                                                        class="badge bg-light" title="Dinner Buffet">Dinner
+                                                        Buffet</a></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <ul>
+                                            <li>
+                                                <div class="res-3-logo-img-container">
+                                                    <a href="https://marketplace.foodotawp.com/store/monal-restaurant/">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/055-50x50.jpg"
+                                                            alt="" class="img-fluid"></a>
+                                                </div>
+                                                <p> <span class="wcfmfa fa-clock"></span><span
+                                                        class="today-status"></span><span class="today-timing">12:09 am
+                                                        - 11:59 pm</span></p>
+                                                <div class="res-2-map-product"><span class="location-png">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/map.png"
+                                                            alt="" class="img-fluid"></span>
+                                                    <span>Main Boulevard,</span>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eq-height col-xxl-4 col-xl-6 col-lg-12 col-md-12">
+                            <div class="res-3-box ">
+                                <div class="res-2-img parallex-new"><a
+                                        href="https://marketplace.foodotawp.com/store/nandos/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/nandos.jpg"
+                                            alt="" class="img-fluid"> </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast"></i></div>
+                                    <div class="new-stars-main">
+                                        <div class="stars"><i class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i></div>
+                                        <div class="rating-number"></div>
+                                    </div>
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text">
+                                            <a href="https://marketplace.foodotawp.com/store/nandos/">
+                                                <div class="text-s1">Marshall Steak House</div>
+                                            </a>
+                                            <div class="food_cats"><span class="cat_names"><a
+                                                        href="https://marketplace.foodotawp.com/store/nandos/"
+                                                        class="badge bg-light" title="Appetizers">Appetizers</a><a
+                                                        href="https://marketplace.foodotawp.com/store/nandos/"
+                                                        class="badge bg-light" title="Deals">Deals</a><a
+                                                        href="https://marketplace.foodotawp.com/store/nandos/"
+                                                        class="badge bg-light" title="Casa Deals">Casa Deals</a><a
+                                                        href="https://marketplace.foodotawp.com/store/nandos/"
+                                                        class="badge bg-light" title="Salads">Salads</a><a
+                                                        href="https://marketplace.foodotawp.com/store/nandos/"
+                                                        class="badge bg-light" title="Shakes">Shakes</a><a
+                                                        href="https://marketplace.foodotawp.com/store/nandos/"
+                                                        class="badge bg-light" title="Desserts">Desserts</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <ul>
+                                            <li>
+                                                <div class="res-3-logo-img-container">
+                                                    <a href="https://marketplace.foodotawp.com/store/nandos/">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/010-50x50.jpg"
+                                                            alt="" class="img-fluid"></a>
+                                                </div>
+                                                <p> <span class="wcfmfa fa-clock"></span><span
+                                                        class="today-status"></span><span class="today-timing">12:06 am
+                                                        - 11:55 pm</span></p>
+                                                <div class="res-2-map-product"><span class="location-png">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/map.png"
+                                                            alt="" class="img-fluid"></span>
+                                                    <span>Suite# 9 Main Boulevard,</span>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eq-height col-xxl-4 col-xl-6 col-lg-12 col-md-12">
+                            <div class="res-3-box ">
+                                <div class="res-2-img parallex-new"><a
+                                        href="https://marketplace.foodotawp.com/store/normas/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/Normas.jpg"
+                                            alt="" class="img-fluid"> </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast"></i></div>
+                                    <div class="new-stars-main">
+                                        <div class="stars"><i class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i></div>
+                                        <div class="rating-number"></div>
+                                    </div>
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text">
+                                            <a href="https://marketplace.foodotawp.com/store/normas/">
+                                                <div class="text-s1">Chickenzilla Pizza Fusion</div>
+                                            </a>
+                                            <div class="food_cats"><span class="cat_names"><a
+                                                        href="https://marketplace.foodotawp.com/store/normas/"
+                                                        class="badge bg-light" title="Paratha">Paratha</a><a
+                                                        href="https://marketplace.foodotawp.com/store/normas/"
+                                                        class="badge bg-light" title="Burgers">Burgers</a><a
+                                                        href="https://marketplace.foodotawp.com/store/normas/"
+                                                        class="badge bg-light" title="BBQ">BBQ</a><a
+                                                        href="https://marketplace.foodotawp.com/store/normas/"
+                                                        class="badge bg-light" title="Continental">Continental</a><a
+                                                        href="https://marketplace.foodotawp.com/store/normas/"
+                                                        class="badge bg-light" title="Rice">Rice</a><a
+                                                        href="https://marketplace.foodotawp.com/store/normas/"
+                                                        class="badge bg-light" title="Karahi">Karahi</a></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <ul>
+                                            <li>
+                                                <div class="res-3-logo-img-container">
+                                                    <a href="https://marketplace.foodotawp.com/store/normas/">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/0112-50x50.jpg"
+                                                            alt="" class="img-fluid"></a>
+                                                </div>
+                                                <p> <span class="wcfmfa fa-clock"></span><span
+                                                        class="today-status"></span><span class="today-timing">12:07 am
+                                                        - 11:35 pm</span></p>
+                                                <div class="res-2-map-product"><span class="location-png">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/map.png"
+                                                            alt="" class="img-fluid"></span>
+                                                    <span>Street 5 Avenue road, New</span>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eq-height col-xxl-4 col-xl-6 col-lg-12 col-md-12">
+                            <div class="res-3-box ">
+                                <div class="res-2-img parallex-new"><a
+                                        href="https://marketplace.foodotawp.com/store/optp/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/optp.jpg"
+                                            alt="" class="img-fluid"> </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast"></i></div>
+                                    <div class="new-stars-main">
+                                        <div class="stars"><i class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i></div>
+                                        <div class="rating-number"></div>
+                                    </div>
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text">
+                                            <a href="https://marketplace.foodotawp.com/store/optp/">
+                                                <div class="text-s1">Burgervil Food Processer</div>
+                                            </a>
+                                            <div class="food_cats"><span class="cat_names"><a
+                                                        href="https://marketplace.foodotawp.com/store/optp/"
+                                                        class="badge bg-light" title="Sauces">Sauces</a><a
+                                                        href="https://marketplace.foodotawp.com/store/optp/"
+                                                        class="badge bg-light" title="Nuggets">Nuggets</a><a
+                                                        href="https://marketplace.foodotawp.com/store/optp/"
+                                                        class="badge bg-light" title="Pizza">Pizza</a><a
+                                                        href="https://marketplace.foodotawp.com/store/optp/"
+                                                        class="badge bg-light" title="Specialities">Specialities</a><a
+                                                        href="https://marketplace.foodotawp.com/store/optp/"
+                                                        class="badge bg-light" title="New Arrival">New
+                                                        Arrival</a></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <ul>
+                                            <li>
+                                                <div class="res-3-logo-img-container">
+                                                    <a href="https://marketplace.foodotawp.com/store/optp/">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/044-50x50.jpg"
+                                                            alt="" class="img-fluid"></a>
+                                                </div>
+                                                <p> <span class="wcfmfa fa-clock"></span><span
+                                                        class="today-status"></span><span class="today-timing">12:07 am
+                                                        - 11:58 pm</span></p>
+                                                <div class="res-2-map-product"><span class="location-png">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/map.png"
+                                                            alt="" class="img-fluid"></span>
+                                                    <span>Block A Suite#7, Sydney, </span>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eq-height col-xxl-4 col-xl-6 col-lg-12 col-md-12">
+                            <div class="res-3-box ">
+                                <div class="res-2-img parallex-new"><a
+                                        href="https://marketplace.foodotawp.com/store/the-otus-rooftop/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/RoofTop.jpg"
+                                            alt="" class="img-fluid"> </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast"></i></div>
+                                    <div class="new-stars-main">
+                                        <div class="stars"><i class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i></div>
+                                        <div class="rating-number"></div>
+                                    </div>
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text">
+                                            <a href="https://marketplace.foodotawp.com/store/the-otus-rooftop/">
+                                                <div class="text-s1">Lezatoz Chicken Server</div>
+                                            </a>
+                                            <div class="food_cats"><span class="cat_names"><a
+                                                        href="https://marketplace.foodotawp.com/store/the-otus-rooftop/"
+                                                        class="badge bg-light" title="Salads">Salads</a><a
+                                                        href="https://marketplace.foodotawp.com/store/the-otus-rooftop/"
+                                                        class="badge bg-light" title="Appetizers">Appetizers</a><a
+                                                        href="https://marketplace.foodotawp.com/store/the-otus-rooftop/"
+                                                        class="badge bg-light" title="Chow Mein">Chow Mein</a><a
+                                                        href="https://marketplace.foodotawp.com/store/the-otus-rooftop/"
+                                                        class="badge bg-light" title="Side Order">Side Order</a><a
+                                                        href="https://marketplace.foodotawp.com/store/the-otus-rooftop/"
+                                                        class="badge bg-light" title="New Arrival">New
+                                                        Arrival</a></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <ul>
+                                            <li>
+                                                <div class="res-3-logo-img-container">
+                                                    <a href="https://marketplace.foodotawp.com/store/the-otus-rooftop/">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/0066-50x50.jpg"
+                                                            alt="" class="img-fluid"></a>
+                                                </div>
+                                                <p> <span class="wcfmfa fa-clock"></span><span
+                                                        class="today-status"></span><span class="today-timing">12:08 am
+                                                        - 11:56 pm</span></p>
+                                                <div class="res-2-map-product"><span class="location-png">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/map.png"
+                                                            alt="" class="img-fluid"></span>
+                                                    <span>Suite#7, Lahore, Punjab</span>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eq-height col-xxl-4 col-xl-6 col-lg-12 col-md-12">
+                            <div class="res-3-box ">
+                                <div class="res-2-img parallex-new"><a
+                                        href="https://marketplace.foodotawp.com/store/topgrill/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/topgrill.jpg"
+                                            alt="" class="img-fluid"> </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast"></i></div>
+                                    <div class="new-stars-main">
+                                        <div class="stars"><i class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i></div>
+                                        <div class="rating-number"></div>
+                                    </div>
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text">
+                                            <a href="https://marketplace.foodotawp.com/store/topgrill/">
+                                                <div class="text-s1">Wingfood Food Planet</div>
+                                            </a>
+                                            <div class="food_cats"><span class="cat_names"><a
+                                                        href="https://marketplace.foodotawp.com/store/topgrill/"
+                                                        class="badge bg-light" title="Rolls">Rolls</a><a
+                                                        href="https://marketplace.foodotawp.com/store/topgrill/"
+                                                        class="badge bg-light" title="Deals">Deals</a><a
+                                                        href="https://marketplace.foodotawp.com/store/topgrill/"
+                                                        class="badge bg-light" title="Broast">Broast</a><a
+                                                        href="https://marketplace.foodotawp.com/store/topgrill/"
+                                                        class="badge bg-light" title="Sandwiches">Sandwiches</a><a
+                                                        href="https://marketplace.foodotawp.com/store/topgrill/"
+                                                        class="badge bg-light" title="Burgers">Burgers</a></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <ul>
+                                            <li>
+                                                <div class="res-3-logo-img-container">
+                                                    <a href="https://marketplace.foodotawp.com/store/topgrill/">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/033-50x50.jpg"
+                                                            alt="" class="img-fluid"></a>
+                                                </div>
+                                                <p> <span class="wcfmfa fa-clock"></span><span
+                                                        class="today-status"></span><span class="today-timing">12:08 am
+                                                        - 11:57 pm</span></p>
+                                                <div class="res-2-map-product"><span class="location-png">
+                                                        <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/map.png"
+                                                            alt="" class="img-fluid"></span>
+                                                    <span>Street 3 Park Avenue,</span>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock body %}
+<!--  -->
