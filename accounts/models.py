@@ -178,6 +178,7 @@ class User(AbstractUser):
         return self.first_name
 
 
+
 #Teachers
 class Teacher(models.Model):
     teacher = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)

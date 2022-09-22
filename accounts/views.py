@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, View
-from accounts.forms import RegisterForm
+from accounts.forms import MyLoginForm, RegisterForm
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from django.views.generic.edit import CreateView
@@ -30,16 +30,23 @@ class HomeView(TemplateView):
 
 
 class UserLoginView(LoginView):
-    # form_class = UserCreationForm
-    # template_name = 'registration/login.html'
+    # form_class = LoginForm
     template_name = 'landingpage/signin.html'
-    # success_url = reverse_lazy('landingpage:home')
+    success_url = reverse_lazy('landingpage:home')
 
+    def get(self, request, *args, **kwargs):
+        form = MyLoginForm
+        return render(request, self.template_name, {'form':form})
+
+    def post(self, request, *args, **kwargs):
+        form = self.form_class(request.POST)
+        
+        return render(request, self.template_name, {'form':form})
 
 class UserLogoutView(LogoutView):
     success_url = reverse_lazy('landingpage:home')
     template_name = 'registration/logged_out'
-    
+
 
 class RegisterView(CreateView):
     form_class = RegisterForm
@@ -78,7 +85,6 @@ class RegisterView(CreateView):
         return render(request, self.template_name, {'form':form})
 
 class ActivateAccount(View):
-
      def get(self, request, uidb64, token, *args, **kwargs):
          try:
              # uid = force_bytes(urlsafe_base64_decode(uidb64)).decode()

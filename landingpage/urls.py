@@ -3,6 +3,8 @@ from django.contrib import admin
 from django.urls import path
 from landingpage import views
 
+app_name = 'landingpage'
+
 urlpatterns = [
     path("", views.landingpage, name='home'),
     path("vendor", views.vender, name='vendor'),
