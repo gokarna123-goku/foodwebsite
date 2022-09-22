@@ -1,0 +1,11 @@
+{% autoescape off %}
+<meta http-equiv="content-type" content='text/html; charset=utf-8'>
+{{ csrf_token }}
+
+Hi {{ user.first_name }},
+
+Please click the link below to confirm your registration:
+
+http://{{ domain }}{% url 'accounts:activate' uidb64=uid token=token %}
+
+{% endautoescape %}

@@ -1,0 +1,87 @@
+[
+  {
+    "model": "accounts.teacher",
+    "pk": 1,
+    "fields": {
+      "teacher_name": "Rabin Sapkota",
+      "DOB": "12/7/1983",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "father_name": "Govardhan Prasad Sapkota",
+      "father_occupation": "Business",
+      "mother_name": "Suman Kumari Sapkota",
+      "mother_occupation": "Housewide",
+      "teacher_class_level": "Class 10"
+    }
+  },
+  {
+    "model": "accounts.teacher",
+    "pk": 2,
+    "fields": {
+      "teacher_name": "Rabin Raut",
+      "DOB": "1/7/1980",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "father_name": "Govinda Prasad Raut",
+      "father_occupation": "Business",
+      "mother_name": "Suman Kumari Raut",
+      "mother_occupation": "Housewide",
+      "teacher_class_level": "Class 10"
+    }
+  },
+  {
+    "model": "accounts.teacher",
+    "pk": 3,
+    "fields": {
+      "teacher_name": "Dinesh Shrestha",
+      "DOB": "12/7/1983",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "father_name": "Govardhan Prasad Shrestha",
+      "father_occupation": "Business",
+      "mother_name": "Suman Kumari Shrestha",
+      "mother_occupation": "Housewide",
+      "teacher_class_level": "Class 10"
+    }
+  },
+  {
+    "model": "accounts.teacher",
+    "pk": 4,
+    "fields": {
+      "teacher_name": "Dipen Khatri",
+      "DOB": "12/7/1983",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "father_name": "Dipesh Khatri",
+      "father_occupation": "Business",
+      "mother_name": "Suman Khatri",
+      "mother_occupation": "Housewide",
+      "teacher_class_level": "Class 8"
+    }
+  },
+  {
+    "model": "accounts.teacher",
+    "pk": 5,
+    "fields": {
+      "teacher_name": "Bipin Khatri",
+      "DOB": "12/7/1983",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "father_name": "Govardhan khatri",
+      "father_occupation": "Business",
+      "mother_name": "Ruman Kumari Khatri",
+      "mother_occupation": "Housewide",
+      "teacher_class_level": "Class 7"
+    }
+  }
+]

@@ -1,0 +1,380 @@
+[
+  {
+    "model": "accounts.student",
+    "pk": 1,
+    "fields": {
+      "student_name": "Bipin Sapkota",
+      "DOB": "12/7/2005",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "father_name": "Gokarna Prasad Sapkota",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Bharati Sapkota",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level": "1",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 2,
+    "fields": {
+      "student_name": "Dipin Sapkota",
+      "DOB": "12/7/2005",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "father_name": "Gokarna Prasad Sapkota",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Bharati Sapkota",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level": "2",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 3,
+    "fields": {
+      "student_name": "Babin Sapkota",
+      "DOB": "12/7/2005",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "father_name": "Gokarna Prasad Sapkota",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Bharati Sapkota",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level": "2",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 4,
+    "fields": {
+      "student_name": "Bipin Gurung",
+      "DOB": "12/7/2005",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "father_name": "Gokarna Gurung",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Bharati Gurung",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level": "2",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 5,
+    "fields": {
+      "student_name": "Dipin Shrestha",
+      "DOB": "1/7/2006",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "father_name": "Nabin Shrestha",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Nabina Shrestha",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level": "3",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 6,
+    "fields": {
+      "student_name": "Nabin Khadka",
+      "DOB": "1/17/2006",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "father_name": "Krishna Bahadur Sapkota",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Bharati Khadka",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level":"4",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 7,
+    "fields": {
+      "student_name": "Sapana Gurung",
+      "DOB": "12/7/2005",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "father_name": "Hemant Gurung",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Sapana Gurung",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level":"4",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 8,
+    "fields": {
+      "student_name": "Dipin Magar",
+      "DOB": "1/7/2006",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "father_name": "Nabin Magar",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Nabina Magar",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level":"4",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 9,
+    "fields": {
+      "student_name": "kumar Khadka",
+      "DOB": "1/17/2006",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "father_name": "Krishna Bahadur Khadka",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Bharati Khadka",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level":"4",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 10,
+    "fields": {
+      "student_name": "Bipin Shah",
+      "DOB": "12/7/2005",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "father_name": "Gokarna Shah",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Bharati Shah",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level":"4",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 11,
+    "fields": {
+      "student_name": "Dipin Dahal",
+      "DOB": "12/7/2005",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "father_name": "Gokarna Dahal",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Bharati Sapkota",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level":"4",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 12,
+    "fields": {
+      "student_name": "Babin Rai",
+      "DOB": "12/7/2005",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "KTM-5, Sukedhara, Ashrit Marg",
+      "father_name": "Nabin Rai",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Bharati Rai",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level":"4",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 13,
+    "fields": {
+      "student_name": "Bipin Dhungana",
+      "DOB": "12/7/2005",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "father_name": "Gokarna Dhungana",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Bharati Dhungana",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level":"4",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 14,
+    "fields": {
+      "student_name": "Suman Pal",
+      "DOB": "1/7/2006",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "father_name": "Nabin Pal",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Nabina Pal",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level":"4",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 15,
+    "fields": {
+      "student_name": "Nabin Maharjan",
+      "DOB": "1/17/2006",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "father_name": "Krishna Bahadur Maharjan",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Bharati Maharjan",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level":"4",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 16,
+    "fields": {
+      "student_name": "Sapana Sedai",
+      "DOB": "12/7/2005",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "father_name": "Hemant Sedai",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Sapana Sedai",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level":"4",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 17,
+    "fields": {
+      "student_name": "Raj Thapa",
+      "DOB": "1/7/2006",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "father_name": "Nabin Thapa",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Nabina Thapa",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level":"4",
+      "student_section": "A"
+    }
+  },
+  {
+    "model": "accounts.student",
+    "pk": 18,
+    "fields": {
+      "student_name": "Kul Kumar Khadka",
+      "DOB": "1/17/2006",
+      "permanent_Address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "temporary_address": "Bagmati, Kathmandu",
+      "ward_tole": "Gokarneshor-5, Jorpati",
+      "father_name": "Kaman Bahadur Khadka",
+      "father_occupation": "Business",
+      "father_academic_background": "Bachelor's",
+      "behavior_impression": "Hardworking",
+      "mother_name": "Nita Kumari Khadka",
+      "mother_occupation": "Housewife",
+      "mother_academic_background": "Nursing",
+      "student_class_level":"4",
+      "student_section": "A"
+    }
+  }
+]

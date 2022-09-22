@@ -6,79 +6,120 @@
 <!-- Hero section -->
 
 
-<!--  -->
-<div class="clearfix"></div>
-<section class="res-srch-hero res-srch-hero-x txt no-defualt-bg ">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12">
-                <div class="res-blog-grid">
-                    <h2>Sing-in / Sing-up</h2>
+<!-- Try Version -->
+<!-- <div class="container-fluid my-5 py-5">
+    <div class="container my-5 py-5">
+        <h2>Login</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.non_field_errors }}
+            <div class="fieldWrapper">
+                {{ form.email.errors }}
+                <label for="{{ form.username.id_for_label }}">Email Address:</label>
+                {{ form.email }}
+            </div>
+            <div class="fieldWrapper">
+                {{ form.username.errors }}
+                <label for="{{ form.username.id_for_label }}">Username:</label>
+                {{ form.username }}
+            </div>
+            <div class="fieldWrapper">
+                {{ form.password1.errors }}
+                <label for="{{ form.password.id_for_label }}">Password:</label>
+                {{ form.password1 }}
+            </div>
+            <div class="fieldWrapper">
+                {{ form.password2.errors }}
+                <label for="{{ form.password.id_for_label }}">Confirm Password:</label>
+                {{ form.password2 }}
+            </div>
+            <button type="submit">Register</button>
+        </form>
+
+    </div>
+</div> -->
+
+
+<!-- <div class="container-fluid my-5 py-5">
+    <div class="container my-5 py-5">
+        <form method='POST'>
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type='submit'>Register</button>
+        </form>
+
+    </div>
+</div> -->
+
+<!-- Registration Form Design -->
+<div class="container-fluid px-0 mx-0 my-5 pt-4">
+    <div class="container col-md-7 mt-5">
+        <div class="row shadow px-0">
+            <div class="col-md-6 px-0">
+                <!-- <img src="https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-mobile-banking-app-welcome-page-startup-page-h5-background-psd-image_153932.jpg"
+                class="login-img" alt="" style="width: 100%; height: 85vh; object-position: center;"> -->
+                <img src="https://png.pngtree.com/thumb_back/fh260/back_our/20190622/ourmid/pngtree-517-world-telecommunication-day-poster-background-image_227511.jpg"
+                    class="login-img" alt="" style="width: 100%; height: 80vh; object-position: center;">
+            </div>
+            <div class="col-md-6 pt-5">
+                <div class="section p-4">
+                    <h4 class="text text-center text-secondary mb-4">Global We Tech Care</h4>
+                    <form action="" method="POST" class="mb-4">
+                        {% csrf_token %}
+                        {{ form.non_field_errors }}
+                        <div class="mb-3">
+                            {{ form.username.errors }}
+                            <label for="{{ form.username.id_for_label }}">User Name:</label> <br>
+                            {{ form.username }}
+                        </div>
+                        <div class="mb-3">
+                            {{ form.password1.errors }}
+                            <label for="{{ form.password1.id_for_label }}">Password </label> <br>
+                            {{ form.password1 }}
+                        </div>
+                        <button type="submit" class="btn btn-warning px-5 text-center w-100">Sign In</button>
+                    </form>
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <p class="text text-secondary mb-0">Don't have an Account? &nbsp;</p>
+                            <a href="/accounts/signup" class="text-decoration-none text-warning" style="font-size: 1.1rem; letter-spacing: 1px;">Create Account</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-<div class="woocommerce">
-    <div class="woocommerce-notices-wrapper"></div>
-    <div class="u-columns col2-set" id="customer_login">
-        <div class="u-column1 col-1">
-            <h2>Login</h2>
-            <form class="woocommerce-form woocommerce-form-login login" method="post">
-                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-                    <label for="username">Username or email address&nbsp;<span class="required">*</span></label>
-                    <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username"
-                        id="username" autocomplete="username" value="" />
-                </p>
-                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-                    <label for="password">Password&nbsp;<span class="required">*</span></label>
-                    <input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password"
-                        id="password" autocomplete="current-password" />
-                </p>
-                <p class="form-row">
-                    <label
-                        class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
-                        <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme"
-                            type="checkbox" id="rememberme" value="forever" /> <span>Remember me</span>
-                    </label>
-                    <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce"
-                        value="13ed4ce358" /><input type="hidden" name="_wp_http_referer" value="/my-account/" />
-                    <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login"
-                        value="Log in">Log in</button>
-                </p>
-                <p class="woocommerce-LostPassword lost_password">
-                    <a href="/lost-password">Lost your password?</a>
-                </p>
-            </form>
-        </div>
-        <div class="u-column2 col-2">
-            <h2>Register</h2>
-            <form method="post" class="woocommerce-form woocommerce-form-register register">
-                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-                    <label for="reg_email">Email address&nbsp;<span class="required">*</span></label>
-                    <input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email"
-                        id="reg_email" autocomplete="email" value="" />
-                </p>
-                <p>A link to set a new password will be sent to your email address.</p>
-                <div class="woocommerce-privacy-policy-text">
-                    <p>Your personal data will be used to support your experience throughout this website, to manage
-                        access to your account, and for other purposes described in our <a
-                            href="https://marketplace.foodotawp.com/?page_id=3" class="woocommerce-privacy-policy-link"
-                            target="_blank">privacy policy</a>.</p>
-                </div>
-                <p class="woocommerce-form-row form-row">
-                    <input type="hidden" id="woocommerce-register-nonce" name="woocommerce-register-nonce"
-                        value="951d4d3b81" /><input type="hidden" name="_wp_http_referer" value="/my-account/" />
-                    <button type="submit"
-                        class="woocommerce-Button woocommerce-button button woocommerce-form-register__submit"
-                        name="register" value="Register">Register</button>
-                </p>
-                <div class="wcfmmp_become_vendor_link"><a href="https://marketplace.foodotawp.com/price-plan/">Become a
-                        Vendor</a>
-                </div>
-            </form>
-        </div>
-    </div>
 </div>
+<!--  -->
+
+<!--  -->
+<!-- <div class="container-fluid my-5 py-5">
+    <div class="container col-md-5 my-5">
+        <div class="container col-md-5 text-center mb-5">
+            <h4 class="text text-secondary text-center py-3 px-2 shadow-sm">Registration Page</h4>
+        </div>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="email">Email address</label>
+                <input type="text" id="email" name="email" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="email">User Name:</label>
+                <input type="text" id="username" name="username" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="password1">Password </label>
+                <input type="password" id="password1" name="password1" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2" name="password2" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-warning px-5 text-center w-100">Register</button>
+        </form>
+    </div>
+</div> -->
+
 
 {% endblock body %}

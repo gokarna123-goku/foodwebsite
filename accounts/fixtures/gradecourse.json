@@ -1,0 +1,124 @@
+[
+  {
+    "model": "accounts.gradecourse",
+    "pk": 1,
+    "fields": {
+      "course_grade_level": "Nursery",
+      "student_courses_1": "English Written",
+      "student_courses_2": "Nepali Written ",
+      "student_courses_3": "Maths Written",
+      "student_courses_4": "English Oral",
+      "student_courses_5": "Nepali Oral",
+      "student_courses_6": "Maths Oral",
+      "created_by": "3"
+    }
+  },
+  {
+    "model": "accounts.gradecourse",
+    "pk": 2,
+    "fields": {
+      "course_grade_level": "LKG",
+      "student_courses_1": "English Written",
+      "student_courses_2": "Nepali Written ",
+      "student_courses_3": "Maths Written",
+      "student_courses_4": "English Oral",
+      "student_courses_5": "Nepali Oral",
+      "student_courses_6": "Maths Oral",
+      "created_by": "2"
+    }
+  },
+  {
+    "model": "accounts.gradecourse",
+    "pk": 3,
+    "fields": {
+      "course_grade_level": "UKG",
+      "student_courses_1": "English Written",
+      "student_courses_2": "Nepali Written ",
+      "student_courses_3": "Maths Written",
+      "student_courses_4": "English Oral",
+      "student_courses_5": "Nepali Oral",
+      "student_courses_6": "Maths Oral",
+      "created_by": "1"
+    }
+  },
+  {
+    "model": "accounts.gradecourse",
+    "pk": 4,
+    "fields": {
+      "course_grade_level": "ONE",
+      "student_courses_1": "English Reader",
+      "student_courses_2": "Nepali",
+      "student_courses_3": "Maths",
+      "student_courses_4": "Science",
+      "student_courses_5": "Social Studies",
+      "student_courses_6": "Computer",
+      "student_courses_7": "Hamro Gokarneshwor",
+      "student_courses_8": "Cambridge English",
+      "created_by": "2"
+    }
+  },
+  {
+    "model": "accounts.gradecourse",
+    "pk": 5,
+    "fields": {
+      "course_grade_level": "TWO",
+      "student_courses_1": "English Reader",
+      "student_courses_2": "Nepali",
+      "student_courses_3": "Maths",
+      "student_courses_4": "Science",
+      "student_courses_5": "Social Studies",
+      "student_courses_6": "Computer",
+      "student_courses_7": "Hamro Gokarneshwor",
+      "student_courses_8": "Cambridge English",
+      "created_by": "1"
+    }
+  },
+  {
+    "model": "accounts.gradecourse",
+    "pk": 6,
+    "fields": {
+      "course_grade_level": "THREE",
+      "student_courses_1": "English Reader",
+      "student_courses_2": "Nepali",
+      "student_courses_3": "Maths",
+      "student_courses_4": "Science",
+      "student_courses_5": "Social Studies",
+      "student_courses_6": "Computer",
+      "student_courses_7": "Hamro Gokarneshwor",
+      "student_courses_8": "Cambridge English",
+      "created_by": "2"
+    }
+  },
+  {
+    "model": "accounts.gradecourse",
+    "pk": 7,
+    "fields": {
+      "course_grade_level": "FOUR",
+      "student_courses_1": "English Reader",
+      "student_courses_2": "Nepali",
+      "student_courses_3": "Maths",
+      "student_courses_4": "Science",
+      "student_courses_5": "Social Studies",
+      "student_courses_6": "Computer",
+      "student_courses_7": "Hamro Gokarneshwor",
+      "student_courses_8": "Cambridge English",
+      "created_by": "3"
+    }
+  },
+  {
+    "model": "accounts.gradecourse",
+    "pk": 8,
+    "fields": {
+      "course_grade_level": "FIVE",
+      "student_courses_1": "English Reader",
+      "student_courses_2": "Nepali",
+      "student_courses_3": "Maths",
+      "student_courses_4": "Science",
+      "student_courses_5": "Social Studies",
+      "student_courses_6": "Computer",
+      "student_courses_7": "Hamro Gokarneshwor",
+      "student_courses_8": "Cambridge English",
+      "created_by": "2"
+    }
+  }
+]

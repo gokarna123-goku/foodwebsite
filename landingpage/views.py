@@ -11,8 +11,8 @@ def vender(request):
     return render(request, 'landingpage/vendor.html')
 
 
-def signin(request):
-    return render(request, 'landingpage/signin.html')
+# def signin(request):
+#     return render(request, 'landingpage/signin.html')
 
 
 def blog(request):
@@ -24,4 +24,6 @@ def allVendors(request):
 
 def singleRestaurant(request):
     return render(request, 'landingpage/single-restaurant.html')
+
+
 # 

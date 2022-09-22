@@ -1,0 +1,15 @@
+<!-- templates/home.html -->
+{% extends 'registration/base_generic.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+  Hi {{ user.username }}!
+  {% comment %} <p><a href="{% url 'logout' %}">logout</a></p> {% endcomment %}
+{% else %}
+  <p>You are not logged in</p>
+  <a href="{% url 'accounts:login' %}">login</a> |
+  <a href="{% url 'accounts:signup' %}">signup</a>
+{% endif %}
+{% endblock %}
