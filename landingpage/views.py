@@ -1,8 +1,17 @@
 from http.client import HTTPResponse
 from urllib.request import HTTPRedirectHandler
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
+from django.views import generic
+from landingpage.models import Food
+
 
 # Create your views here.
+
+class index(generic.ListView):
+    template_name = 'landingpage/index.html'
+    model = Food
+    context_object_name = 'foods'
+
 def landingpage(request):
     return render(request, 'landingpage/index.html')
     # return HttpResponse("This is HomePage")

@@ -36,8 +36,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="res-hero-srch">
-                                                        <form action=""
-                                                            method="get">
+                                                        <form action="" method="get">
                                                             <div class="ul-search-3">
                                                                 <div class="location-search">
                                                                     <div class="form-group random-search">
@@ -144,11 +143,12 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- First Section-->
                                         <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
                                             <div class="category-main">
-                                                <a href="https://marketplace.foodotawp.com/all-vendors/?cat_id=82">
+                                                <a href="#">
                                                     <img loading="lazy" alt="" class="cate-images"
-                                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/Layer256-1.png"></a>
+                                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/1qLayer-1.png"></a>
                                                 <div class="category-text-box">
                                                     <div class="category-text-inner">
                                                         <a
@@ -1014,182 +1014,40 @@
                                             </div>
 
                                         </div>
+                                        <!--Food First Item-->
+                                        {% for food in foods %}
                                         <div
                                             class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
                                             <div class="main-box">
                                                 <div class="image-box">
-                                                    <a href="https://marketplace.foodotawp.com/store/howdy/"><img
-                                                            width="300" height="300"
-                                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-1-300x300.png"
+                                                    <a href="#">
+                                                        <img
+                                                            src="{{food.food_image}}"
                                                             class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" loading="lazy"
-                                                            srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-1.png 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-1-150x150.png 150w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-1-120x120.png 120w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-1-210x210.png 210w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-1-40x40.png 40w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-1-128x128.png 128w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-1-64x64.png 64w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-1-50x50.png 50w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-1-100x100.png 100w"
-                                                            sizes="(max-width: 300px) 100vw, 300px" /></a>
+                                                            alt="" loading="lazy" style="width: 100%; height: 34vh; object-position: center; object-fit: cover;"
+                                                    </a>
                                                 </div>
                                                 <div class="bottom-box">
                                                     <div class="uper-box">
-                                                        <p><a href="https://marketplace.foodotawp.com/store/howdy/">Crispy
-                                                                Fry Burger</a></p>
+                                                        <p><a href="{{food.food_name}}">Crispy
+                                                                Fry Burger</a>
+                                                            </p>
                                                     </div>
                                                     <p>Howdy Special, A well-seasoned, crispy fried chicken fillet
-                                                        slathered with a</p>
+                                                        slathered with a
+                                                    </p>
                                                     <div class="price-box">
                                                         <del aria-hidden="true"><span
                                                                 class="woocommerce-Price-amount amount"><bdi><span
-                                                                        class="woocommerce-Price-currencySymbol">&pound;</span>690.00</bdi></span></del>
+                                                                        class="woocommerce-Price-currencySymbol">Rs.</span>{{food.discount_price}}</bdi></span></del>
                                                         <ins><span class="woocommerce-Price-amount amount"><bdi><span
-                                                                        class="woocommerce-Price-currencySymbol">&pound;</span>600.00</bdi></span></ins>
+                                                                        class="woocommerce-Price-currencySymbol">Rs.</span>{{food.food_price}}</bdi></span></ins>
                                                     </div>
                                                 </div>
                                             </div>
 
                                         </div>
-                                        <div
-                                            class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
-                                            <div class="main-box">
-                                                <div class="image-box">
-                                                    <a href="https://marketplace.foodotawp.com/store/howdy/"><img
-                                                            width="300" height="300"
-                                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-2-300x300.png"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" loading="lazy"
-                                                            srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-2.png 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-2-150x150.png 150w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-2-120x120.png 120w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-2-210x210.png 210w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-2-40x40.png 40w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-2-128x128.png 128w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-2-64x64.png 64w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-2-50x50.png 50w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-2-100x100.png 100w"
-                                                            sizes="(max-width: 300px) 100vw, 300px" /></a>
-                                                </div>
-                                                <div class="bottom-box">
-                                                    <div class="uper-box">
-                                                        <p><a href="https://marketplace.foodotawp.com/store/howdy/">Fandango
-                                                                Burger</a></p>
-                                                    </div>
-                                                    <p>Potato skins, chicken strips, toasted ravioli and mozzarella
-                                                        sticks served with</p>
-                                                    <div class="price-box">
-                                                        <del aria-hidden="true"><span
-                                                                class="woocommerce-Price-amount amount"><bdi><span
-                                                                        class="woocommerce-Price-currencySymbol">&pound;</span>690.00</bdi></span></del>
-                                                        <ins><span class="woocommerce-Price-amount amount"><bdi><span
-                                                                        class="woocommerce-Price-currencySymbol">&pound;</span>600.00</bdi></span></ins>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div
-                                            class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
-                                            <div class="main-box">
-                                                <div class="image-box">
-                                                    <a href="https://marketplace.foodotawp.com/store/howdy/"><img
-                                                            width="300" height="300"
-                                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-2-300x300.png"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" loading="lazy"
-                                                            srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-2.png 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-2-150x150.png 150w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-2-120x120.png 120w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-2-210x210.png 210w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-2-40x40.png 40w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-2-128x128.png 128w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-2-64x64.png 64w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-2-50x50.png 50w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-2-100x100.png 100w"
-                                                            sizes="(max-width: 300px) 100vw, 300px" /></a>
-                                                </div>
-                                                <div class="bottom-box">
-                                                    <div class="uper-box">
-                                                        <p><a href="https://marketplace.foodotawp.com/store/howdy/">Wrangler
-                                                                Burger</a></p>
-                                                    </div>
-                                                    <p>Blackened chicken, sauteed onions and peppers smothered with
-                                                        pepper jack and</p>
-                                                    <div class="price-box">
-                                                        <del aria-hidden="true"><span
-                                                                class="woocommerce-Price-amount amount"><bdi><span
-                                                                        class="woocommerce-Price-currencySymbol">&pound;</span>590.00</bdi></span></del>
-                                                        <ins><span class="woocommerce-Price-amount amount"><bdi><span
-                                                                        class="woocommerce-Price-currencySymbol">&pound;</span>550.00</bdi></span></ins>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div
-                                            class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
-                                            <div class="main-box">
-                                                <div class="image-box">
-                                                    <a href="https://marketplace.foodotawp.com/store/howdy/"><img
-                                                            width="300" height="300"
-                                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-2-300x300.png"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" loading="lazy"
-                                                            srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-2.png 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-2-150x150.png 150w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-2-120x120.png 120w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-2-210x210.png 210w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-2-40x40.png 40w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-2-128x128.png 128w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-2-64x64.png 64w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-2-50x50.png 50w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-2-100x100.png 100w"
-                                                            sizes="(max-width: 300px) 100vw, 300px" /></a>
-                                                </div>
-                                                <div class="bottom-box">
-                                                    <div class="uper-box">
-                                                        <p><a href="https://marketplace.foodotawp.com/store/howdy/">Double
-                                                                Cheese Burger</a></p>
-                                                    </div>
-                                                    <p>Special Burger, deep-fried beef ravioli served with marinara
-                                                        sauce and topped</p>
-                                                    <div class="price-box">
-                                                        <del aria-hidden="true"><span
-                                                                class="woocommerce-Price-amount amount"><bdi><span
-                                                                        class="woocommerce-Price-currencySymbol">&pound;</span>590.00</bdi></span></del>
-                                                        <ins><span class="woocommerce-Price-amount amount"><bdi><span
-                                                                        class="woocommerce-Price-currencySymbol">&pound;</span>500.00</bdi></span></ins>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div
-                                            class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
-                                            <div class="main-box">
-                                                <div class="image-box">
-                                                    <a href="https://marketplace.foodotawp.com/store/howdy/"><img
-                                                            width="300" height="300"
-                                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-2-300x300.png"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" loading="lazy"
-                                                            srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-2.png 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-2-150x150.png 150w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-2-120x120.png 120w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-2-210x210.png 210w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-2-40x40.png 40w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-2-128x128.png 128w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-2-64x64.png 64w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-2-50x50.png 50w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-2-100x100.png 100w"
-                                                            sizes="(max-width: 300px) 100vw, 300px" /></a>
-                                                </div>
-                                                <div class="bottom-box">
-                                                    <div class="uper-box">
-                                                        <p><a href="https://marketplace.foodotawp.com/store/howdy/">Cheddar
-                                                                Cheese burger</a></p>
-                                                    </div>
-                                                    <p>Hot & Grilled nachos smothered in cheddar cheese, beef, black
-                                                        olives, onions,</p>
-                                                    <div class="price-box">
-                                                        <span class="woocommerce-Price-amount amount"><bdi><span
-                                                                    class="woocommerce-Price-currencySymbol">&pound;</span>590.00</bdi>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div
-                                            class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
-                                            <div class="main-box">
-                                                <div class="image-box">
-                                                    <a href="https://marketplace.foodotawp.com/store/howdy/"><img
-                                                            width="300" height="300"
-                                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-2-300x300.png"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" loading="lazy"
-                                                            srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-2.png 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-2-150x150.png 150w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-2-120x120.png 120w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-2-210x210.png 210w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-2-40x40.png 40w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-2-128x128.png 128w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-2-64x64.png 64w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-2-50x50.png 50w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-2-100x100.png 100w"
-                                                            sizes="(max-width: 300px) 100vw, 300px" /></a>
-                                                </div>
-                                                <div class="bottom-box">
-                                                    <div class="uper-box">
-                                                        <p><a href="https://marketplace.foodotawp.com/store/howdy/">Howdy
-                                                                Hamburger</a></p>
-                                                    </div>
-                                                    <p>Double Breast Of A Chicken Burger With Spicy Red Sauce Try
-                                                        this new arrival to</p>
-                                                    <div class="price-box">
-                                                        <span class="woocommerce-Price-amount amount"><bdi><span
-                                                                    class="woocommerce-Price-currencySymbol">&pound;</span>290.00</bdi>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
+                                        {% endfor %}
                                     </div>
                                 </div>
                             </section>

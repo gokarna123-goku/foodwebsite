@@ -32,20 +32,22 @@ class HomeView(TemplateView):
 class UserLoginView(LoginView):
     # form_class = LoginForm
     template_name = 'landingpage/signin.html'
-    success_url = reverse_lazy('landingpage:home')
-
+    # success_url = reverse_lazy('landingpage:home')
+    
     def get(self, request, *args, **kwargs):
         form = MyLoginForm
         return render(request, self.template_name, {'form':form})
 
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
-        
+        if form.is_valid():
+            return redirect('landingpage:home')
         return render(request, self.template_name, {'form':form})
+    
+    
 
 class UserLogoutView(LogoutView):
-    success_url = reverse_lazy('landingpage:home')
-    template_name = 'registration/logged_out'
+    pass
 
 
 class RegisterView(CreateView):
@@ -81,7 +83,7 @@ class RegisterView(CreateView):
             # user.email_user(subject, message, from_email=None, **kwargs)
             # messages.success(request, 'Please confirm your email to complete registration')
             # return redirect('accounts:sent')
-            return redirect('landingpage:signin')
+            return redirect('accounts:signin')
         return render(request, self.template_name, {'form':form})
 
 class ActivateAccount(View):

@@ -221,6 +221,8 @@ class Gradecourse(models.Model):
 
     def __str__(self):              # __unicode__ on Python 2
         return self.course_grade_level
+
+
 # Students
 class Student(models.Model):
     student = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)

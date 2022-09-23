@@ -5,7 +5,7 @@
         <div class="sb-header-container">
             <div class="logo">
                 <a href="/">GWTC</a>
-            </div> 
+            </div>
             <!-- <div class="logo"
                     data-mobile-logo="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/sticky.svg"
                     data-sticky-logo="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/sticky.svg"><a
@@ -22,18 +22,9 @@
                 <ul>
                     <li class=""><a href="/">Home</a></li>
                     <li class=""><a href="/single-restaurant">Single Restaurant </a></li>
-                    <li class=""><a href="/registration">Registration </a>
-                        <ul>
-                            <li><a href="/accounts/signup">Register </a>
-                            <li><a href="/accounts/signin">Login </a>
-                            <li><a href="/vendor">Vendor Membership
-                                </a>
-                        </ul>
-                    </li>
                     <li class=""><a href="/blog">Blog </a></li>
                     <li class=""><a href="/all-vendors">All Vendors </a></li>
                     <li class="right-space">
-                        {% comment %} <i class="fa fa-crosshairs"></i> {% endcomment %}
                         <i class="fas fa-crosshairs"></i>
                         <form class="header-form" method="get" action="/all-vendors">
                             <div class="form-group">
@@ -56,6 +47,18 @@
                             </div>
                         </form>
                     </li>
+                    {% if user.is_authenticated %}
+                    <li class="me-4"><a href="{% url 'accounts:logout' %}">Log Out </a>
+                    {% else %}
+                    <li class="me-4"><a href="/registration">Registration </a>
+                        <ul>
+                            <li><a href="{% url 'accounts:signup' %}">Register </a>
+                            <li><a href="{% url 'accounts:signin' %}">Login </a>
+                            <li><a href="{% url 'landingpage:vendor' %}">Vendor Membership
+                                </a>
+                        </ul>
+                    </li>
+                    {% endif %}
                     <li class="color-x"><a href="/all-vendors" class="btn btn-theme">
                             Restaurant Search
                         </a>

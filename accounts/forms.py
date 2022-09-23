@@ -46,9 +46,9 @@ class MyLoginForm(LoginView):
 
     def clean_email(self):
         username = self.cleaned_data.get('username')
-        qs = User.objects.filter(email=username)
+        qs = User.objects.filter(username=username)
         if qs.exists():
-            raise forms.ValidationError("Email address already exists")
+            raise forms.ValidationError("Username already exists")
         return username
     
 
