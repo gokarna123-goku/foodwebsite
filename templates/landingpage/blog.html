@@ -24,36 +24,35 @@
             <div class="col-xxl-8 col-xl-8 col-md-12 col-lg-12 col-xs-12 col-sm-12">
                 <div class="content-area">
                     <div class="row grid">
+                        <!-- Blog Data Section -->
+                        {% for blog in blogs %}
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 grid-item">
                             <div class="post-81 post type-post status-publish format-standard has-post-thumbnail hentry category-appetizers tag-desert tag-food tag-sweet"
                                 id="post-81">
                                 <div class="blog-card">
                                     <div class="blog-card-header p-0 mx-3 mt-3 position-relative z-index-1">
-                                        <img width="970" height="450"
-                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/pexels-abhinav-goswami-291528.jpg"
-                                            class="img-fluid border-radius-lg wp-post-image" alt=""
-                                            srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/pexels-abhinav-goswami-291528.jpg 970w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/pexels-abhinav-goswami-291528-300x139.jpg 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/pexels-abhinav-goswami-291528-768x356.jpg 768w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/pexels-abhinav-goswami-291528-375x174.jpg 375w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/pexels-abhinav-goswami-291528-400x186.jpg 400w"
-                                            sizes="(max-width: 970px) 100vw, 970px" />
+                                        <img width="970" height="500"
+                                            src="{{blog.blog_images}}"
+                                            class="img-fluid border-radius-lg wp-post-image" alt="" />
                                     </div>
                                     <div class="card-body pt-3">
                                         <span
                                             class="blog-category text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">
-                                            Appetizers </span>
-                                        <a href="https://marketplace.foodotawp.com/amazing-decadent-pecan-pie/"
+                                            {{blog.blog_type}} 
+                                        </span>
+                                        <a href="/blog-details"
                                             class="card-title h5 d-block text-darker">
-                                            <h3>Amazing Decadent Pecan PIE Best Cake</h3>
+                                            <h3>{{blog.blog_title}}</h3>
                                         </a>
                                         <p class="blog-card-description mb-4">
-                                            Pie is a rich chewy, nutty, sweet holiday staple. For many the holidays
-                                            aren’t the holidays without must explain all this  of denouncing pleasure
-                                            and praising pain was born and&hellip; </p>
+                                            {{blog.blog_desc}} &hellip; </p>
                                         <div class="blog-author align-items-center">
                                             <img src="https://secure.gravatar.com/avatar/?s=96&#038;d=mm&#038;r=g"
                                                 alt="" class="blog-avatar blog-shadow">
                                             <div class="blog-name ps-3">
-                                                <span>admin</span>
+                                                <span>{{user.username}}</span>
                                                 <div class="stats">
-                                                    <small>March 22, 2021</small>
+                                                    <small>{{blog.blog_posted_date}}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -61,43 +60,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 grid-item">
-                            <div class="post-73 post type-post status-publish format-standard has-post-thumbnail hentry category-appetizers tag-food tag-lunch tag-salad tag-vegetable"
-                                id="post-73">
-                                <div class="blog-card">
-                                    <div class="blog-card-header p-0 mx-3 mt-3 position-relative z-index-1">
-                                        <img width="970" height="450"
-                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/post-2-1.jpg"
-                                            class="img-fluid border-radius-lg wp-post-image" alt="" loading="lazy"
-                                            srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/post-2-1.jpg 970w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/post-2-1-300x139.jpg 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/post-2-1-768x356.jpg 768w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/post-2-1-375x174.jpg 375w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/post-2-1-400x186.jpg 400w"
-                                            sizes="(max-width: 970px) 100vw, 970px" />
-                                    </div>
-                                    <div class="card-body pt-3">
-                                        <span
-                                            class="blog-category text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">
-                                            Appetizers </span>
-                                        <a href="https://marketplace.foodotawp.com/wrap-vegetable-salad-for-lunch/"
-                                            class="card-title h5 d-block text-darker">
-                                            <h3>Vegetable &#038; Chicken Wrap For Lunch</h3>
-                                        </a>
-                                        <p class="blog-card-description mb-4">
-                                            I love a good salad for lunchand Pakistan posted dinner.And I have them
-                                            often. But I also love my carbs. So a little while back,qui dolorem ipsum
-                                            quia dolor sit&hellip; </p>
-                                        <div class="blog-author align-items-center">
-                                            <img src="https://secure.gravatar.com/avatar/?s=96&#038;d=mm&#038;r=g"
-                                                alt="" class="blog-avatar blog-shadow">
-                                            <div class="blog-name ps-3">
-                                                <span>admin</span>
-                                                <div class="stats">
-                                                    <small>March 19, 2021</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
+                        <!--  -->
                     </div>
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 margin-bottom-30">

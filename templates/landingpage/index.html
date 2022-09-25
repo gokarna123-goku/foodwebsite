@@ -222,7 +222,7 @@
                                                         <div class="res-2-img parallex-new">
                                                             <a href="#">
                                                                 <img src="{{restaurant.restaurant_image}}" alt=""
-                                                                    class="img-fluid" style="width:100%; height:35vh;">
+                                                                    class="img-fluid" style="width:100%; height:40vh;">
                                                             </a>
                                                             <div class="res-3-icons fav-check">
                                                                 <i class="fas fa-shipping-fast active">
@@ -300,7 +300,8 @@
                                                                         <div
                                                                             class="d-flex jusstify-content-start align-items-center">
                                                                             <i class="fa fa-clock ms-1 me-2"></i>
-                                                                            <span class="today-timing" style="color: green;">
+                                                                            <span class="today-timing"
+                                                                                style="color: green;">
                                                                                 {{restaurant.restaurant_opening_closing_time}}
                                                                             </span>
                                                                         </div>
@@ -400,186 +401,42 @@
                                             </div>
 
                                         </div>
+                                        <!--  -->
+                                        {% for food in foods %}
                                         <div
                                             class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
                                             <div class="main-box">
                                                 <div class="image-box">
-                                                    <a href="https://marketplace.foodotawp.com/store/broadway-pizza/"><img
-                                                            width="300" height="300"
-                                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-2-300x300.png"
+                                                    <a href="#">
+                                                        <img src="{{food.food_image}}"
                                                             class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
                                                             alt="" loading="lazy"
-                                                            srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-2.png 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-2-150x150.png 150w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-2-120x120.png 120w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-2-210x210.png 210w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-2-40x40.png 40w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-2-128x128.png 128w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-2-64x64.png 64w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-2-50x50.png 50w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-2-100x100.png 100w"
-                                                            sizes="(max-width: 300px) 100vw, 300px" /></a>
+                                                            style="width: 100%; height: 30vh; object-fit: inherit; object-position: center;" />
+                                                    </a>
                                                 </div>
                                                 <div class="bottom-box">
                                                     <div class="uper-box">
-                                                        <p><a
-                                                                href="https://marketplace.foodotawp.com/store/broadway-pizza/">Cauliflower
-                                                                Pizza</a></p>
+                                                        <p>
+                                                            <a href="#">
+                                                                {{food.food_name}}
+                                                            </a>
+                                                        </p>
                                                     </div>
-                                                    <p>Special Cauliflower Pizza, Add your favourite toppings and
-                                                        create your own</p>
+                                                    <p>
+                                                        Special Cauliflower Pizza, Add your favourite toppings and
+                                                        create your own
+                                                    </p>
                                                     <div class="price-box">
                                                         <span class="woocommerce-Price-amount amount"><bdi><span
-                                                                    class="woocommerce-Price-currencySymbol">&pound;</span>1,200.00</bdi>
+                                                                    class="woocommerce-Price-currencySymbol">Rs.
+                                                                </span>{{food.food_price}}</bdi>
                                                         </span>
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
-                                        <div
-                                            class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
-                                            <div class="main-box">
-                                                <div class="image-box">
-                                                    <a href="https://marketplace.foodotawp.com/store/broadway-pizza/"><img
-                                                            width="300" height="300"
-                                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-1-1-300x300.png"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" loading="lazy"
-                                                            srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-1-1.png 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-1-1-150x150.png 150w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-1-1-120x120.png 120w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-1-1-210x210.png 210w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-1-1-40x40.png 40w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-1-1-128x128.png 128w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-1-1-64x64.png 64w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-1-1-50x50.png 50w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-1-1-100x100.png 100w"
-                                                            sizes="(max-width: 300px) 100vw, 300px" /></a>
-                                                </div>
-                                                <div class="bottom-box">
-                                                    <div class="uper-box">
-                                                        <p><a
-                                                                href="https://marketplace.foodotawp.com/store/broadway-pizza/">Tikka
-                                                                Heat Pizza</a></p>
-                                                    </div>
-                                                    <p>Medium size special tikka heart pizza Green Peppers,
-                                                        Mushrooms, Onions,</p>
-                                                    <div class="price-box">
-                                                        <del aria-hidden="true"><span
-                                                                class="woocommerce-Price-amount amount"><bdi><span
-                                                                        class="woocommerce-Price-currencySymbol">&pound;</span>550.00</bdi></span></del>
-                                                        <ins><span class="woocommerce-Price-amount amount"><bdi><span
-                                                                        class="woocommerce-Price-currencySymbol">&pound;</span>500.00</bdi></span></ins>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div
-                                            class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
-                                            <div class="main-box">
-                                                <div class="image-box">
-                                                    <a href="https://marketplace.foodotawp.com/store/broadway-pizza/"><img
-                                                            width="300" height="300"
-                                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/03-1-1-300x300.png"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" loading="lazy"
-                                                            srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/03-1-1.png 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/03-1-1-150x150.png 150w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/03-1-1-120x120.png 120w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/03-1-1-210x210.png 210w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/03-1-1-40x40.png 40w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/03-1-1-128x128.png 128w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/03-1-1-64x64.png 64w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/03-1-1-50x50.png 50w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/03-1-1-100x100.png 100w"
-                                                            sizes="(max-width: 300px) 100vw, 300px" /></a>
-                                                </div>
-                                                <div class="bottom-box">
-                                                    <div class="uper-box">
-                                                        <p><a
-                                                                href="https://marketplace.foodotawp.com/store/broadway-pizza/">Sicilian
-                                                                Pizza</a></p>
-                                                    </div>
-                                                    <p>Sillicon Pizza with Chapli Chicken, Green Chilli,  Green
-                                                        Peppers, Onions,</p>
-                                                    <div class="price-box">
-                                                        <del aria-hidden="true"><span
-                                                                class="woocommerce-Price-amount amount"><bdi><span
-                                                                        class="woocommerce-Price-currencySymbol">&pound;</span>390.00</bdi></span></del>
-                                                        <ins><span class="woocommerce-Price-amount amount"><bdi><span
-                                                                        class="woocommerce-Price-currencySymbol">&pound;</span>300.00</bdi></span></ins>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div
-                                            class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
-                                            <div class="main-box">
-                                                <div class="image-box">
-                                                    <a href="https://marketplace.foodotawp.com/store/broadway-pizza/"><img
-                                                            width="300" height="300"
-                                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-1-1-300x300.png"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" loading="lazy"
-                                                            srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-1-1.png 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-1-1-150x150.png 150w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-1-1-120x120.png 120w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-1-1-210x210.png 210w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-1-1-40x40.png 40w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-1-1-128x128.png 128w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-1-1-64x64.png 64w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-1-1-50x50.png 50w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-1-1-100x100.png 100w"
-                                                            sizes="(max-width: 300px) 100vw, 300px" /></a>
-                                                </div>
-                                                <div class="bottom-box">
-                                                    <div class="uper-box">
-                                                        <p><a
-                                                                href="https://marketplace.foodotawp.com/store/broadway-pizza/">Crown
-                                                                Crust</a></p>
-                                                    </div>
-                                                    <p>Green tikka mint mayo drizzle jalapenos onions tomatoes
-                                                        mozarella with marinara</p>
-                                                    <div class="price-box">
-                                                        <del aria-hidden="true"><span
-                                                                class="woocommerce-Price-amount amount"><bdi><span
-                                                                        class="woocommerce-Price-currencySymbol">&pound;</span>550.00</bdi></span></del>
-                                                        <ins><span class="woocommerce-Price-amount amount"><bdi><span
-                                                                        class="woocommerce-Price-currencySymbol">&pound;</span>499.80</bdi></span></ins>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div
-                                            class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
-                                            <div class="main-box">
-                                                <div class="image-box">
-                                                    <a href="https://marketplace.foodotawp.com/store/broadway-pizza/"><img
-                                                            width="300" height="300"
-                                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-1-1-300x300.png"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" loading="lazy"
-                                                            srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-1-1.png 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-1-1-150x150.png 150w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-1-1-120x120.png 120w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-1-1-210x210.png 210w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-1-1-40x40.png 40w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-1-1-128x128.png 128w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-1-1-64x64.png 64w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-1-1-50x50.png 50w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/05-1-1-100x100.png 100w"
-                                                            sizes="(max-width: 300px) 100vw, 300px" /></a>
-                                                </div>
-                                                <div class="bottom-box">
-                                                    <div class="uper-box">
-                                                        <p><a
-                                                                href="https://marketplace.foodotawp.com/store/broadway-pizza/">Hot
-                                                                &#038; Spicy Pizza</a></p>
-                                                    </div>
-                                                    <p>Spicy Chicken, Jalapenos, Onions, Corn, Green Pepper, Ranch
-                                                        Drizzle on a Peri</p>
-                                                    <div class="price-box">
-                                                        <span class="woocommerce-Price-amount amount"><bdi><span
-                                                                    class="woocommerce-Price-currencySymbol">&pound;</span>690.00</bdi>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div
-                                            class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
-                                            <div class="main-box">
-                                                <div class="image-box">
-                                                    <a href="https://marketplace.foodotawp.com/store/broadway-pizza/"><img
-                                                            width="300" height="300"
-                                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-1-1-300x300.png"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" loading="lazy"
-                                                            srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-1-1.png 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-1-1-150x150.png 150w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-1-1-120x120.png 120w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-1-1-210x210.png 210w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-1-1-40x40.png 40w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-1-1-128x128.png 128w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-1-1-64x64.png 64w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-1-1-50x50.png 50w, https://marketplace.foodotawp.com/wp-content/uploads/2021/04/06-1-1-100x100.png 100w"
-                                                            sizes="(max-width: 300px) 100vw, 300px" /></a>
-                                                </div>
-                                                <div class="bottom-box">
-                                                    <div class="uper-box">
-                                                        <p><a
-                                                                href="https://marketplace.foodotawp.com/store/broadway-pizza/">Stuff
-                                                                Crust Pizza</a></p>
-                                                    </div>
-                                                    <p>Sliced Chicken Poppers, Green Peppers, Mushrooms, Onions,
-                                                        Tomatoes, Ranch</p>
-                                                    <div class="price-box">
-                                                        <span class="woocommerce-Price-amount amount"><bdi><span
-                                                                    class="woocommerce-Price-currencySymbol">&pound;</span>290.00</bdi>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
+                                        {% endfor %}
+                                        <!--  -->
                                     </div>
                                 </div>
                             </section>
@@ -760,7 +617,8 @@
                                                     class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12 align-self-center text-end">
                                                     <img src="{% static 'images/goku.jpg' %}"
                                                         class="rounded-circle pull-right  center-block img-responsive"
-                                                        alt="2741" style="width: 475px; height: 475px; border-radius: 50%; object-fit: cover;">
+                                                        alt="2741"
+                                                        style="width: 475px; height: 475px; border-radius: 50%; object-fit: cover;">
                                                 </div>
                                             </div>
                                         </div>
@@ -930,8 +788,7 @@
                                             <div class="main-team-box">
                                                 <div class="image-box">
                                                     <a href="#">
-                                                        <img src="{{teams.team_image}}"
-                                                            alt="icon" class="img-fluid">
+                                                        <img src="{{teams.team_image}}" alt="icon" class="img-fluid">
                                                     </a>
                                                     <div class="social-box">
                                                         lllll
@@ -1043,12 +900,14 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!--  -->
+                                        {% for blog in blogs %}
                                         <div
                                             class="eq-height col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
                                             <div class="blog-card">
                                                 <div class="blog-card-header p-0 mx-3 mt-3 position-relative z-index-1">
-                                                    <img width="440" height="250"
-                                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/pexels-abhinav-goswami-291528-440x250.jpg"
+                                                    <img width="970" height="500"
+                                                        src="{{blog.blog_images}}"
                                                         class="img-fluid border-radius-lg wp-post-image" alt=""
                                                         loading="lazy" />
                                                 </div>
@@ -1057,29 +916,27 @@
                                                         class="blog-category text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">
                                                         Appetizers
                                                     </span>
-                                                    <a href="/blog-details"
-                                                        class="card-title h5 d-block text-darker">
-                                                        <h3>Amazing Decadent Pecan PIE Best Cake</h3>
+                                                    <a href="/blog-details" class="card-title h5 d-block text-darker">
+                                                        <h3>{{blog.blog_title}}</h3>
                                                     </a>
                                                     <p class="blog-card-description mb-4">
-                                                        Pie is a rich chewy, nutty, sweet holiday staple. For many
-                                                        the holidays aren’t the holidays without must explain all
-                                                        this  of denouncing pleasure and praising pain was born
-                                                        and&hellip;
+                                                        {{blog.blog_desc}} &hellip;
                                                     </p>
                                                     <div class="blog-author align-items-center">
                                                         <img src="https://secure.gravatar.com/avatar/2382cb2c0964748950257e0cb38a08e8?s=96&#038;d=mm&#038;r=g"
                                                             alt="" class="blog-avatar blog-shadow">
                                                         <div class="blog-name ps-3">
-                                                            <span>admin</span>
+                                                            <span>{{user.username}}</span>
                                                             <div class="stats">
-                                                                <small>March 22, 2021</small>
+                                                                <small>{{blog.blog_posted_date}}</small>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        {% endfor %}
+                                        <!--  -->
                                     </div>
                                 </div>
                             </section>

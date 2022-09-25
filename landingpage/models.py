@@ -1,6 +1,8 @@
 from django.db import models
 import uuid
 from accounts.models import User
+# from tinymce import models as tinymce_models
+
 
 # Create your models here.
 
@@ -90,6 +92,20 @@ class Team(models.Model):
 
     def __str__(self):
         return self.team_name
+
+
+# Blog 
+class Blog(models.Model):
+    blog_type = models.CharField(max_length=20)
+    blog_title = models.CharField(max_length=50)
+    blog_posted_date = models.DateField()
+    blog_images = models.ImageField(upload_to = "media/blog_images")
+    # blog_description = tinymce_models.TextField()
+    blog_desc = models.TextField()
+
+    def __Str__(self):
+        return self.blog_title
+
 
 # food category 
 # class FoodCategories(models.Model):
