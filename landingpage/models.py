@@ -82,6 +82,15 @@ class RestaurantCategories(models.Model):
     restaurant_type = models.CharField(max_length=40)
 
 
+# Team 
+class Team(models.Model):
+    team_image = models.ImageField(upload_to = "media/team_image")
+    team_name = models.CharField(max_length=25)
+    team_profession = models.CharField(max_length=25)
+
+    def __str__(self):
+        return self.team_name
+
 # food category 
 # class FoodCategories(models.Model):
 #     food_category_name =  

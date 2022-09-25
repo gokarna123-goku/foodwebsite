@@ -2,7 +2,7 @@ from http.client import HTTPResponse
 from urllib.request import HTTPRedirectHandler
 from django.shortcuts import render
 from django.views import generic
-from landingpage.models import Food, FoodCategories, Restaurant
+from landingpage.models import Food, FoodCategories, Restaurant, RestaurantFeatures, Team
 
 
 # Create your views here.
@@ -16,10 +16,12 @@ class index(generic.ListView):
         foods = Food.objects.all()
         food_categories = FoodCategories.objects.all()
         restaurants = Restaurant.objects.all()
+        team = Team.objects.all()
         context = {
             'foods': foods,
             'food_categories': food_categories,
-            'restaurants': restaurants
+            'restaurants': restaurants,
+            'team': team
         }
         return render(request, self.template_name, context)
 
@@ -52,5 +54,8 @@ def allVendors(request):
 def singleRestaurant(request):
     return render(request, 'landingpage/single-restaurant.html')
 
+
+def blogDetails(request):
+    return render(request, 'landingpage/blog_details.html')
 
 # 

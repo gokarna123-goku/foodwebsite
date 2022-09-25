@@ -153,19 +153,21 @@
                                         <!-- -->
                                         {% for food_category in food_categories %}
                                         <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                                            <div class="category-main">
-                                                <a href="#">
+                                            <div class="category-main border shadow-sm">
+                                                <a href="#" class="">
                                                     <img loading="lazy" alt="" class="cate-images"
-                                                        src="{{food_category.food_category_image}}"></a>
-                                                <div class="category-text-box">
+                                                        src="{{food_category.food_category_image}}">
+                                                </a>
+                                                <div class="category-text-box mt-3">
                                                     <div class="category-text-inner">
                                                         <a href="#">
                                                             <h3>{{food_category.food_category_name}}</h3>
                                                         </a>
                                                     </div>
                                                     <div class="category-text-desc">
-                                                        <span class="text-center">{{food_category.restaurant_count}}
-                                                            Restaurants Products</span>
+                                                        <span class="text-center">
+                                                            {{food_category.restaurant_count}} Restaurants Products
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -220,11 +222,10 @@
                                                         <div class="res-2-img parallex-new">
                                                             <a href="#">
                                                                 <img src="{{restaurant.restaurant_image}}" alt=""
-                                                                    class="img-fluid" style="width:100%; height:35vh;"> 
+                                                                    class="img-fluid" style="width:100%; height:35vh;">
                                                             </a>
                                                             <div class="res-3-icons fav-check">
-                                                                <i
-                                                                    class="fas fa-shipping-fast active">
+                                                                <i class="fas fa-shipping-fast active">
                                                                 </i>
                                                             </div>
                                                             <div class="new-stars-main">
@@ -247,64 +248,70 @@
                                                                     <div class="food_cats">
                                                                         <span class="cat_names">
                                                                             <a href="#"
-                                                                                class="badge bg-warning px-2 me-3 mb-2" title="{{restaurant.restaurant_features}}" style="border-radius: 0px;">
+                                                                                class="badge bg-warning px-2 me-3 mb-2"
+                                                                                title="{{restaurant.restaurant_features}}"
+                                                                                style="border-radius: 0px;">
                                                                                 {{restaurant.restaurant_features}}
                                                                             </a>
                                                                             <a href="#"
-                                                                                class="badge bg-warning px-2 me-3 mb-2" title="{{restaurant.restaurant_features}}" style="border-radius: 0px;">
+                                                                                class="badge bg-warning px-2 me-3 mb-2"
+                                                                                title="{{restaurant.restaurant_features}}"
+                                                                                style="border-radius: 0px;">
                                                                                 {{restaurant.restaurant_features}}
                                                                             </a>
                                                                             <a href="#"
-                                                                                class="badge bg-warning px-2 me-3 mb-2" title="{{restaurant.restaurant_features}}" style="border-radius: 0px;">
+                                                                                class="badge bg-warning px-2 me-3 mb-2"
+                                                                                title="{{restaurant.restaurant_features}}"
+                                                                                style="border-radius: 0px;">
                                                                                 {{restaurant.restaurant_features}}
                                                                             </a>
                                                                             <a href="#"
-                                                                                class="badge bg-warning px-2 me-3 mb-2" title="{{restaurant.restaurant_features}}" style="border-radius: 0px;">
+                                                                                class="badge bg-warning px-2 me-3 mb-2"
+                                                                                title="{{restaurant.restaurant_features}}"
+                                                                                style="border-radius: 0px;">
                                                                                 {{restaurant.restaurant_features}}
                                                                             </a>
                                                                             <a href="#"
-                                                                                class="badge bg-warning px-2 me-3 mb-2" title="{{restaurant.restaurant_features}}" style="border-radius: 0px;">
+                                                                                class="badge bg-warning px-2 me-3 mb-2"
+                                                                                title="{{restaurant.restaurant_features}}"
+                                                                                style="border-radius: 0px;">
                                                                                 {{restaurant.restaurant_features}}
                                                                             </a>
                                                                             <a href="#"
-                                                                                class="badge bg-warning px-2 me-3 mb-2" title="{{restaurant.restaurant_features}}" style="border-radius: 0px;">
+                                                                                class="badge bg-warning px-2 me-3 mb-2"
+                                                                                title="{{restaurant.restaurant_features}}"
+                                                                                style="border-radius: 0px;">
                                                                                 {{restaurant.restaurant_features}}
                                                                             </a>
                                                                         </span>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="res-2-box">
-                                                                <ul>
-                                                                    <li>
-                                                                        <div class="res-3-logo-img-container">
-                                                                            <a
-                                                                                href="#">
-                                                                                <img src="{{restaurant.restaurant_image}}"
-                                                                                    alt="" class="img-fluid">
-                                                                            </a>
-                                                                        </div>
-                                                                        <p> 
-                                                                            <span class="wcfmfa fa-clock"></span>
-                                                                            <span
-                                                                                class="today-status">
-                                                                            </span>
-                                                                            <span
-                                                                                class="today-timing">
+                                                            <hr class="bg-secondary">
+                                                            <div class="mb-4 mt-2">
+                                                                <div
+                                                                    class="d-flex justify-content-start align-items-center mx-3">
+                                                                    <div class="ms-1 me-3">
+                                                                        <img src="{{restaurant.restaurant_image}}"
+                                                                            alt="" style="width: 70px; height: 55px;">
+                                                                    </div>
+                                                                    <!--  -->
+                                                                    <div class="location flex-column">
+                                                                        <div
+                                                                            class="d-flex jusstify-content-start align-items-center">
+                                                                            <i class="fa fa-clock ms-1 me-2"></i>
+                                                                            <span class="today-timing" style="color: green;">
                                                                                 {{restaurant.restaurant_opening_closing_time}}
                                                                             </span>
-                                                                        </p>
-                                                                        <div class="res-2-map-product">
-                                                                            <span
-                                                                                class="location-png">
-                                                                                <img src="{% static 'images/map.png' %}"
-                                                                                    alt="" class="img-fluid">
-                                                                            </span>
-                                                                            <span>{{restaurant.restaurant_location}}</span>
                                                                         </div>
-
-                                                                    </li>
-                                                                </ul>
+                                                                        <!--  -->
+                                                                        <span class="location-png mb-0">
+                                                                            <img src="{% static 'images/map.png' %}"
+                                                                                alt="" class="img-fluid">
+                                                                        </span>
+                                                                        <span>{{restaurant.restaurant_location}}</span>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -313,77 +320,6 @@
                                                 <!--  -->
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Food Item Section -->
-    <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-a564cc0 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-        data-id="a564cc0" data-element_type="section"
-        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-        <div class="elementor-container elementor-column-gap-no">
-            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c1dc400"
-                data-id="c1dc400" data-element_type="column">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-199f790 elementor-widget elementor-widget-food-product-restaurants2"
-                        data-id="199f790" data-element_type="widget"
-                        data-widget_type="food-product-restaurants2.default">
-                        <div class="">
-                            <section class="delicious cols-padding white-section">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-xxl-12 col-xl-12 col-lg-12">
-                                            <div class="heading-minimal">
-                                                <div class="sub-title">Super Delicious</div>
-                                                <h3 class="head-title">Super Delicious Deal</h3>
-                                                <div class="bottom-dots  clearfix">
-                                                    <span class="dot line-dot"></span>
-                                                    <span class="dot"></span>
-                                                    <span class="dot"></span>
-                                                    <span class="dot"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Food First Item-->
-                                        {% for food in foods %}
-                                        <div
-                                            class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
-                                            <div class="main-box">
-                                                <div class="image-box">
-                                                    <a href="#">
-                                                        <img src="{{food.food_image}}"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" loading="lazy"
-                                                            style="width: 100%; height: 34vh; object-position: center; object-fit: cover;"
-                                                            </a>
-                                                </div>
-                                                <div class="bottom-box">
-                                                    <div class="uper-box">
-                                                        <p><a href="{{food.food_name}}">Crispy
-                                                                Fry Burger</a>
-                                                        </p>
-                                                    </div>
-                                                    <p>Howdy Special, A well-seasoned, crispy fried chicken fillet
-                                                        slathered with a
-                                                    </p>
-                                                    <div class="price-box">
-                                                        <del aria-hidden="true"><span
-                                                                class="woocommerce-Price-amount amount"><bdi><span
-                                                                        class="woocommerce-Price-currencySymbol">Rs.</span>{{food.discount_price}}</bdi></span></del>
-                                                        <ins><span class="woocommerce-Price-amount amount"><bdi><span
-                                                                        class="woocommerce-Price-currencySymbol">Rs.</span>{{food.food_price}}</bdi></span></ins>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        {% endfor %}
                                     </div>
                                 </div>
                             </section>
@@ -821,10 +757,10 @@
                                                     </div>
                                                 </div>
                                                 <div
-                                                    class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12 align-self-center text-center">
-                                                    <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/ggfg-min.jpg"
+                                                    class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12 align-self-center text-end">
+                                                    <img src="{% static 'images/goku.jpg' %}"
                                                         class="rounded-circle pull-right  center-block img-responsive"
-                                                        alt="2741">
+                                                        alt="2741" style="width: 475px; height: 475px; border-radius: 50%; object-fit: cover;">
                                                 </div>
                                             </div>
                                         </div>
@@ -987,110 +923,37 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!--  -->
+                                        {% for teams in team %}
                                         <div
                                             class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
                                             <div class="main-team-box">
                                                 <div class="image-box">
                                                     <a href="#">
-                                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/team1.png"
+                                                        <img src="{{teams.team_image}}"
                                                             alt="icon" class="img-fluid">
                                                     </a>
                                                     <div class="social-box">
+                                                        lllll
                                                         <div class="res-f-social">
                                                             <a href="#"><i class="fa fa-instagram"
-                                                                    aria-hidden="true"></i></a>
+                                                                    aria-hidden="true">i</i></a>
                                                             <a href="#"> <i class="fa fa-google-plus-square"
-                                                                    aria-hidden="true"></i></a>
-                                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                                                    aria-hidden="true">g</i></a>
+                                                            <a href="#"><i class="fa fa-twitter">t</i></a>
+                                                            <a href="#"><i class="fa fa-linkedin">l</i></a>
+                                                            <a href="#"><i class="fa fa-facebook">f</i></a>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="text-box">
-                                                    <h3>Alizeh Anderson</h3>
-                                                    <p>Senior Chef</p>
+                                                    <h3>{{teams.team_name}}</h3>
+                                                    <p>{{teams.team_profession}}</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div
-                                            class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
-                                            <div class="main-team-box">
-                                                <div class="image-box">
-                                                    <a href="#">
-                                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/team2.png"
-                                                            alt="icon" class="img-fluid">
-                                                    </a>
-                                                    <div class="social-box">
-                                                        <div class="res-f-social">
-                                                            <a href="#"><i class="fa fa-instagram"
-                                                                    aria-hidden="true"></i></a>
-                                                            <a href="#"> <i class="fa fa-google-plus-square"
-                                                                    aria-hidden="true"></i></a>
-                                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-box">
-                                                    <h3>Angelina John Doe</h3>
-                                                    <p>Master Chef</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
-                                            <div class="main-team-box">
-                                                <div class="image-box">
-                                                    <a href="#">
-                                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/team3.png"
-                                                            alt="icon" class="img-fluid">
-                                                    </a>
-                                                    <div class="social-box">
-                                                        <div class="res-f-social">
-                                                            <a href="#"><i class="fa fa-instagram"
-                                                                    aria-hidden="true"></i></a>
-                                                            <a href="#"> <i class="fa fa-google-plus-square"
-                                                                    aria-hidden="true"></i></a>
-                                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-box">
-                                                    <h3>Andre Smith</h3>
-                                                    <p>Professor</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
-                                            <div class="main-team-box">
-                                                <div class="image-box">
-                                                    <a href="#">
-                                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/team4.png"
-                                                            alt="icon" class="img-fluid">
-                                                    </a>
-                                                    <div class="social-box">
-                                                        <div class="res-f-social">
-                                                            <a href="#"><i class="fa fa-instagram"
-                                                                    aria-hidden="true"></i></a>
-                                                            <a href="#"> <i class="fa fa-google-plus-square"
-                                                                    aria-hidden="true"></i></a>
-                                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-box">
-                                                    <h3>Christina Chi</h3>
-                                                    <p>Psychologist</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        {% endfor %}
+                                        <!--  -->
                                     </div>
                                 </div>
                             </section>
@@ -1194,7 +1057,7 @@
                                                         class="blog-category text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">
                                                         Appetizers
                                                     </span>
-                                                    <a href="https://marketplace.foodotawp.com/amazing-decadent-pecan-pie/"
+                                                    <a href="/blog-details"
                                                         class="card-title h5 d-block text-darker">
                                                         <h3>Amazing Decadent Pecan PIE Best Cake</h3>
                                                     </a>
@@ -1211,79 +1074,6 @@
                                                             <span>admin</span>
                                                             <div class="stats">
                                                                 <small>March 22, 2021</small>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="eq-height col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
-                                            <div class="blog-card">
-                                                <div class="blog-card-header p-0 mx-3 mt-3 position-relative z-index-1">
-                                                    <img width="440" height="250"
-                                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/post-2-1-440x250.jpg"
-                                                        class="img-fluid border-radius-lg wp-post-image" alt=""
-                                                        loading="lazy" />
-                                                </div>
-                                                <div class="card-body pt-3">
-                                                    <span
-                                                        class="blog-category text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">
-                                                        Appetizers
-                                                    </span>
-                                                    <a href="https://marketplace.foodotawp.com/wrap-vegetable-salad-for-lunch/"
-                                                        class="card-title h5 d-block text-darker">
-                                                        <h3>Vegetable & Chicken Wrap For Lunch</h3>
-                                                    </a>
-                                                    <p class="blog-card-description mb-4">
-                                                        I love a good salad for lunchand Pakistan posted dinner.And
-                                                        I have them often. But I also love my carbs. So a little
-                                                        while back,qui dolorem ipsum quia dolor sit&hellip;
-                                                    </p>
-                                                    <div class="blog-author align-items-center">
-                                                        <img src="https://secure.gravatar.com/avatar/8baac83e1568ad2008b898f4125b558a?s=96&#038;d=mm&#038;r=g"
-                                                            alt="" class="blog-avatar blog-shadow">
-                                                        <div class="blog-name ps-3">
-                                                            <span>admin</span>
-                                                            <div class="stats">
-                                                                <small>March 19, 2021</small>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="eq-height col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 row-col-3 margin-bottom-30">
-                                            <div class="blog-card">
-                                                <div class="blog-card-header p-0 mx-3 mt-3 position-relative z-index-1">
-                                                    <img width="440" height="250"
-                                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/post-3-440x250.jpg"
-                                                        class="img-fluid border-radius-lg wp-post-image" alt=""
-                                                        loading="lazy" />
-                                                </div>
-                                                <div class="card-body pt-3">
-                                                    <span
-                                                        class="blog-category text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">
-                                                        Sushi
-                                                    </span>
-                                                    <a href="https://marketplace.foodotawp.com/black-hot-suchi-with-salad/"
-                                                        class="card-title h5 d-block text-darker">
-                                                        <h3>Black Special hot Suchi with Salad Serving</h3>
-                                                    </a>
-                                                    <p class="blog-card-description mb-4">
-                                                        I always love a little sweet andcreamy salty taste at
-                                                        parties and this Brie has just that! Baked brie is an
-                                                        appetizer that will wow the entire party. Sed ut
-                                                        perspiciatis&hellip;
-                                                    </p>
-                                                    <div class="blog-author align-items-center">
-                                                        <img src="https://secure.gravatar.com/avatar/e5bc3bf30e8f0357a4e502b7854788ac?s=96&#038;d=mm&#038;r=g"
-                                                            alt="" class="blog-avatar blog-shadow">
-                                                        <div class="blog-name ps-3">
-                                                            <span>admin</span>
-                                                            <div class="stats">
-                                                                <small>March 19, 2021</small>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1353,6 +1143,7 @@
             </div>
         </div>
     </section>
+    <!--  -->
 </div>
 
 <!-- index page -->
