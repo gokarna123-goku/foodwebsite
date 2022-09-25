@@ -2,15 +2,33 @@ from http.client import HTTPResponse
 from urllib.request import HTTPRedirectHandler
 from django.shortcuts import render
 from django.views import generic
-from landingpage.models import Food
+from landingpage.models import Food, FoodCategories, Restaurant
 
 
 # Create your views here.
 
 class index(generic.ListView):
     template_name = 'landingpage/index.html'
-    model = Food
-    context_object_name = 'foods'
+    # model = Food
+    # context_object_name = 'foods'
+
+    def get(self, request, *args, **kwargs):
+        foods = Food.objects.all()
+        food_categories = FoodCategories.objects.all()
+        restaurants = Restaurant.objects.all()
+        context = {
+            'foods': foods,
+            'food_categories': food_categories,
+            'restaurants': restaurants
+        }
+        return render(request, self.template_name, context)
+
+
+# class index(generic.ListView):
+#     template_name = 'landingpage/index.html'
+#     model = FoodCategories
+#     context_object_name = 'food_categories'
+    
 
 def landingpage(request):
     return render(request, 'landingpage/index.html')

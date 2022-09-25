@@ -7,6 +7,7 @@ app_name = 'landingpage'
 
 urlpatterns = [
     path("", views.index.as_view(), name='home'),
+    # path("", views.index1.as_view(), name='home'),
     path("vendor", views.vender, name='vendor'),
     # path("sign-in", views.signin, name='signin'),
     path("blog", views.blog, name='blog'),
