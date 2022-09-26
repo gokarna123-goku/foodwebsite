@@ -1,7 +1,8 @@
 from django.db import models
 import uuid
 from accounts.models import User
-# from tinymce import models as tinymce_models
+from tinymce import models as tinymce_models
+# from ckeditor.fields import RichTextField
 
 
 # Create your models here.
@@ -100,8 +101,9 @@ class Blog(models.Model):
     blog_title = models.CharField(max_length=50)
     blog_posted_date = models.DateField()
     blog_images = models.ImageField(upload_to = "media/blog_images")
-    # blog_description = tinymce_models.TextField()
-    blog_desc = models.TextField()
+    # blog_description = RichTextField(blank=True, null=True)
+    # blog_desc = models.TextField()
+    blog_desc = tinymce_models.HTMLField(blank=True, null=True)
 
     def __Str__(self):
         return self.blog_title

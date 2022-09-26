@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "restaurant_features_name": "Chicken"
+    },
+    {
+        "id": 2,
+        "restaurant_features_name": "Steak"
+    },
+    {
+        "id": 3,
+        "restaurant_features_name": "Sea Food"
+    },
+    {
+        "id": 4,
+        "restaurant_features_name": "Buff"
+    },
+    {
+        "id": 5,
+        "restaurant_features_name": "Steak"
+    }
+]

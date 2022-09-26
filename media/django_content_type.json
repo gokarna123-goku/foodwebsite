@@ -1,0 +1,112 @@
+[
+    {
+        "app_label": "landingpage",
+        "id": 1,
+        "model": "food"
+    },
+    {
+        "app_label": "landingpage",
+        "id": 2,
+        "model": "foodcategories"
+    },
+    {
+        "app_label": "landingpage",
+        "id": 3,
+        "model": "order"
+    },
+    {
+        "app_label": "landingpage",
+        "id": 4,
+        "model": "restaurantcategories"
+    },
+    {
+        "app_label": "landingpage",
+        "id": 5,
+        "model": "restaurantfeatures"
+    },
+    {
+        "app_label": "landingpage",
+        "id": 6,
+        "model": "restaurant"
+    },
+    {
+        "app_label": "landingpage",
+        "id": 7,
+        "model": "orderitem"
+    },
+    {
+        "app_label": "landingpage",
+        "id": 8,
+        "model": "menu"
+    },
+    {
+        "app_label": "admin",
+        "id": 9,
+        "model": "logentry"
+    },
+    {
+        "app_label": "auth",
+        "id": 10,
+        "model": "permission"
+    },
+    {
+        "app_label": "auth",
+        "id": 11,
+        "model": "group"
+    },
+    {
+        "app_label": "contenttypes",
+        "id": 12,
+        "model": "contenttype"
+    },
+    {
+        "app_label": "sessions",
+        "id": 13,
+        "model": "session"
+    },
+    {
+        "app_label": "accounts",
+        "id": 14,
+        "model": "user"
+    },
+    {
+        "app_label": "accounts",
+        "id": 15,
+        "model": "gradecourse"
+    },
+    {
+        "app_label": "accounts",
+        "id": 16,
+        "model": "teacher"
+    },
+    {
+        "app_label": "accounts",
+        "id": 17,
+        "model": "teacher_course_assignment"
+    },
+    {
+        "app_label": "accounts",
+        "id": 18,
+        "model": "student"
+    },
+    {
+        "app_label": "accounts",
+        "id": 19,
+        "model": "principal_admin"
+    },
+    {
+        "app_label": "accounts",
+        "id": 20,
+        "model": "director"
+    },
+    {
+        "app_label": "landingpage",
+        "id": 21,
+        "model": "team"
+    },
+    {
+        "app_label": "landingpage",
+        "id": 22,
+        "model": "blog"
+    }
+]

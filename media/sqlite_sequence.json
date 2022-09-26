@@ -1,0 +1,42 @@
+[
+    {
+        "name": "django_migrations",
+        "seq": 26
+    },
+    {
+        "name": "django_content_type",
+        "seq": 22
+    },
+    {
+        "name": "auth_permission",
+        "seq": 88
+    },
+    {
+        "name": "auth_group",
+        "seq": 0
+    },
+    {
+        "name": "django_admin_log",
+        "seq": 21
+    },
+    {
+        "name": "accounts_user",
+        "seq": 1
+    },
+    {
+        "name": "landingpage_restaurantfeatures",
+        "seq": 5
+    },
+    {
+        "name": "landingpage_foodcategories",
+        "seq": 4
+    },
+    {
+        "name": "landingpage_team",
+        "seq": 2
+    },
+    {
+        "name": "landingpage_blog",
+        "seq": 1
+    }
+]

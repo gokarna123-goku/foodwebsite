@@ -1,0 +1,212 @@
+[
+    {
+        "action_flag": 1,
+        "action_time": "2022-09-25 07:37:08.179645",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 5,
+        "id": 1,
+        "object_id": "1",
+        "object_repr": "RestaurantFeatures object (1)",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2022-09-25 07:37:20.511355",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 5,
+        "id": 2,
+        "object_id": "2",
+        "object_repr": "RestaurantFeatures object (2)",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2022-09-25 07:37:58.919963",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 5,
+        "id": 3,
+        "object_id": "3",
+        "object_repr": "RestaurantFeatures object (3)",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2022-09-25 07:38:05.293705",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 5,
+        "id": 4,
+        "object_id": "4",
+        "object_repr": "RestaurantFeatures object (4)",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2022-09-25 07:40:28.972794",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 5,
+        "id": 5,
+        "object_id": "5",
+        "object_repr": "Steak",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2022-09-25 07:41:17.939697",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 6,
+        "id": 6,
+        "object_id": "0612c6da-fcd6-4d1f-a550-3694548eb695",
+        "object_repr": "Goku Restaurant",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2022-09-25 08:37:32.557516",
+        "change_message": "[{\"changed\": {\"fields\": [\"Restaurant features\"]}}]",
+        "content_type_id": 6,
+        "id": 7,
+        "object_id": "0612c6da-fcd6-4d1f-a550-3694548eb695",
+        "object_repr": "Goku Restaurant",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2022-09-25 08:51:20.948995",
+        "change_message": "[{\"changed\": {\"fields\": [\"Restaurant name\"]}}]",
+        "content_type_id": 6,
+        "id": 8,
+        "object_id": "0612c6da-fcd6-4d1f-a550-3694548eb695",
+        "object_repr": "Goku Coffee Restaurant",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2022-09-25 08:56:38.541350",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 6,
+        "id": 9,
+        "object_id": "a9bcfbef-fe0f-450c-bc53-5183c56fd32a",
+        "object_repr": "The Goku Burger House",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2022-09-25 08:58:58.813417",
+        "change_message": "[{\"changed\": {\"fields\": [\"Restaurant features\"]}}]",
+        "content_type_id": 6,
+        "id": 10,
+        "object_id": "0612c6da-fcd6-4d1f-a550-3694548eb695",
+        "object_repr": "Goku Coffee Restaurant",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2022-09-25 09:09:37.273859",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 2,
+        "id": 11,
+        "object_id": "1",
+        "object_repr": "Chicken Items",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2022-09-25 09:14:38.224192",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 2,
+        "id": 12,
+        "object_id": "2",
+        "object_repr": "Hot Wings Chicken",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2022-09-25 09:15:50.225184",
+        "change_message": "[]",
+        "content_type_id": 2,
+        "id": 13,
+        "object_id": "1",
+        "object_repr": "Chicken Items",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2022-09-25 09:16:06.824868",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 2,
+        "id": 14,
+        "object_id": "3",
+        "object_repr": "Burger",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2022-09-25 09:16:46.296832",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 2,
+        "id": 15,
+        "object_id": "4",
+        "object_repr": "Coffee Items",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2022-09-25 09:30:14.214980",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 1,
+        "id": 16,
+        "object_id": "2a8557be-e1bf-470e-9e60-9e5a88653925",
+        "object_repr": "Double Cheese Burger",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2022-09-25 09:32:56.586080",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 1,
+        "id": 17,
+        "object_id": "f604f00e-c061-4f73-9ff2-ae53ae4942bc",
+        "object_repr": "Large Cup Coffee",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2022-09-25 10:14:53.245085",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 21,
+        "id": 18,
+        "object_id": "1",
+        "object_repr": "Alizeh Anderson",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2022-09-25 13:00:34.427448",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 21,
+        "id": 19,
+        "object_id": "2",
+        "object_repr": "Lady Girl",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2022-09-25 15:16:39.203059",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 22,
+        "id": 20,
+        "object_id": "1",
+        "object_repr": "Blog object (1)",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2022-09-25 15:16:58.140185",
+        "change_message": "[]",
+        "content_type_id": 22,
+        "id": 21,
+        "object_id": "1",
+        "object_repr": "Blog object (1)",
+        "user_id": 1
+    }
+]

@@ -1,0 +1,19 @@
+[
+    {
+        "date_joined": "2022-09-25 07:36:48.690929",
+        "email": "",
+        "email_confirmed": 0,
+        "first_name": "",
+        "id": 1,
+        "is_active": 1,
+        "is_admin": 0,
+        "is_customer": 0,
+        "is_seller": 0,
+        "is_staff": 1,
+        "is_superuser": 1,
+        "last_login": "2022-09-26 05:39:22.572017",
+        "last_name": "",
+        "password": "pbkdf2_sha256$390000$ZYZnB7Q7EazGhtRdypzZKS$Bbd0XMdQmWBmTB0tKm3lhwjA9ZzDhq+ln6JvlDKmqe4=",
+        "username": "admin"
+    }
+]

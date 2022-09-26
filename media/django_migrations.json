@@ -1,0 +1,158 @@
+[
+    {
+        "app": "contenttypes",
+        "applied": "2022-09-25 07:35:49.201346",
+        "id": 1,
+        "name": "0001_initial"
+    },
+    {
+        "app": "contenttypes",
+        "applied": "2022-09-25 07:35:49.217348",
+        "id": 2,
+        "name": "0002_remove_content_type_name"
+    },
+    {
+        "app": "auth",
+        "applied": "2022-09-25 07:35:49.238365",
+        "id": 3,
+        "name": "0001_initial"
+    },
+    {
+        "app": "auth",
+        "applied": "2022-09-25 07:35:49.254344",
+        "id": 4,
+        "name": "0002_alter_permission_name_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2022-09-25 07:35:49.265348",
+        "id": 5,
+        "name": "0003_alter_user_email_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2022-09-25 07:35:49.285346",
+        "id": 6,
+        "name": "0004_alter_user_username_opts"
+    },
+    {
+        "app": "auth",
+        "applied": "2022-09-25 07:35:49.311350",
+        "id": 7,
+        "name": "0005_alter_user_last_login_null"
+    },
+    {
+        "app": "auth",
+        "applied": "2022-09-25 07:35:49.318347",
+        "id": 8,
+        "name": "0006_require_contenttypes_0002"
+    },
+    {
+        "app": "auth",
+        "applied": "2022-09-25 07:35:49.330346",
+        "id": 9,
+        "name": "0007_alter_validators_add_error_messages"
+    },
+    {
+        "app": "auth",
+        "applied": "2022-09-25 07:35:49.340346",
+        "id": 10,
+        "name": "0008_alter_user_username_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2022-09-25 07:35:49.351347",
+        "id": 11,
+        "name": "0009_alter_user_last_name_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2022-09-25 07:35:49.368348",
+        "id": 12,
+        "name": "0010_alter_group_name_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2022-09-25 07:35:49.378349",
+        "id": 13,
+        "name": "0011_update_proxy_permissions"
+    },
+    {
+        "app": "auth",
+        "applied": "2022-09-25 07:35:49.391348",
+        "id": 14,
+        "name": "0012_alter_user_first_name_max_length"
+    },
+    {
+        "app": "accounts",
+        "applied": "2022-09-25 07:35:49.497350",
+        "id": 15,
+        "name": "0001_initial"
+    },
+    {
+        "app": "admin",
+        "applied": "2022-09-25 07:35:49.521346",
+        "id": 16,
+        "name": "0001_initial"
+    },
+    {
+        "app": "admin",
+        "applied": "2022-09-25 07:35:49.542346",
+        "id": 17,
+        "name": "0002_logentry_remove_auto_add"
+    },
+    {
+        "app": "admin",
+        "applied": "2022-09-25 07:35:49.558349",
+        "id": 18,
+        "name": "0003_logentry_add_action_flag_choices"
+    },
+    {
+        "app": "landingpage",
+        "applied": "2022-09-25 07:35:49.621346",
+        "id": 19,
+        "name": "0001_initial"
+    },
+    {
+        "app": "sessions",
+        "applied": "2022-09-25 07:35:49.632366",
+        "id": 20,
+        "name": "0001_initial"
+    },
+    {
+        "app": "landingpage",
+        "applied": "2022-09-25 10:14:07.867631",
+        "id": 21,
+        "name": "0002_team"
+    },
+    {
+        "app": "landingpage",
+        "applied": "2022-09-25 15:08:00.809125",
+        "id": 22,
+        "name": "0003_blog"
+    },
+    {
+        "app": "landingpage",
+        "applied": "2022-09-26 05:38:21.123675",
+        "id": 23,
+        "name": "0004_remove_blog_blog_desc_blog_blog_description"
+    },
+    {
+        "app": "landingpage",
+        "applied": "2022-09-26 05:49:59.062290",
+        "id": 24,
+        "name": "0005_remove_blog_blog_description_blog_blog_desc"
+    },
+    {
+        "app": "landingpage",
+        "applied": "2022-09-26 05:59:29.847758",
+        "id": 25,
+        "name": "0006_remove_blog_blog_desc_blog_blog_description"
+    },
+    {
+        "app": "landingpage",
+        "applied": "2022-09-26 07:18:19.762329",
+        "id": 26,
+        "name": "0007_remove_blog_blog_description_blog_blog_desc"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "food_category_image": "media/food_categories_images/chicken.png",
+        "food_category_name": "Chicken Items",
+        "id": 1,
+        "restaurant_count": 25
+    },
+    {
+        "food_category_image": "media/food_categories_images/hot-wings.png",
+        "food_category_name": "Hot Wings Chicken",
+        "id": 2,
+        "restaurant_count": 12
+    },
+    {
+        "food_category_image": "media/food_categories_images/burger.png",
+        "food_category_name": "Burger",
+        "id": 3,
+        "restaurant_count": 23
+    },
+    {
+        "food_category_image": "media/food_categories_images/Arcadian.jpg",
+        "food_category_name": "Coffee Items",
+        "id": 4,
+        "restaurant_count": 15
+    }
+]

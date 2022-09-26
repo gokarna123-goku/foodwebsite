@@ -1,0 +1,1898 @@
+{% extends 'landingpage/base.html' %}
+{% load static %}
+{% block body %}
+
+
+<div class="clearfix"></div>
+<!-- Image Section -->
+<section class="res-banner-height res-srch-hero">
+    <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/Howdy.jpg" alt="" class="img-fluid">
+</section>
+
+<!-- Second Info Section -->
+<section class="res-top3-style">
+    <div class="container">
+        <div class="row">
+            <!-- Restaurant Information Section -->
+            <div class="col-xxl-9 col-xl-9 col-sm-12 col-md-12 col-lg-8">
+                <div class="res-top3-product">
+                    <div class="res-top3-logo">
+                        <img src="{{restaurant_details.restaurant_image}}" alt=""
+                            class="img-fluid">
+                    </div>
+                    <div class="res-top3-content">
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                        <span></span>
+                        <h2>{{restaurant_details.restaurant_name}}</h2>
+                        <p>
+                            <span class="location-png">
+                                <img src="{% static 'images/map.png' %}"
+                                    alt="" class="img-fluid">
+                            </span>
+                            {{restautant_details.restaurant_location}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Working Hours Dropdowns Section -->
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-12 align-self-end">
+                <div class="res-top3-main">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown">
+                            Working Hours </button>
+                        <ul class="dropdown-menu opening-hours-dropdown">
+                            <li><span class="today-status">Today </span><span class="days-timing">12:04 am - 11:55
+                                    pm</span> <br /></li>
+                            <li><span class="days-names">Monday</span><span class="days-timing">12:04 am - 11:55
+                                    pm</span></li>
+                            <li><span class="days-names">Tuesday</span><span class="days-timing">12:05 am - 11:50
+                                    pm</span></li>
+                            <li><span class="days-names">Wednesday</span><span class="days-timing">12:01 am - 11:55
+                                    pm</span></li>
+                            <li><span class="days-names">Thursday</span><span class="days-timing">12:04 am - 11:48
+                                    pm</span></li>
+                            <li><span class="days-names">Friday</span><span class="days-timing">12:06 am - 11:57
+                                    pm</span></li>
+                            <li><span class="days-names">Saturday</span><span class="days-timing">12:09 am - 11:52
+                                    pm</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </div>
+</section>
+<!--  -->
+<div class="wcfm-clearfix"></div>
+<section class="res-fl-details section-padding bg-color">
+    <!--  -->
+    <div class="container">
+        <div class="row">
+            <!-- Left Section -->
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-12">
+                <div class="res-fl-box">
+                    <!--  -->
+                    <div class="my-heading-style">
+                        <h3>All Details</h3>
+                        <div class="bottom-dots  clearfix">
+                            <span class="dot line-dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="res-fl-box-content">
+                        <ul class="nav nav-tabs" id="tab">
+                            <!--  -->
+                            <li>
+                                <a class="nav-link active" id="menu-tab" data-bs-toggle="tab" href="#menu">
+                                    <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/menu-cc.png"
+                                        alt="" class="img-fluid">
+                                    <span>Menu</span>
+                                </a>
+                            </li>
+                            <!--  -->
+                            <li>
+                                <a class="nav-link" id="reviewz-tab" data-bs-toggle="tab"
+                                    href="#reviews-tabs"><span>Reviews</span>
+                                    <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/common.png"
+                                        alt="" class="img-fluid">
+                                </a>
+                            </li>
+                            <!--  -->
+                            <li>
+                                <a class="nav-link" id="store-information" data-bs-toggle="tab"
+                                    href="#store-info"><span>Restaurant Info</span>
+                                    <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/info-x.png"
+                                        alt="" class="img-fluid">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--  -->
+                <!-- <div id="media_image-2" class="res-fl-deals widget widget_media_image">
+                    <div class="my-heading-style">
+                        <h3>Advertisement</h3>
+                    </div><img width="300" height="500"
+                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/sd.png"
+                        class="image wp-image-593  attachment-full size-full" alt="" loading="lazy"
+                        style="max-width: 100%; height: auto;" title="Advertisement"
+                        srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/sd.png 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/sd-180x300.png 180w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/sd-126x210.png 126w"
+                        sizes="(max-width: 300px) 100vw, 300px" />
+                </div> -->
+            </div>
+            <!-- Middle Section -->
+            <div class="col-xxl-6 col-xl-6 col-lg-8 col-md-12">
+                <div class="tab-content">
+                    <!--  -->
+                    <div class="tab-pane active" id="menu">
+                        <div class="res-fl-center-container">
+                            <div class="res-fl-cat">
+                                <!-- heading section -->
+                                <div class="heading-panel">
+                                    <h3>Categories</h3>
+                                    <div class="bottom-dots  clearfix">
+                                        <span class="dot line-dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                                <!-- Navbar for Scroll Horizontal Restaurant Details Section -->
+                                <div class="nav nav-tabs">
+                                    <!-- Navbar for the Food Items -->
+                                    <div class="food-cats owl-carousel owl-theme">
+                                        <div class="item">
+                                            <a data-child-id="0" data-term-id="85" data-store-id="35" data-level-id="0"
+                                                data-bs-toggle="tab" href="85" class="menu-tabs-list  active">
+                                                Burgers </a>
+                                        </div>
+                                        <div class="item">
+                                            <a data-child-id="0" data-term-id="93" data-store-id="35" data-level-id="0"
+                                                data-bs-toggle="tab" href="93" class="menu-tabs-list  ">
+                                                Beverages </a>
+                                        </div>
+                                        <div class="item">
+                                            <a data-child-id="0" data-term-id="100" data-store-id="35" data-level-id="0"
+                                                data-bs-toggle="tab" href="100" class="menu-tabs-list  ">
+                                                Chicken </a>
+                                        </div>
+                                        <div class="item">
+                                            <a data-child-id="0" data-term-id="97" data-store-id="35" data-level-id="0"
+                                                data-bs-toggle="tab" href="97" class="menu-tabs-list  ">
+                                                Steaks </a>
+                                        </div>
+                                        <div class="item">
+                                            <a data-child-id="0" data-term-id="106" data-store-id="35" data-level-id="0"
+                                                data-bs-toggle="tab" href="106" class="menu-tabs-list  ">
+                                                New Arrival </a>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="food-cats-child"></div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="main-tab-content">
+                                <!--  -->
+                                <div class="taber-inner">
+                                    <div class="food-blocks menu-tabs-content cats-disply-block"
+                                        data-tab-content-id="85">
+                                        <!--  -->
+                                        <div class="res-fl-main-cat-heading">
+                                            <div class="heading-panel2">
+                                                <h3> Burgers (10)</h3>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="res-fl-main-cat">
+                                            <div class="res-fl-main-cat-content">
+                                                <div class="res-fl-cat-img2">
+                                                    <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-1-150x150.png"
+                                                        alt="" class="img-fluid">
+                                                </div>
+                                                <div class="res-fl-cat-2-count">
+                                                    <p>Crispy Fry Burger</p>
+                                                    <span class="short-des">Howdy Special, A<span class="read_more">
+                                                            ...Read more</span></span>
+                                                    <span class="long-des">Howdy Special, A well-seasoned, crispy
+                                                        fried chicken fillet slathered with a special burger sauce,
+                                                        topped with a slice of Cheddar<span class="read_less">
+                                                            ...Read less</span></span>
+
+                                                    <div class="foodota-product-price"><del><span
+                                                                class="woocommerce-Price-amount amount"><span
+                                                                    class="woocommerce-Price-currencySymbol">&pound;</span>690.00</span></del>
+                                                        <span class="woocommerce-Price-amount amount"><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>600.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="res-fl-main-cat-content-3">
+                                                <div class="innner-cart-div">
+                                                    <input type="number" class="myquantity product-quantity" step="1"
+                                                        min="1" max="500" name="quantity" value="1">
+                                                    <button type="button" data-quantity="1"
+                                                        class="order-btn btn btn-theme cart-check-btn button product_type_simple add_to_cart_button ajax_add_to_cart product-quantity-btn openNav"
+                                                        data-product_id="1714 " data-store_id="35 "
+                                                        aria-label="Add Product to your cart" rel="nofollow">Order
+                                                        Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="res-fl-main-cat">
+                                            <div class="res-fl-main-cat-content">
+                                                <div class="res-fl-cat-img2">
+                                                    <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-2-150x150.png"
+                                                        alt="" class="img-fluid">
+                                                </div>
+                                                <div class="res-fl-cat-2-count">
+                                                    <p>Fandango Burger</p>
+                                                    <span class="short-des">Potato skins, chicken<span
+                                                            class="read_more"> ...Read more</span></span>
+                                                    <span class="long-des">Potato skins, chicken strips, toasted
+                                                        ravioli and mozzarella sticks served with your choice of
+                                                        three dipping<span class="read_less"> ...Read
+                                                            less</span></span>
+
+                                                    <div class="foodota-product-price"><del><span
+                                                                class="woocommerce-Price-amount amount"><span
+                                                                    class="woocommerce-Price-currencySymbol">&pound;</span>690.00</span></del>
+                                                        <span class="woocommerce-Price-amount amount"><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>600.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="res-fl-main-cat-content-3">
+                                                <div class="innner-cart-div">
+                                                    <input type="number" class="myquantity product-quantity" step="1"
+                                                        min="1" max="500" name="quantity" value="1">
+                                                    <button type="button" data-quantity="1"
+                                                        class="order-btn btn btn-theme cart-check-btn button product_type_simple add_to_cart_button ajax_add_to_cart product-quantity-btn openNav"
+                                                        data-product_id="1713 " data-store_id="35 "
+                                                        aria-label="Add Product to your cart" rel="nofollow">Order
+                                                        Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="res-fl-main-cat">
+                                            <div class="res-fl-main-cat-content">
+                                                <div class="res-fl-cat-img2">
+                                                    <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-2-150x150.png"
+                                                        alt="" class="img-fluid">
+                                                </div>
+                                                <div class="res-fl-cat-2-count">
+                                                    <p>Wrangler Burger</p>
+                                                    <span class="short-des">Blackened chicken,<span class="read_more">
+                                                            ...Read more</span></span>
+                                                    <span class="long-des">Blackened chicken, sauteed onions and
+                                                        peppers smothered with pepper jack and cheddar cheeses,
+                                                        served with lettuce and pico de gallo on the<span
+                                                            class="read_less"> ...Read less</span></span>
+
+                                                    <div class="foodota-product-price"><del><span
+                                                                class="woocommerce-Price-amount amount"><span
+                                                                    class="woocommerce-Price-currencySymbol">&pound;</span>590.00</span></del>
+                                                        <span class="woocommerce-Price-amount amount"><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>550.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="res-fl-main-cat-content-3">
+                                                <div class="innner-cart-div">
+                                                    <input type="number" class="myquantity product-quantity" step="1"
+                                                        min="1" max="500" name="quantity" value="1">
+                                                    <button type="button" data-quantity="1"
+                                                        class="order-btn btn btn-theme cart-check-btn button product_type_simple add_to_cart_button ajax_add_to_cart product-quantity-btn openNav"
+                                                        data-product_id="1711 " data-store_id="35 "
+                                                        aria-label="Add Product to your cart" rel="nofollow">Order
+                                                        Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="taber-inner">
+                                    <div class="food-blocks menu-tabs-content " data-tab-content-id="93">
+                                        <!--  -->
+                                        <div class="res-fl-main-cat-heading">
+                                            <div class="heading-panel2">
+                                                <h3> Beverages (4)</h3>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="res-fl-main-cat">
+                                            <div class="res-fl-main-cat-content">
+                                                <div class="res-fl-cat-img2">
+                                                    <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/zero-150x150.jpg"
+                                                        alt="" class="img-fluid">
+                                                </div>
+                                                <div class="res-fl-cat-2-count">
+                                                    <p>7Up Zero</p>
+                                                    <span class="short-des"></span>
+                                                    <span class="long-des"><span class="read_less"> ...Read
+                                                            less</span></span>
+
+                                                    <div class="foodota-product-price"><span
+                                                            class="woocommerce-Price-amount amount"><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>70.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <div class="res-fl-main-cat-content-3">
+                                                <div class="innner-cart-div">
+                                                    <input type="number" class="myquantity product-quantity" step="1"
+                                                        min="1" max="500" name="quantity" value="1">
+                                                    <button type="button" data-quantity="1"
+                                                        class="order-btn btn btn-theme cart-check-btn button product_type_simple add_to_cart_button ajax_add_to_cart product-quantity-btn openNav"
+                                                        data-product_id="424 " data-store_id="35 "
+                                                        aria-label="Add Product to your cart" rel="nofollow">Order
+                                                        Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="res-fl-main-cat">
+                                            <div class="res-fl-main-cat-content">
+                                                <div class="res-fl-cat-img2">
+                                                    <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/marinda-150x150.jpg"
+                                                        alt="" class="img-fluid">
+                                                </div>
+                                                <div class="res-fl-cat-2-count">
+                                                    <p>Mirinda</p>
+                                                    <span class="short-des"></span>
+                                                    <span class="long-des"><span class="read_less"> ...Read
+                                                            less</span></span>
+
+                                                    <div class="foodota-product-price"><del><span
+                                                                class="woocommerce-Price-amount amount"><span
+                                                                    class="woocommerce-Price-currencySymbol">&pound;</span>89.00</span></del>
+                                                        <span class="woocommerce-Price-amount amount"><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>79.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="res-fl-main-cat-content-3">
+                                                <div class="innner-cart-div">
+                                                    <input type="number" class="myquantity product-quantity" step="1"
+                                                        min="1" max="500" name="quantity" value="1">
+                                                    <button type="button" data-quantity="1"
+                                                        class="order-btn btn btn-theme cart-check-btn button product_type_simple add_to_cart_button ajax_add_to_cart product-quantity-btn openNav"
+                                                        data-product_id="422 " data-store_id="35 "
+                                                        aria-label="Add Product to your cart" rel="nofollow">Order
+                                                        Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="res-fl-main-cat">
+                                            <div class="res-fl-main-cat-content">
+                                                <div class="res-fl-cat-img2">
+                                                    <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/7up-150x150.jpg"
+                                                        alt="" class="img-fluid">
+                                                </div>
+                                                <div class="res-fl-cat-2-count">
+                                                    <p>7Up</p>
+                                                    <span class="short-des"></span>
+                                                    <span class="long-des"><span class="read_less"> ...Read
+                                                            less</span></span>
+
+                                                    <div class="foodota-product-price"><span
+                                                            class="woocommerce-Price-amount amount"><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>79.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="res-fl-main-cat-content-3">
+                                                <div class="innner-cart-div">
+                                                    <input type="number" class="myquantity product-quantity" step="1"
+                                                        min="1" max="500" name="quantity" value="1">
+                                                    <button type="button" data-quantity="1"
+                                                        class="order-btn btn btn-theme cart-check-btn button product_type_simple add_to_cart_button ajax_add_to_cart product-quantity-btn openNav"
+                                                        data-product_id="420 " data-store_id="35 "
+                                                        aria-label="Add Product to your cart" rel="nofollow">Order
+                                                        Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="taber-inner">
+                                    <div class="food-blocks menu-tabs-content " data-tab-content-id="100">
+                                        <div class="res-fl-main-cat-heading">
+                                            <div class="heading-panel2">
+                                                <h3> Chicken (1)</h3>
+                                            </div>
+                                        </div>
+                                        <div class="res-fl-main-cat">
+                                            <div class="res-fl-main-cat-content">
+                                                <div class="res-fl-cat-img2">
+                                                    <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/special-150x150.jpg"
+                                                        alt="" class="img-fluid">
+                                                </div>
+                                                <div class="res-fl-cat-2-count">
+                                                    <p>Rotisserie Chicken Special Deal</p>
+                                                    <span class="short-des">Have you tried our<span class="read_more">
+                                                            ...Read more</span></span>
+                                                    <span class="long-des">Have you tried our delicious, one-day
+                                                        deals Choose from two different deals every weekday, with
+                                                        affordable costs Serves 2 to<span class="read_less"> ...Read
+                                                            less</span></span>
+
+                                                    <div class="foodota-product-price"><span
+                                                            class="woocommerce-Price-amount amount"><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>1,550.00</span>
+                                                        &ndash; <span class="woocommerce-Price-amount amount"><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>2,450.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="res-fl-main-cat-content-3">
+
+                                                <button type="button" class="btn btn-theme" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModalLong-36179588-413"
+                                                    id="#exampleModalLong-36179588-413" data-store_id="35">
+                                                    Order Now
+                                                </button>
+                                                <div class="res-modal-content modal fde fade"
+                                                    id="exampleModalLong-36179588-413" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog order-modal" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close"
+                                                                    data-bs-dismiss="modal">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="foodota-product-data"
+                                                                    id="product-data-678475348">
+                                                                    <div class="res-md-img"><img
+                                                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/Howdy.jpg"
+                                                                            alt="" class="img-fluid"></div>
+                                                                    <div class="res-dialog">
+                                                                        <div class="res-fl-main-cat-heading">
+                                                                            <div class="main-mrgn">
+                                                                                <div class="heading-panel-model">
+                                                                                    <div id="foodota_quick_view_4132208"
+                                                                                        class="mfp-hide mfp-with-anim foodota_quick_view_content foodota_clearfix">
+                                                                                        <div
+                                                                                            class="foodota_product_images">
+                                                                                            <a href="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/special.jpg"
+                                                                                                class="woocommerce-main-image zoom"
+                                                                                                title="special"
+                                                                                                data-rel="prettyPhoto"><img
+                                                                                                    width="150"
+                                                                                                    height="150"
+                                                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/special-150x150.jpg"
+                                                                                                    class="attachment-thumbnail size-thumbnail wp-post-image"
+                                                                                                    alt=""
+                                                                                                    loading="lazy"
+                                                                                                    title="special"
+                                                                                                    srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/special-150x150.jpg 150w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/special-120x120.jpg 120w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/special-40x40.jpg 40w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/special-128x128.jpg 128w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/special-64x64.jpg 64w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/special-50x50.jpg 50w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/special-300x300.jpg 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/special-100x100.jpg 100w"
+                                                                                                    sizes="(max-width: 150px) 100vw, 150px" /></a>
+                                                                                        </div>
+                                                                                        <div class="foodota_summary">
+                                                                                            <div class="product-right">
+                                                                                                <h3
+                                                                                                    class="foodota_product_title">
+                                                                                                    Rotisserie
+                                                                                                    Chicken Special
+                                                                                                    Deal</h3>
+                                                                                                <div
+                                                                                                    class="product-detail">
+                                                                                                    <div
+                                                                                                        class="woocommerce-product-details__short-description">
+                                                                                                        <p><span
+                                                                                                                style="font-family: probapro, Geogia, sans-serif; white-space: pre-wrap;">Have
+                                                                                                                you
+                                                                                                                tried
+                                                                                                                our
+                                                                                                                delicious,
+                                                                                                                one-day
+                                                                                                                deals?
+                                                                                                                Choose
+                                                                                                                from
+                                                                                                                two
+                                                                                                                different
+                                                                                                                deals
+                                                                                                                every
+                                                                                                                weekday,
+                                                                                                                with
+                                                                                                                affordable
+                                                                                                                costs.
+                                                                                                            </span>Serves
+                                                                                                            2 to 4
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="cart-detail">
+                                                                                <form class="variations_form cart"
+                                                                                    action="https://marketplace.foodotawp.com/product/rotisserie-chicken-special-deal/"
+                                                                                    method="post"
+                                                                                    enctype='multipart/form-data'
+                                                                                    data-product_id="413"
+                                                                                    data-product_variations="[{&quot;attributes&quot;:{&quot;attribute_select-variation&quot;:&quot;Half&quot;,&quot;attribute_choose-your-sauce&quot;:&quot;&quot;,&quot;attribute_select-your-drink&quot;:&quot;&quot;},&quot;availability_html&quot;:&quot;&quot;,&quot;backorders_allowed&quot;:false,&quot;dimensions&quot;:{&quot;length&quot;:&quot;&quot;,&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;},&quot;dimensions_html&quot;:&quot;N\/A&quot;,&quot;display_price&quot;:1550,&quot;display_regular_price&quot;:1550,&quot;image&quot;:{&quot;title&quot;:&quot;special&quot;,&quot;caption&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special.jpg&quot;,&quot;alt&quot;:&quot;&quot;,&quot;src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special-400x267.jpg&quot;,&quot;srcset&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special-400x267.jpg 400w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special-300x200.jpg 300w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special-100x66.jpg 100w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special-315x210.jpg 315w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special.jpg 750w&quot;,&quot;sizes&quot;:&quot;(max-width: 400px) 100vw, 400px&quot;,&quot;full_src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special.jpg&quot;,&quot;full_src_w&quot;:750,&quot;full_src_h&quot;:500,&quot;gallery_thumbnail_src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special-100x100.jpg&quot;,&quot;gallery_thumbnail_src_w&quot;:100,&quot;gallery_thumbnail_src_h&quot;:100,&quot;thumb_src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special-300x300.jpg&quot;,&quot;thumb_src_w&quot;:300,&quot;thumb_src_h&quot;:300,&quot;src_w&quot;:400,&quot;src_h&quot;:267},&quot;image_id&quot;:415,&quot;is_downloadable&quot;:false,&quot;is_in_stock&quot;:true,&quot;is_purchasable&quot;:true,&quot;is_sold_individually&quot;:&quot;no&quot;,&quot;is_virtual&quot;:false,&quot;max_qty&quot;:&quot;&quot;,&quot;min_qty&quot;:1,&quot;price_html&quot;:&quot;&lt;span class=\&quot;price\&quot;&gt;&lt;span class=\&quot;woocommerce-Price-amount amount\&quot;&gt;&lt;bdi&gt;&lt;span class=\&quot;woocommerce-Price-currencySymbol\&quot;&gt;&amp;pound;&lt;\/span&gt;1,550.00&lt;\/bdi&gt;&lt;\/span&gt;&lt;\/span&gt;&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variation_description&quot;:&quot;&quot;,&quot;variation_id&quot;:414,&quot;variation_is_active&quot;:true,&quot;variation_is_visible&quot;:true,&quot;weight&quot;:&quot;&quot;,&quot;weight_html&quot;:&quot;N\/A&quot;},{&quot;attributes&quot;:{&quot;attribute_select-variation&quot;:&quot;Full&quot;,&quot;attribute_choose-your-sauce&quot;:&quot;&quot;,&quot;attribute_select-your-drink&quot;:&quot;&quot;},&quot;availability_html&quot;:&quot;&quot;,&quot;backorders_allowed&quot;:false,&quot;dimensions&quot;:{&quot;length&quot;:&quot;&quot;,&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;},&quot;dimensions_html&quot;:&quot;N\/A&quot;,&quot;display_price&quot;:2450,&quot;display_regular_price&quot;:2450,&quot;image&quot;:{&quot;title&quot;:&quot;special&quot;,&quot;caption&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special.jpg&quot;,&quot;alt&quot;:&quot;&quot;,&quot;src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special-400x267.jpg&quot;,&quot;srcset&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special-400x267.jpg 400w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special-300x200.jpg 300w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special-100x66.jpg 100w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special-315x210.jpg 315w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special.jpg 750w&quot;,&quot;sizes&quot;:&quot;(max-width: 400px) 100vw, 400px&quot;,&quot;full_src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special.jpg&quot;,&quot;full_src_w&quot;:750,&quot;full_src_h&quot;:500,&quot;gallery_thumbnail_src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special-100x100.jpg&quot;,&quot;gallery_thumbnail_src_w&quot;:100,&quot;gallery_thumbnail_src_h&quot;:100,&quot;thumb_src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/special-300x300.jpg&quot;,&quot;thumb_src_w&quot;:300,&quot;thumb_src_h&quot;:300,&quot;src_w&quot;:400,&quot;src_h&quot;:267},&quot;image_id&quot;:415,&quot;is_downloadable&quot;:false,&quot;is_in_stock&quot;:true,&quot;is_purchasable&quot;:true,&quot;is_sold_individually&quot;:&quot;no&quot;,&quot;is_virtual&quot;:false,&quot;max_qty&quot;:&quot;&quot;,&quot;min_qty&quot;:1,&quot;price_html&quot;:&quot;&lt;span class=\&quot;price\&quot;&gt;&lt;span class=\&quot;woocommerce-Price-amount amount\&quot;&gt;&lt;bdi&gt;&lt;span class=\&quot;woocommerce-Price-currencySymbol\&quot;&gt;&amp;pound;&lt;\/span&gt;2,450.00&lt;\/bdi&gt;&lt;\/span&gt;&lt;\/span&gt;&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variation_description&quot;:&quot;&quot;,&quot;variation_id&quot;:416,&quot;variation_is_active&quot;:true,&quot;variation_is_visible&quot;:true,&quot;weight&quot;:&quot;&quot;,&quot;weight_html&quot;:&quot;N\/A&quot;}]">
+
+                                                                                    <div class="variations">
+                                                                                        <div class="form-group label">
+                                                                                            <label>select
+                                                                                                variation</label>
+                                                                                            <select
+                                                                                                id="select-select-variation-5103821"
+                                                                                                class=" hide foodota-variation-product woo-variation-raw-select woo-variation-raw-type-button"
+                                                                                                name="attribute_select-variation"
+                                                                                                data-attribute_name="attribute_select-variation"
+                                                                                                data-show_option_none="yes">
+                                                                                                <option value="">
+                                                                                                    Choose an option
+                                                                                                </option>
+                                                                                                <option value="Half">
+                                                                                                    Half</option>
+                                                                                                <option value="Full">
+                                                                                                    Full</option>
+                                                                                            </select>
+                                                                                            <ul role="radiogroup"
+                                                                                                aria-label="select variation"
+                                                                                                class="variable-items-wrapper button-variable-wrapper"
+                                                                                                data-attribute_name="attribute_select-variation"
+                                                                                                data-attribute_values="[&quot;Half&quot;,&quot;Full&quot;]">
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Half"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Half "
+                                                                                                    title="Half"
+                                                                                                    data-title="Half"
+                                                                                                    data-value="Half"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Half</span>
+                                                                                                </li>
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Full"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Full "
+                                                                                                    title="Full"
+                                                                                                    data-title="Full"
+                                                                                                    data-value="Full"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Full</span>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                        <div class="form-group label">
+                                                                                            <label>Choose Your
+                                                                                                Sauce</label>
+                                                                                            <select
+                                                                                                id="select-choose-your-sauce-6216175"
+                                                                                                class=" hide foodota-variation-product woo-variation-raw-select woo-variation-raw-type-button"
+                                                                                                name="attribute_choose-your-sauce"
+                                                                                                data-attribute_name="attribute_choose-your-sauce"
+                                                                                                data-show_option_none="yes">
+                                                                                                <option value="">
+                                                                                                    Choose an option
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Garlic Sauce">
+                                                                                                    Garlic Sauce
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Mayo Sauce">
+                                                                                                    Mayo Sauce
+                                                                                                </option>
+                                                                                            </select>
+                                                                                            <ul role="radiogroup"
+                                                                                                aria-label="Choose Your Sauce"
+                                                                                                class="variable-items-wrapper button-variable-wrapper"
+                                                                                                data-attribute_name="attribute_choose-your-sauce"
+                                                                                                data-attribute_values="[&quot;Garlic Sauce&quot;,&quot;Mayo Sauce&quot;]">
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Garlic Sauce"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Garlic Sauce "
+                                                                                                    title="Garlic Sauce"
+                                                                                                    data-title="Garlic Sauce"
+                                                                                                    data-value="Garlic Sauce"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Garlic
+                                                                                                        Sauce</span>
+                                                                                                </li>
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Mayo Sauce"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Mayo Sauce "
+                                                                                                    title="Mayo Sauce"
+                                                                                                    data-title="Mayo Sauce"
+                                                                                                    data-value="Mayo Sauce"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Mayo
+                                                                                                        Sauce</span>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                        <div class="form-group label">
+                                                                                            <label>Select your
+                                                                                                Drink</label>
+                                                                                            <select
+                                                                                                id="select-select-your-drink-5864019"
+                                                                                                class=" hide foodota-variation-product woo-variation-raw-select woo-variation-raw-type-button"
+                                                                                                name="attribute_select-your-drink"
+                                                                                                data-attribute_name="attribute_select-your-drink"
+                                                                                                data-show_option_none="yes">
+                                                                                                <option value="">
+                                                                                                    Choose an option
+                                                                                                </option>
+                                                                                                <option value="7up">
+                                                                                                    7up</option>
+                                                                                                <option value="Coke">
+                                                                                                    Coke</option>
+                                                                                                <option value="Marinda">
+                                                                                                    Marinda</option>
+                                                                                                <option
+                                                                                                    value="Mountain Dew">
+                                                                                                    Mountain Dew
+                                                                                                </option>
+                                                                                            </select>
+                                                                                            <ul role="radiogroup"
+                                                                                                aria-label="Select your Drink"
+                                                                                                class="variable-items-wrapper button-variable-wrapper"
+                                                                                                data-attribute_name="attribute_select-your-drink"
+                                                                                                data-attribute_values="[&quot;7up&quot;,&quot;Coke&quot;,&quot;Marinda&quot;,&quot;Mountain Dew&quot;]">
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="7up"
+                                                                                                    class="variable-item button-variable-item button-variable-item-7up "
+                                                                                                    title="7up"
+                                                                                                    data-title="7up"
+                                                                                                    data-value="7up"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">7up</span>
+                                                                                                </li>
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Coke"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Coke "
+                                                                                                    title="Coke"
+                                                                                                    data-title="Coke"
+                                                                                                    data-value="Coke"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Coke</span>
+                                                                                                </li>
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Marinda"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Marinda "
+                                                                                                    title="Marinda"
+                                                                                                    data-title="Marinda"
+                                                                                                    data-value="Marinda"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Marinda</span>
+                                                                                                </li>
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Mountain Dew"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Mountain Dew "
+                                                                                                    title="Mountain Dew"
+                                                                                                    data-title="Mountain Dew"
+                                                                                                    data-value="Mountain Dew"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Mountain
+                                                                                                        Dew</span>
+                                                                                                </li>
+                                                                                            </ul><a
+                                                                                                class="reset_variations"
+                                                                                                href="#">Clear</a>
+                                                                                        </div>
+                                                                                    </div>
+
+
+                                                                                    <div class="single_variation_wrap">
+                                                                                        <div
+                                                                                            class="woocommerce-variation single_variation">
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="woocommerce-variation-add-to-cart variations_button">
+
+                                                                                            <div class="quantity">
+                                                                                                <label
+                                                                                                    class="screen-reader-text"
+                                                                                                    for="quantity_63313c0d03efc">Rotisserie
+                                                                                                    Chicken Special
+                                                                                                    Deal
+                                                                                                    quantity</label>
+                                                                                                <input type="number"
+                                                                                                    id="quantity_63313c0d03efc"
+                                                                                                    class="input-text qty text"
+                                                                                                    step="1" min="1"
+                                                                                                    max="40"
+                                                                                                    name="quantity"
+                                                                                                    value="1"
+                                                                                                    title="Qty"
+                                                                                                    placeholder=""
+                                                                                                    inputmode="numeric" />
+                                                                                            </div>
+
+                                                                                            <button type="submit"
+                                                                                                class="close single_add_to_cart_button button alt openNav"
+                                                                                                data-bs-dismiss="modal">Add
+                                                                                                to cart</button>
+
+
+                                                                                            <input type="hidden"
+                                                                                                name="add-to-cart"
+                                                                                                value="413" />
+                                                                                            <input type="hidden"
+                                                                                                name="product_id"
+                                                                                                value="413" />
+                                                                                            <input type="hidden"
+                                                                                                name="variation_id"
+                                                                                                class="variation_id"
+                                                                                                value="0" />
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </form>
+                                                                            </div><span
+                                                                                class="price foodota_product_price"><span
+                                                                                    class="woocommerce-Price-amount amount"><bdi><span
+                                                                                            class="woocommerce-Price-currencySymbol">&pound;</span>1,550.00</bdi></span>
+                                                                                &ndash; <span
+                                                                                    class="woocommerce-Price-amount amount"><bdi><span
+                                                                                            class="woocommerce-Price-currencySymbol">&pound;</span>2,450.00</bdi></span></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="taber-inner">
+                                    <div class="food-blocks menu-tabs-content " data-tab-content-id="97">
+                                        <div class="res-fl-main-cat-heading">
+                                            <div class="heading-panel2">
+                                                <h3> Steaks (3)</h3>
+                                            </div>
+                                        </div>
+                                        <div class="res-fl-main-cat">
+                                            <div class="res-fl-main-cat-content">
+                                                <div class="res-fl-cat-img2">
+                                                    <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/mexican-150x150.jpg"
+                                                        alt="" class="img-fluid">
+                                                </div>
+                                                <div class="res-fl-cat-2-count">
+                                                    <p>Mexicano Steak</p>
+                                                    <span class="short-des">Spicy Mexican red sauce,<span
+                                                            class="read_more"> ...Read more</span></span>
+                                                    <span class="long-des">Spicy Mexican red sauce, We love to share
+                                                        this Special steak with your to make your day special with
+                                                        you<span class="read_less"> ...Read less</span></span>
+
+                                                    <div class="foodota-product-price"><del><span
+                                                                class="woocommerce-Price-amount amount"><span
+                                                                    class="woocommerce-Price-currencySymbol">&pound;</span>1,990.00</span></del>
+                                                        <span class="woocommerce-Price-amount amount"><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>1,900.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="res-fl-main-cat-content-3">
+                                                <div class="innner-cart-div">
+                                                    <input type="number" class="myquantity product-quantity" step="1"
+                                                        min="1" max="500" name="quantity" value="1">
+                                                    <button type="button" data-quantity="1"
+                                                        class="order-btn btn btn-theme cart-check-btn button product_type_simple add_to_cart_button ajax_add_to_cart product-quantity-btn openNav"
+                                                        data-product_id="412 " data-store_id="35 "
+                                                        aria-label="Add Product to your cart" rel="nofollow">Order
+                                                        Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="res-fl-main-cat">
+                                            <div class="res-fl-main-cat-content">
+                                                <div class="res-fl-cat-img2">
+                                                    <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/steak4-150x150.jpg"
+                                                        alt="" class="img-fluid">
+                                                </div>
+                                                <div class="res-fl-cat-2-count">
+                                                    <p>Texan Steak</p>
+                                                    <span class="short-des">Combine sugar,<span class="read_more">
+                                                            ...Read more</span></span>
+                                                    <span class="long-des">Combine sugar, coriander, salt, chili
+                                                        powder, garlic powder, white pepper and crushed red pepper;
+                                                        set<span class="read_less"> ...Read less</span></span>
+
+                                                    <div class="foodota-product-price"><del><span
+                                                                class="woocommerce-Price-amount amount"><span
+                                                                    class="woocommerce-Price-currencySymbol">&pound;</span>990.00</span></del>
+                                                        <span class="woocommerce-Price-amount amount"><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>900.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="res-fl-main-cat-content-3">
+                                                <div class="innner-cart-div">
+                                                    <input type="number" class="myquantity product-quantity" step="1"
+                                                        min="1" max="500" name="quantity" value="1">
+                                                    <button type="button" data-quantity="1"
+                                                        class="order-btn btn btn-theme cart-check-btn button product_type_simple add_to_cart_button ajax_add_to_cart product-quantity-btn openNav"
+                                                        data-product_id="410 " data-store_id="35 "
+                                                        aria-label="Add Product to your cart" rel="nofollow">Order
+                                                        Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="res-fl-main-cat">
+                                            <div class="res-fl-main-cat-content">
+                                                <div class="res-fl-cat-img2">
+                                                    <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/chicken-steaks-150x150.jpg"
+                                                        alt="" class="img-fluid">
+                                                </div>
+                                                <div class="res-fl-cat-2-count">
+                                                    <p>Gunslinger Steak</p>
+                                                    <span class="short-des">Mushroom Pepper Sauce<span
+                                                            class="read_more"> ...Read more</span></span>
+                                                    <span class="long-des">Mushroom Pepper Sauce Chicken Steak All
+                                                        entries served with our house made outrider mashed<span
+                                                            class="read_less"> ...Read less</span></span>
+
+                                                    <div class="foodota-product-price"><span
+                                                            class="woocommerce-Price-amount amount"><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>290.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="res-fl-main-cat-content-3">
+                                                <div class="innner-cart-div">
+                                                    <input type="number" class="myquantity product-quantity" step="1"
+                                                        min="1" max="500" name="quantity" value="1">
+                                                    <button type="button" data-quantity="1"
+                                                        class="order-btn btn btn-theme cart-check-btn button product_type_simple add_to_cart_button ajax_add_to_cart product-quantity-btn openNav"
+                                                        data-product_id="409 " data-store_id="35 "
+                                                        aria-label="Add Product to your cart" rel="nofollow">Order
+                                                        Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="taber-inner">
+                                    <div class="food-blocks menu-tabs-content " data-tab-content-id="106">
+                                        <div class="res-fl-main-cat-heading">
+                                            <div class="heading-panel2">
+                                                <h3> New Arrival (2)</h3>
+                                            </div>
+                                        </div>
+                                        <div class="res-fl-main-cat">
+                                            <div class="res-fl-main-cat-content">
+                                                <div class="res-fl-cat-img2">
+                                                    <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal-7-150x150.jpeg"
+                                                        alt="" class="img-fluid">
+                                                </div>
+                                                <div class="res-fl-cat-2-count">
+                                                    <p>Weekend Madness</p>
+                                                    <span class="short-des">Make it a meal 3 Zinger<span
+                                                            class="read_more"> ...Read more</span></span>
+                                                    <span class="long-des">Make it a meal 3 Zinger burger, 3 chicken
+                                                        piece, large pizza, large fries & 15 litre soft<span
+                                                            class="read_less"> ...Read less</span></span>
+
+                                                    <div class="foodota-product-price"><span
+                                                            class="woocommerce-Price-amount amount"><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>990.00</span>
+                                                        &ndash; <span class="woocommerce-Price-amount amount"><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>1,200.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="res-fl-main-cat-content-3">
+
+                                                <button type="button" class="btn btn-theme" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModalLong-11323110-402"
+                                                    id="#exampleModalLong-11323110-402" data-store_id="35">
+                                                    Order Now
+                                                </button>
+                                                <div class="res-modal-content modal fde fade"
+                                                    id="exampleModalLong-11323110-402" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog order-modal" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close"
+                                                                    data-bs-dismiss="modal">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="foodota-product-data"
+                                                                    id="product-data-515699467">
+                                                                    <div class="res-md-img"><img
+                                                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/Howdy.jpg"
+                                                                            alt="" class="img-fluid"></div>
+                                                                    <div class="res-dialog">
+                                                                        <div class="res-fl-main-cat-heading">
+                                                                            <div class="main-mrgn">
+                                                                                <div class="heading-panel-model">
+                                                                                    <div id="foodota_quick_view_4028883"
+                                                                                        class="mfp-hide mfp-with-anim foodota_quick_view_content foodota_clearfix">
+                                                                                        <div
+                                                                                            class="foodota_product_images">
+                                                                                            <a href="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal-7.jpeg"
+                                                                                                class="woocommerce-main-image zoom"
+                                                                                                title="deal 7"
+                                                                                                data-rel="prettyPhoto"><img
+                                                                                                    width="150"
+                                                                                                    height="150"
+                                                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal-7-150x150.jpeg"
+                                                                                                    class="attachment-thumbnail size-thumbnail wp-post-image"
+                                                                                                    alt=""
+                                                                                                    loading="lazy"
+                                                                                                    title="deal 7"
+                                                                                                    srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal-7-150x150.jpeg 150w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal-7-120x120.jpeg 120w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal-7-40x40.jpeg 40w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal-7-128x128.jpeg 128w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal-7-64x64.jpeg 64w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal-7-50x50.jpeg 50w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal-7-600x600.jpeg 600w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal-7-300x300.jpeg 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal-7-100x100.jpeg 100w"
+                                                                                                    sizes="(max-width: 150px) 100vw, 150px" /></a>
+                                                                                        </div>
+                                                                                        <div class="foodota_summary">
+                                                                                            <div class="product-right">
+                                                                                                <h3
+                                                                                                    class="foodota_product_title">
+                                                                                                    Weekend Madness
+                                                                                                </h3>
+                                                                                                <div
+                                                                                                    class="product-detail">
+                                                                                                    <div
+                                                                                                        class="woocommerce-product-details__short-description">
+                                                                                                        <p>Make it a
+                                                                                                            meal. 3
+                                                                                                            Zinger
+                                                                                                            burger,
+                                                                                                            3
+                                                                                                            chicken
+                                                                                                            piece,
+                                                                                                            large
+                                                                                                            pizza,
+                                                                                                            large
+                                                                                                            fries
+                                                                                                            &#038;
+                                                                                                            1.5
+                                                                                                            litre
+                                                                                                            soft
+                                                                                                            drink<br
+                                                                                                                data-mce-bogus="1">
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="cart-detail">
+                                                                                <form class="variations_form cart"
+                                                                                    action="https://marketplace.foodotawp.com/product/weekend-madness/"
+                                                                                    method="post"
+                                                                                    enctype='multipart/form-data'
+                                                                                    data-product_id="402"
+                                                                                    data-product_variations="[{&quot;attributes&quot;:{&quot;attribute_choose-your-burger&quot;:&quot;Prawn Star (Claasic)&quot;,&quot;attribute_choose-your-prefrence&quot;:&quot;&quot;},&quot;availability_html&quot;:&quot;&quot;,&quot;backorders_allowed&quot;:false,&quot;dimensions&quot;:{&quot;length&quot;:&quot;&quot;,&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;},&quot;dimensions_html&quot;:&quot;N\/A&quot;,&quot;display_price&quot;:990,&quot;display_regular_price&quot;:990,&quot;image&quot;:{&quot;title&quot;:&quot;deal 7&quot;,&quot;caption&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7.jpeg&quot;,&quot;alt&quot;:&quot;&quot;,&quot;src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-400x267.jpeg&quot;,&quot;srcset&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-400x267.jpeg 400w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-300x200.jpeg 300w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-1024x683.jpeg 1024w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-768x512.jpeg 768w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-100x66.jpeg 100w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-315x210.jpeg 315w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7.jpeg 1124w&quot;,&quot;sizes&quot;:&quot;(max-width: 400px) 100vw, 400px&quot;,&quot;full_src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7.jpeg&quot;,&quot;full_src_w&quot;:1124,&quot;full_src_h&quot;:750,&quot;gallery_thumbnail_src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-100x100.jpeg&quot;,&quot;gallery_thumbnail_src_w&quot;:100,&quot;gallery_thumbnail_src_h&quot;:100,&quot;thumb_src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-300x300.jpeg&quot;,&quot;thumb_src_w&quot;:300,&quot;thumb_src_h&quot;:300,&quot;src_w&quot;:400,&quot;src_h&quot;:267},&quot;image_id&quot;:401,&quot;is_downloadable&quot;:false,&quot;is_in_stock&quot;:true,&quot;is_purchasable&quot;:true,&quot;is_sold_individually&quot;:&quot;no&quot;,&quot;is_virtual&quot;:false,&quot;max_qty&quot;:&quot;&quot;,&quot;min_qty&quot;:1,&quot;price_html&quot;:&quot;&lt;span class=\&quot;price\&quot;&gt;&lt;span class=\&quot;woocommerce-Price-amount amount\&quot;&gt;&lt;bdi&gt;&lt;span class=\&quot;woocommerce-Price-currencySymbol\&quot;&gt;&amp;pound;&lt;\/span&gt;990.00&lt;\/bdi&gt;&lt;\/span&gt;&lt;\/span&gt;&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variation_description&quot;:&quot;&quot;,&quot;variation_id&quot;:403,&quot;variation_is_active&quot;:true,&quot;variation_is_visible&quot;:true,&quot;weight&quot;:&quot;&quot;,&quot;weight_html&quot;:&quot;N\/A&quot;},{&quot;attributes&quot;:{&quot;attribute_choose-your-burger&quot;:&quot;DJango&quot;,&quot;attribute_choose-your-prefrence&quot;:&quot;&quot;},&quot;availability_html&quot;:&quot;&quot;,&quot;backorders_allowed&quot;:false,&quot;dimensions&quot;:{&quot;length&quot;:&quot;&quot;,&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;},&quot;dimensions_html&quot;:&quot;N\/A&quot;,&quot;display_price&quot;:1200,&quot;display_regular_price&quot;:1200,&quot;image&quot;:{&quot;title&quot;:&quot;deal 7&quot;,&quot;caption&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7.jpeg&quot;,&quot;alt&quot;:&quot;&quot;,&quot;src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-400x267.jpeg&quot;,&quot;srcset&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-400x267.jpeg 400w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-300x200.jpeg 300w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-1024x683.jpeg 1024w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-768x512.jpeg 768w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-100x66.jpeg 100w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-315x210.jpeg 315w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7.jpeg 1124w&quot;,&quot;sizes&quot;:&quot;(max-width: 400px) 100vw, 400px&quot;,&quot;full_src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7.jpeg&quot;,&quot;full_src_w&quot;:1124,&quot;full_src_h&quot;:750,&quot;gallery_thumbnail_src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-100x100.jpeg&quot;,&quot;gallery_thumbnail_src_w&quot;:100,&quot;gallery_thumbnail_src_h&quot;:100,&quot;thumb_src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal-7-300x300.jpeg&quot;,&quot;thumb_src_w&quot;:300,&quot;thumb_src_h&quot;:300,&quot;src_w&quot;:400,&quot;src_h&quot;:267},&quot;image_id&quot;:401,&quot;is_downloadable&quot;:false,&quot;is_in_stock&quot;:true,&quot;is_purchasable&quot;:true,&quot;is_sold_individually&quot;:&quot;no&quot;,&quot;is_virtual&quot;:false,&quot;max_qty&quot;:&quot;&quot;,&quot;min_qty&quot;:1,&quot;price_html&quot;:&quot;&lt;span class=\&quot;price\&quot;&gt;&lt;span class=\&quot;woocommerce-Price-amount amount\&quot;&gt;&lt;bdi&gt;&lt;span class=\&quot;woocommerce-Price-currencySymbol\&quot;&gt;&amp;pound;&lt;\/span&gt;1,200.00&lt;\/bdi&gt;&lt;\/span&gt;&lt;\/span&gt;&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variation_description&quot;:&quot;&quot;,&quot;variation_id&quot;:404,&quot;variation_is_active&quot;:true,&quot;variation_is_visible&quot;:true,&quot;weight&quot;:&quot;&quot;,&quot;weight_html&quot;:&quot;N\/A&quot;}]">
+
+                                                                                    <div class="variations">
+                                                                                        <div class="form-group label">
+                                                                                            <label>Choose your
+                                                                                                Burger</label>
+                                                                                            <select
+                                                                                                id="select-choose-your-burger-4005397"
+                                                                                                class=" hide foodota-variation-product woo-variation-raw-select woo-variation-raw-type-button"
+                                                                                                name="attribute_choose-your-burger"
+                                                                                                data-attribute_name="attribute_choose-your-burger"
+                                                                                                data-show_option_none="yes">
+                                                                                                <option value="">
+                                                                                                    Choose an option
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Prawn Star (Claasic)">
+                                                                                                    Prawn Star
+                                                                                                    (Claasic)
+                                                                                                </option>
+                                                                                                <option value="DJango">
+                                                                                                    DJango</option>
+                                                                                            </select>
+                                                                                            <ul role="radiogroup"
+                                                                                                aria-label="Choose your Burger"
+                                                                                                class="variable-items-wrapper button-variable-wrapper"
+                                                                                                data-attribute_name="attribute_choose-your-burger"
+                                                                                                data-attribute_values="[&quot;Prawn Star (Claasic)&quot;,&quot;DJango&quot;]">
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Prawn Star (Claasic)"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Prawn Star (Claasic) "
+                                                                                                    title="Prawn Star (Claasic)"
+                                                                                                    data-title="Prawn Star (Claasic)"
+                                                                                                    data-value="Prawn Star (Claasic)"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Prawn
+                                                                                                        Star
+                                                                                                        (Claasic)</span>
+                                                                                                </li>
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="DJango"
+                                                                                                    class="variable-item button-variable-item button-variable-item-DJango "
+                                                                                                    title="DJango"
+                                                                                                    data-title="DJango"
+                                                                                                    data-value="DJango"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">DJango</span>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                        <div class="form-group label">
+                                                                                            <label>Choose Your
+                                                                                                Prefrence</label>
+                                                                                            <select
+                                                                                                id="select-choose-your-prefrence-6331850"
+                                                                                                class=" hide foodota-variation-product woo-variation-raw-select woo-variation-raw-type-button"
+                                                                                                name="attribute_choose-your-prefrence"
+                                                                                                data-attribute_name="attribute_choose-your-prefrence"
+                                                                                                data-show_option_none="yes">
+                                                                                                <option value="">
+                                                                                                    Choose an option
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Regular Fries">
+                                                                                                    Regular Fries
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Onion Fries">
+                                                                                                    Onion Fries
+                                                                                                </option>
+                                                                                            </select>
+                                                                                            <ul role="radiogroup"
+                                                                                                aria-label="Choose Your Prefrence"
+                                                                                                class="variable-items-wrapper button-variable-wrapper"
+                                                                                                data-attribute_name="attribute_choose-your-prefrence"
+                                                                                                data-attribute_values="[&quot;Regular Fries&quot;,&quot;Onion Fries&quot;]">
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Regular Fries"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Regular Fries "
+                                                                                                    title="Regular Fries"
+                                                                                                    data-title="Regular Fries"
+                                                                                                    data-value="Regular Fries"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Regular
+                                                                                                        Fries</span>
+                                                                                                </li>
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Onion Fries"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Onion Fries "
+                                                                                                    title="Onion Fries"
+                                                                                                    data-title="Onion Fries"
+                                                                                                    data-value="Onion Fries"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Onion
+                                                                                                        Fries</span>
+                                                                                                </li>
+                                                                                            </ul><a
+                                                                                                class="reset_variations"
+                                                                                                href="#">Clear</a>
+                                                                                        </div>
+                                                                                    </div>
+
+
+                                                                                    <div class="single_variation_wrap">
+                                                                                        <div
+                                                                                            class="woocommerce-variation single_variation">
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="woocommerce-variation-add-to-cart variations_button">
+
+                                                                                            <div class="quantity">
+                                                                                                <label
+                                                                                                    class="screen-reader-text"
+                                                                                                    for="quantity_63313c0d0b6a1">Weekend
+                                                                                                    Madness
+                                                                                                    quantity</label>
+                                                                                                <input type="number"
+                                                                                                    id="quantity_63313c0d0b6a1"
+                                                                                                    class="input-text qty text"
+                                                                                                    step="1" min="1"
+                                                                                                    max="40"
+                                                                                                    name="quantity"
+                                                                                                    value="1"
+                                                                                                    title="Qty"
+                                                                                                    placeholder=""
+                                                                                                    inputmode="numeric" />
+                                                                                            </div>
+
+                                                                                            <button type="submit"
+                                                                                                class="close single_add_to_cart_button button alt openNav"
+                                                                                                data-bs-dismiss="modal">Add
+                                                                                                to cart</button>
+
+
+                                                                                            <input type="hidden"
+                                                                                                name="add-to-cart"
+                                                                                                value="402" />
+                                                                                            <input type="hidden"
+                                                                                                name="product_id"
+                                                                                                value="402" />
+                                                                                            <input type="hidden"
+                                                                                                name="variation_id"
+                                                                                                class="variation_id"
+                                                                                                value="0" />
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </form>
+                                                                            </div><span
+                                                                                class="price foodota_product_price"><span
+                                                                                    class="woocommerce-Price-amount amount"><bdi><span
+                                                                                            class="woocommerce-Price-currencySymbol">&pound;</span>990.00</bdi></span>
+                                                                                &ndash; <span
+                                                                                    class="woocommerce-Price-amount amount"><bdi><span
+                                                                                            class="woocommerce-Price-currencySymbol">&pound;</span>1,200.00</bdi></span></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="res-fl-main-cat">
+                                            <div class="res-fl-main-cat-content">
+                                                <div class="res-fl-cat-img2">
+                                                    <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal7-150x150.jpeg"
+                                                        alt="" class="img-fluid">
+                                                </div>
+                                                <div class="res-fl-cat-2-count">
+                                                    <p>Tickle Pickle Deal</p>
+                                                    <span class="short-des">Make it a meal, Malai<span
+                                                            class="read_more"> ...Read more</span></span>
+                                                    <span class="long-des">Make it a meal, Malai boti half, chicken
+                                                        breast/leg, 5 sada naan, salad, raita & 500ml soft<span
+                                                            class="read_less"> ...Read less</span></span>
+
+                                                    <div class="foodota-product-price"><del><span
+                                                                class="woocommerce-Price-amount amount"><span
+                                                                    class="woocommerce-Price-currencySymbol">&pound;</span>1,190.00</span></del>
+                                                        <span class="woocommerce-Price-amount amount"><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>1,100.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="res-fl-main-cat-content-3">
+
+                                                <button type="button" class="btn btn-theme" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModalLong-95371963-399"
+                                                    id="#exampleModalLong-95371963-399" data-store_id="35">
+                                                    Order Now
+                                                </button>
+                                                <div class="res-modal-content modal fde fade"
+                                                    id="exampleModalLong-95371963-399" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog order-modal" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close"
+                                                                    data-bs-dismiss="modal">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="foodota-product-data"
+                                                                    id="product-data-735155372">
+                                                                    <div class="res-md-img"><img
+                                                                            src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/Howdy.jpg"
+                                                                            alt="" class="img-fluid"></div>
+                                                                    <div class="res-dialog">
+                                                                        <div class="res-fl-main-cat-heading">
+                                                                            <div class="main-mrgn">
+                                                                                <div class="heading-panel-model">
+                                                                                    <div id="foodota_quick_view_3992865"
+                                                                                        class="mfp-hide mfp-with-anim foodota_quick_view_content foodota_clearfix">
+                                                                                        <div
+                                                                                            class="foodota_product_images">
+                                                                                            <a href="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal7.jpeg"
+                                                                                                class="woocommerce-main-image zoom"
+                                                                                                title="deal7"
+                                                                                                data-rel="prettyPhoto"><img
+                                                                                                    width="150"
+                                                                                                    height="150"
+                                                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal7-150x150.jpeg"
+                                                                                                    class="attachment-thumbnail size-thumbnail wp-post-image"
+                                                                                                    alt=""
+                                                                                                    loading="lazy"
+                                                                                                    title="deal7"
+                                                                                                    srcset="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal7-150x150.jpeg 150w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal7-120x120.jpeg 120w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal7-40x40.jpeg 40w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal7-128x128.jpeg 128w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal7-64x64.jpeg 64w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal7-50x50.jpeg 50w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal7-600x600.jpeg 600w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal7-300x300.jpeg 300w, https://marketplace.foodotawp.com/wp-content/uploads/2021/03/deal7-100x100.jpeg 100w"
+                                                                                                    sizes="(max-width: 150px) 100vw, 150px" /></a>
+                                                                                        </div>
+                                                                                        <div class="foodota_summary">
+                                                                                            <div class="product-right">
+                                                                                                <h3
+                                                                                                    class="foodota_product_title">
+                                                                                                    Tickle Pickle
+                                                                                                    Deal</h3>
+                                                                                                <div
+                                                                                                    class="product-detail">
+                                                                                                    <div
+                                                                                                        class="woocommerce-product-details__short-description">
+                                                                                                        <p>Make it a
+                                                                                                            meal,
+                                                                                                            Malai
+                                                                                                            boti
+                                                                                                            half,
+                                                                                                            chicken
+                                                                                                            breast/leg,
+                                                                                                            5 sada
+                                                                                                            naan,
+                                                                                                            salad,
+                                                                                                            raita
+                                                                                                            &#038;
+                                                                                                            500ml
+                                                                                                            soft
+                                                                                                            drink
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="cart-detail">
+                                                                                <form class="variations_form cart"
+                                                                                    action="https://marketplace.foodotawp.com/product/tickle-pickle-deal/"
+                                                                                    method="post"
+                                                                                    enctype='multipart/form-data'
+                                                                                    data-product_id="399"
+                                                                                    data-product_variations="[{&quot;attributes&quot;:{&quot;attribute_choose-your-burger&quot;:&quot;&quot;,&quot;attribute_choose-your-drink&quot;:&quot;&quot;},&quot;availability_html&quot;:&quot;&quot;,&quot;backorders_allowed&quot;:false,&quot;dimensions&quot;:{&quot;length&quot;:&quot;&quot;,&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;},&quot;dimensions_html&quot;:&quot;N\/A&quot;,&quot;display_price&quot;:1100,&quot;display_regular_price&quot;:1190,&quot;image&quot;:{&quot;title&quot;:&quot;deal7&quot;,&quot;caption&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal7.jpeg&quot;,&quot;alt&quot;:&quot;&quot;,&quot;src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal7-400x267.jpeg&quot;,&quot;srcset&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal7-400x267.jpeg 400w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal7-300x200.jpeg 300w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal7-1024x683.jpeg 1024w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal7-768x512.jpeg 768w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal7-100x66.jpeg 100w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal7-315x210.jpeg 315w, https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal7.jpeg 1125w&quot;,&quot;sizes&quot;:&quot;(max-width: 400px) 100vw, 400px&quot;,&quot;full_src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal7.jpeg&quot;,&quot;full_src_w&quot;:1125,&quot;full_src_h&quot;:750,&quot;gallery_thumbnail_src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal7-100x100.jpeg&quot;,&quot;gallery_thumbnail_src_w&quot;:100,&quot;gallery_thumbnail_src_h&quot;:100,&quot;thumb_src&quot;:&quot;https:\/\/marketplace.foodotawp.com\/wp-content\/uploads\/2021\/03\/deal7-300x300.jpeg&quot;,&quot;thumb_src_w&quot;:300,&quot;thumb_src_h&quot;:300,&quot;src_w&quot;:400,&quot;src_h&quot;:267},&quot;image_id&quot;:398,&quot;is_downloadable&quot;:false,&quot;is_in_stock&quot;:true,&quot;is_purchasable&quot;:true,&quot;is_sold_individually&quot;:&quot;no&quot;,&quot;is_virtual&quot;:false,&quot;max_qty&quot;:&quot;&quot;,&quot;min_qty&quot;:1,&quot;price_html&quot;:&quot;&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variation_description&quot;:&quot;&quot;,&quot;variation_id&quot;:400,&quot;variation_is_active&quot;:true,&quot;variation_is_visible&quot;:true,&quot;weight&quot;:&quot;&quot;,&quot;weight_html&quot;:&quot;N\/A&quot;}]">
+
+                                                                                    <div class="variations">
+                                                                                        <div class="form-group label">
+                                                                                            <label>Choose your
+                                                                                                Burger</label>
+                                                                                            <select
+                                                                                                id="select-choose-your-burger-1578060"
+                                                                                                class=" hide foodota-variation-product woo-variation-raw-select woo-variation-raw-type-button"
+                                                                                                name="attribute_choose-your-burger"
+                                                                                                data-attribute_name="attribute_choose-your-burger"
+                                                                                                data-show_option_none="yes">
+                                                                                                <option value="">
+                                                                                                    Choose an option
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Rango Tango">
+                                                                                                    Rango Tango
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Fandago Wild">
+                                                                                                    Fandago Wild
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Wrangler">
+                                                                                                    Wrangler
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Tickle Pickle">
+                                                                                                    Tickle Pickle
+                                                                                                </option>
+                                                                                            </select>
+                                                                                            <ul role="radiogroup"
+                                                                                                aria-label="Choose your Burger"
+                                                                                                class="variable-items-wrapper button-variable-wrapper"
+                                                                                                data-attribute_name="attribute_choose-your-burger"
+                                                                                                data-attribute_values="[&quot;Rango Tango&quot;,&quot;Fandago Wild&quot;,&quot;Wrangler&quot;,&quot;Tickle Pickle&quot;]">
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Rango Tango"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Rango Tango "
+                                                                                                    title="Rango Tango"
+                                                                                                    data-title="Rango Tango"
+                                                                                                    data-value="Rango Tango"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Rango
+                                                                                                        Tango</span>
+                                                                                                </li>
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Fandago Wild"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Fandago Wild "
+                                                                                                    title="Fandago Wild"
+                                                                                                    data-title="Fandago Wild"
+                                                                                                    data-value="Fandago Wild"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Fandago
+                                                                                                        Wild</span>
+                                                                                                </li>
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Wrangler"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Wrangler "
+                                                                                                    title="Wrangler"
+                                                                                                    data-title="Wrangler"
+                                                                                                    data-value="Wrangler"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Wrangler</span>
+                                                                                                </li>
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Tickle Pickle"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Tickle Pickle "
+                                                                                                    title="Tickle Pickle"
+                                                                                                    data-title="Tickle Pickle"
+                                                                                                    data-value="Tickle Pickle"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Tickle
+                                                                                                        Pickle</span>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                        <div class="form-group label">
+                                                                                            <label>Choose your
+                                                                                                Drink</label>
+                                                                                            <select
+                                                                                                id="select-choose-your-drink-2296779"
+                                                                                                class=" hide foodota-variation-product woo-variation-raw-select woo-variation-raw-type-button"
+                                                                                                name="attribute_choose-your-drink"
+                                                                                                data-attribute_name="attribute_choose-your-drink"
+                                                                                                data-show_option_none="yes">
+                                                                                                <option value="">
+                                                                                                    Choose an option
+                                                                                                </option>
+                                                                                                <option value="Coke">
+                                                                                                    Coke</option>
+                                                                                                <option value="Sprite">
+                                                                                                    Sprite</option>
+                                                                                                <option
+                                                                                                    value="7up Zero">
+                                                                                                    7up Zero
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Mountain Dew">
+                                                                                                    Mountain Dew
+                                                                                                </option>
+                                                                                            </select>
+                                                                                            <ul role="radiogroup"
+                                                                                                aria-label="Choose your Drink"
+                                                                                                class="variable-items-wrapper button-variable-wrapper"
+                                                                                                data-attribute_name="attribute_choose-your-drink"
+                                                                                                data-attribute_values="[&quot;Coke&quot;,&quot;Sprite&quot;,&quot;7up Zero&quot;,&quot;Mountain Dew&quot;]">
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Coke"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Coke "
+                                                                                                    title="Coke"
+                                                                                                    data-title="Coke"
+                                                                                                    data-value="Coke"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Coke</span>
+                                                                                                </li>
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Sprite"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Sprite "
+                                                                                                    title="Sprite"
+                                                                                                    data-title="Sprite"
+                                                                                                    data-value="Sprite"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Sprite</span>
+                                                                                                </li>
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="7up Zero"
+                                                                                                    class="variable-item button-variable-item button-variable-item-7up Zero "
+                                                                                                    title="7up Zero"
+                                                                                                    data-title="7up Zero"
+                                                                                                    data-value="7up Zero"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">7up
+                                                                                                        Zero</span>
+                                                                                                </li>
+                                                                                                <li aria-checked="false"
+                                                                                                    data-wvstooltip="Mountain Dew"
+                                                                                                    class="variable-item button-variable-item button-variable-item-Mountain Dew "
+                                                                                                    title="Mountain Dew"
+                                                                                                    data-title="Mountain Dew"
+                                                                                                    data-value="Mountain Dew"
+                                                                                                    role="radio"
+                                                                                                    tabindex="0">
+                                                                                                    <span
+                                                                                                        class="variable-item-span variable-item-span-button">Mountain
+                                                                                                        Dew</span>
+                                                                                                </li>
+                                                                                            </ul><a
+                                                                                                class="reset_variations"
+                                                                                                href="#">Clear</a>
+                                                                                        </div>
+                                                                                    </div>
+
+
+                                                                                    <div class="single_variation_wrap">
+                                                                                        <div
+                                                                                            class="woocommerce-variation single_variation">
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="woocommerce-variation-add-to-cart variations_button">
+
+                                                                                            <div class="quantity">
+                                                                                                <label
+                                                                                                    class="screen-reader-text"
+                                                                                                    for="quantity_63313c0d0e277">Tickle
+                                                                                                    Pickle Deal
+                                                                                                    quantity</label>
+                                                                                                <input type="number"
+                                                                                                    id="quantity_63313c0d0e277"
+                                                                                                    class="input-text qty text"
+                                                                                                    step="1" min="1"
+                                                                                                    max="40"
+                                                                                                    name="quantity"
+                                                                                                    value="1"
+                                                                                                    title="Qty"
+                                                                                                    placeholder=""
+                                                                                                    inputmode="numeric" />
+                                                                                            </div>
+
+                                                                                            <button type="submit"
+                                                                                                class="close single_add_to_cart_button button alt openNav"
+                                                                                                data-bs-dismiss="modal">Add
+                                                                                                to cart</button>
+
+
+                                                                                            <input type="hidden"
+                                                                                                name="add-to-cart"
+                                                                                                value="399" />
+                                                                                            <input type="hidden"
+                                                                                                name="product_id"
+                                                                                                value="399" />
+                                                                                            <input type="hidden"
+                                                                                                name="variation_id"
+                                                                                                class="variation_id"
+                                                                                                value="0" />
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </form>
+                                                                            </div><span
+                                                                                class="price foodota_product_price"><del
+                                                                                    aria-hidden="true"><span
+                                                                                        class="woocommerce-Price-amount amount"><bdi><span
+                                                                                                class="woocommerce-Price-currencySymbol">&pound;</span>1,190.00</bdi></span></del>
+                                                                                <ins><span
+                                                                                        class="woocommerce-Price-amount amount"><bdi><span
+                                                                                                class="woocommerce-Price-currencySymbol">&pound;</span>1,100.00</bdi></span></ins></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="tab-child"></div>
+                            </div>
+                        </div>
+                        <input type="hidden" id="store-id" value="35">
+                    </div>
+                    <!--  -->
+                    <div class="tab-pane" id="reviews-tabs">
+                        <div class="ddt">
+                            <div class="row">
+                                <div id="wcfmmp-store" class="wcfmmp-stor-class">
+                                    <div class="_area" id="reviews">
+                                        <!--  -->
+                                        <div class="container col-md-12 border border-3 shadow-sm py-lg-5 py-md-4 py-4 px-lg-5 px-md-3 px-sm-2 px-2">
+                                            <h5 class="text text-dark text-start mb-0">
+                                                Write a Review
+                                            </h5>
+                                            <hr class="bg-secondary">
+                                            <div class="input-group flex-nowrap mb-3 shadow-sm">
+                                                <span class="input-group-text bg-white py-2" id="addon-wrapping" style="border-radius: 0px;">&#9999;</span>
+                                                <input type="text" class="form-control py-2" placeholder="Type your reviews..."
+                                                    aria-label="Username" aria-describedby="addon-wrapping" style="border-radius: 0px;">
+                                            </div>
+                                            <button class="btn btn-warning px-4 py-2" style="border-radius: 0px;">Add Your Review</button>
+                                        </div>
+                                        <!--  -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Restaurant Information Section -->
+                    <div class="tab-pane" id="store-info">
+                        <div class="res-ck-fl-details">
+                            <div class="heading-panel">
+                                <h3>Restaurant Info</h3>
+                                <div class="bottom-dots  clearfix">
+                                    <span class="dot line-dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <!-- Restaurant Details Section -->
+                            <div class="res-ck-text">
+                                <div class="res-ck-info">
+                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                        praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                                        molestias excepturi sint occaecati cupiditate non provident, similique sunt
+                                        in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+                                        fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+                                        tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus
+                                        id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis
+                                        dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut
+                                        rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et
+                                        molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente
+                                        delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
+                                        perferendis doloribus asperiores repellat.
+                                    </p>
+                                </div>
+                                <!-- Restaurant Location -->
+                                <div class="res-map">
+                                    <div class="heading-panel">
+                                        <h3>Current Location</h3>
+                                        <div class="bottom-dots  clearfix">
+                                            <span class="dot line-dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                    </div>
+                                    <!-- Map Section -->
+                                    <div class="map-show">
+                                        <div class="res-map-dash">
+                                            <input type="hidden" name="r_lat" class="form-control" id="m_lat"
+                                                value="31.5203696">
+                                            <input type="hidden" name="r_long" class="form-control" id="m_long"
+                                                value="74.35874729999999">
+                                            <div id="mapshow" class="mapfull">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+            <!-- Right Section -->
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-12 col-xs-12">
+                <!--  -->
+                <div id="food_top_rated_product_widget-5" class="res-fl-deals widget res-bg-color">
+                    <!--  -->
+                    <div class="heading-panel-simple">
+                        <div class="my-heading-style">
+                            <h3>Best Selling Products</h3>
+                        </div>
+                        <div class="bottom-dots  clearfix">
+                            <span class="dot line-dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="top-sale-product owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="res-3-box res-fl-product">
+                                <div class="res-2-img"> <a href="https://marketplace.foodotawp.com/store/howdy/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-1-1-258x200.png"
+                                            alt="" class="img-fluid">
+                                    </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast"></i></div>
+                                    <div class="res-3-logo-img"> <a
+                                            href="https://marketplace.foodotawp.com/store/howdy/">
+                                            <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/077-50x50.jpg"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text"> <i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i> <a
+                                                href="https://marketplace.foodotawp.com/store/howdy/">
+                                                <div class="text-s1">Crispy Fry Burger</div>
+                                            </a>
+                                            <div class="foodota-product-price"><del aria-hidden="true"><span
+                                                        class="woocommerce-Price-amount amount"><bdi><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>690.00</bdi></span></del>
+                                                <ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>600.00</bdi></span></ins>
+                                            </div>
+                                        </div>
+                                        <div class="res-2-map-product">
+                                            <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/location.png"
+                                                alt="" class="img-fluid">
+                                            <span>Suite# 2 Street 5 Main</span>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <div class="res-fl-main-cat-content-3 slider-btn">
+
+                                            <button type="button" data-quantity="1"
+                                                class="order-btn btn btn-theme cart-check-btn button product_type_simple add_to_cart_button ajax_add_to_cart product-quantity-btn openNav"
+                                                data-product_id="1714 " data-store_id="35 " data-product_sku="rw-7"
+                                                aria-label="Add “Product-3” to your cart" rel="nofollow">Order
+                                                Now</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="res-3-box res-fl-product">
+                                <div class="res-2-img"> <a href="https://marketplace.foodotawp.com/store/howdy/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/01-2-258x200.png"
+                                            alt="" class="img-fluid">
+                                    </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast"></i></div>
+                                    <div class="res-3-logo-img"> <a
+                                            href="https://marketplace.foodotawp.com/store/howdy/">
+                                            <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/077-50x50.jpg"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text"> <i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i> <a
+                                                href="https://marketplace.foodotawp.com/store/howdy/">
+                                                <div class="text-s1">Fandango Burger</div>
+                                            </a>
+                                            <div class="foodota-product-price"><del aria-hidden="true"><span
+                                                        class="woocommerce-Price-amount amount"><bdi><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>690.00</bdi></span></del>
+                                                <ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>600.00</bdi></span></ins>
+                                            </div>
+                                        </div>
+                                        <div class="res-2-map-product">
+                                            <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/location.png"
+                                                alt="" class="img-fluid">
+                                            <span>Suite# 2 Street 5 Main</span>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <div class="res-fl-main-cat-content-3 slider-btn">
+
+                                            <button type="button" data-quantity="1"
+                                                class="order-btn btn btn-theme cart-check-btn button product_type_simple add_to_cart_button ajax_add_to_cart product-quantity-btn openNav"
+                                                data-product_id="1713 " data-store_id="35 " data-product_sku="rw-7"
+                                                aria-label="Add “Product-3” to your cart" rel="nofollow">Order
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="res-3-box res-fl-product">
+                                <div class="res-2-img"> <a href="https://marketplace.foodotawp.com/store/howdy/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/02-2-258x200.png"
+                                            alt="" class="img-fluid">
+                                    </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast"></i></div>
+                                    <div class="res-3-logo-img"> <a
+                                            href="https://marketplace.foodotawp.com/store/howdy/">
+                                            <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/077-50x50.jpg"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text"> <i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i> <a
+                                                href="https://marketplace.foodotawp.com/store/howdy/">
+                                                <div class="text-s1">Wrangler Burger</div>
+                                            </a>
+                                            <div class="foodota-product-price"><del aria-hidden="true"><span
+                                                        class="woocommerce-Price-amount amount"><bdi><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>590.00</bdi></span></del>
+                                                <ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>550.00</bdi></span></ins>
+                                            </div>
+                                        </div>
+                                        <div class="res-2-map-product">
+                                            <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/location.png"
+                                                alt="" class="img-fluid">
+                                            <span>Suite# 2 Street 5 Main</span>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <div class="res-fl-main-cat-content-3 slider-btn">
+
+                                            <button type="button" data-quantity="1"
+                                                class="order-btn btn btn-theme cart-check-btn button product_type_simple add_to_cart_button ajax_add_to_cart product-quantity-btn openNav"
+                                                data-product_id="1711 " data-store_id="35 " data-product_sku="rw-7"
+                                                aria-label="Add “Product-3” to your cart" rel="nofollow">Order
+                                                Now</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="res-3-box res-fl-product">
+                                <div class="res-2-img"> <a href="https://marketplace.foodotawp.com/store/howdy/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/04-2-258x200.png"
+                                            alt="" class="img-fluid">
+                                    </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast"></i></div>
+                                    <div class="res-3-logo-img"> <a
+                                            href="https://marketplace.foodotawp.com/store/howdy/">
+                                            <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/077-50x50.jpg"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text"> <i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i> <a
+                                                href="https://marketplace.foodotawp.com/store/howdy/">
+                                                <div class="text-s1">Double Cheese Burger</div>
+                                            </a>
+                                            <div class="foodota-product-price"><del aria-hidden="true"><span
+                                                        class="woocommerce-Price-amount amount"><bdi><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>590.00</bdi></span></del>
+                                                <ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                                                class="woocommerce-Price-currencySymbol">&pound;</span>500.00</bdi></span></ins>
+                                            </div>
+                                        </div>
+                                        <div class="res-2-map-product">
+                                            <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/location.png"
+                                                alt="" class="img-fluid">
+                                            <span>Suite# 2 Street 5 Main</span>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <div class="res-fl-main-cat-content-3 slider-btn">
+
+                                            <button type="button" data-quantity="1"
+                                                class="order-btn btn btn-theme cart-check-btn button product_type_simple add_to_cart_button ajax_add_to_cart product-quantity-btn openNav"
+                                                data-product_id="1709 " data-store_id="35 " data-product_sku="rw-7"
+                                                aria-label="Add “Product-3” to your cart" rel="nofollow">Order
+                                                Now</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="res-3-box res-fl-product">
+                                <div class="res-2-img"> <a href="https://marketplace.foodotawp.com/store/howdy/">
+                                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/03/coke-258x200.jpg"
+                                            alt="" class="img-fluid">
+                                    </a>
+                                    <div class="res-3-icons fav-check"><i class="fas fa-shipping-fast"></i></div>
+                                    <div class="res-3-logo-img"> <a
+                                            href="https://marketplace.foodotawp.com/store/howdy/">
+                                            <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/077-50x50.jpg"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text"> <i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i><i
+                                                class="fa fa-star "></i><i class="fa fa-star "></i> <a
+                                                href="https://marketplace.foodotawp.com/store/howdy/">
+                                                <div class="text-s1">Coca COla</div>
+                                            </a>
+                                            <div class="foodota-product-price"><span
+                                                    class="woocommerce-Price-amount amount"><bdi><span
+                                                            class="woocommerce-Price-currencySymbol">&pound;</span>79.00</bdi></span>
+                                            </div>
+                                        </div>
+                                        <div class="res-2-map-product">
+                                            <img src="https://marketplace.foodotawp.com/wp-content/themes/foodota/libs/images/location.png"
+                                                alt="" class="img-fluid">
+                                            <span>Suite# 2 Street 5 Main</span>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <div class="res-fl-main-cat-content-3 slider-btn">
+
+                                            <button type="button" data-quantity="1"
+                                                class="order-btn btn btn-theme cart-check-btn button product_type_simple add_to_cart_button ajax_add_to_cart product-quantity-btn openNav"
+                                                data-product_id="418 " data-store_id="35 " data-product_sku="rw-7"
+                                                aria-label="Add “Product-3” to your cart" rel="nofollow">Order
+                                                Now</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--  -->
+                </div>
+                <!--  -->
+            </div>
+            <!--  -->
+        </div>
+    </div>
+    <!--  -->
+</section>
+<!--  -->
+<div class="wcfm-clearfix"></div>
+<div class="res-modal-content modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog order-modal" role="document">
+    </div>
+</div>
+<!--  -->
+
+{% endblock body %}

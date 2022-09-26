@@ -1,0 +1,30 @@
+[
+    {
+        "available_tables": 15,
+        "booked_tables": 10,
+        "restaurant_features_id": 1,
+        "restaurant_id": "0612c6dafcd64d1fa5503694548eb695",
+        "restaurant_image": "media/restaurant_images/Arcadian_0ZDzWjC.jpg",
+        "restaurant_info": "kjhkjhkhkjh",
+        "restaurant_location": "Thulobharyang, Ktm",
+        "restaurant_name": "Goku Coffee Restaurant",
+        "restaurant_opening_closing_time": "10:00 AM - 08:00 PM",
+        "restaurant_reviews": "ghhkhkjhkjhkh",
+        "restaurnat_ratings": "5",
+        "total_tables": 25
+    },
+    {
+        "available_tables": 10,
+        "booked_tables": 20,
+        "restaurant_features_id": 1,
+        "restaurant_id": "a9bcfbeffe0f450cbc535183c56fd32a",
+        "restaurant_image": "media/restaurant_images/burger.jpg",
+        "restaurant_info": "The Goku House is famous for its best services.",
+        "restaurant_location": "Dillibazaar, Kathmandu",
+        "restaurant_name": "The Goku Burger House",
+        "restaurant_opening_closing_time": "10:00 AM - 08:00 PM",
+        "restaurant_reviews": "The Goku Burger House is very good at providing the best services in the world.",
+        "restaurnat_ratings": "5",
+        "total_tables": 30
+    }
+]

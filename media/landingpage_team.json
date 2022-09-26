@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "team_image": "media/team_image/team1.png",
+        "team_name": "Alizeh Anderson",
+        "team_profession": "Senior Chef"
+    },
+    {
+        "id": 2,
+        "team_image": "media/team_image/team2.png",
+        "team_name": "Lady Girl",
+        "team_profession": "Junior  Chef"
+    }
+]

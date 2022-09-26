@@ -1,0 +1,530 @@
+[
+    {
+        "codename": "add_food",
+        "content_type_id": 1,
+        "id": 1,
+        "name": "Can add food"
+    },
+    {
+        "codename": "change_food",
+        "content_type_id": 1,
+        "id": 2,
+        "name": "Can change food"
+    },
+    {
+        "codename": "delete_food",
+        "content_type_id": 1,
+        "id": 3,
+        "name": "Can delete food"
+    },
+    {
+        "codename": "view_food",
+        "content_type_id": 1,
+        "id": 4,
+        "name": "Can view food"
+    },
+    {
+        "codename": "add_foodcategories",
+        "content_type_id": 2,
+        "id": 5,
+        "name": "Can add food categories"
+    },
+    {
+        "codename": "change_foodcategories",
+        "content_type_id": 2,
+        "id": 6,
+        "name": "Can change food categories"
+    },
+    {
+        "codename": "delete_foodcategories",
+        "content_type_id": 2,
+        "id": 7,
+        "name": "Can delete food categories"
+    },
+    {
+        "codename": "view_foodcategories",
+        "content_type_id": 2,
+        "id": 8,
+        "name": "Can view food categories"
+    },
+    {
+        "codename": "add_order",
+        "content_type_id": 3,
+        "id": 9,
+        "name": "Can add order"
+    },
+    {
+        "codename": "change_order",
+        "content_type_id": 3,
+        "id": 10,
+        "name": "Can change order"
+    },
+    {
+        "codename": "delete_order",
+        "content_type_id": 3,
+        "id": 11,
+        "name": "Can delete order"
+    },
+    {
+        "codename": "view_order",
+        "content_type_id": 3,
+        "id": 12,
+        "name": "Can view order"
+    },
+    {
+        "codename": "add_restaurantcategories",
+        "content_type_id": 4,
+        "id": 13,
+        "name": "Can add restaurant categories"
+    },
+    {
+        "codename": "change_restaurantcategories",
+        "content_type_id": 4,
+        "id": 14,
+        "name": "Can change restaurant categories"
+    },
+    {
+        "codename": "delete_restaurantcategories",
+        "content_type_id": 4,
+        "id": 15,
+        "name": "Can delete restaurant categories"
+    },
+    {
+        "codename": "view_restaurantcategories",
+        "content_type_id": 4,
+        "id": 16,
+        "name": "Can view restaurant categories"
+    },
+    {
+        "codename": "add_restaurantfeatures",
+        "content_type_id": 5,
+        "id": 17,
+        "name": "Can add restaurant features"
+    },
+    {
+        "codename": "change_restaurantfeatures",
+        "content_type_id": 5,
+        "id": 18,
+        "name": "Can change restaurant features"
+    },
+    {
+        "codename": "delete_restaurantfeatures",
+        "content_type_id": 5,
+        "id": 19,
+        "name": "Can delete restaurant features"
+    },
+    {
+        "codename": "view_restaurantfeatures",
+        "content_type_id": 5,
+        "id": 20,
+        "name": "Can view restaurant features"
+    },
+    {
+        "codename": "add_restaurant",
+        "content_type_id": 6,
+        "id": 21,
+        "name": "Can add restaurant"
+    },
+    {
+        "codename": "change_restaurant",
+        "content_type_id": 6,
+        "id": 22,
+        "name": "Can change restaurant"
+    },
+    {
+        "codename": "delete_restaurant",
+        "content_type_id": 6,
+        "id": 23,
+        "name": "Can delete restaurant"
+    },
+    {
+        "codename": "view_restaurant",
+        "content_type_id": 6,
+        "id": 24,
+        "name": "Can view restaurant"
+    },
+    {
+        "codename": "add_orderitem",
+        "content_type_id": 7,
+        "id": 25,
+        "name": "Can add order item"
+    },
+    {
+        "codename": "change_orderitem",
+        "content_type_id": 7,
+        "id": 26,
+        "name": "Can change order item"
+    },
+    {
+        "codename": "delete_orderitem",
+        "content_type_id": 7,
+        "id": 27,
+        "name": "Can delete order item"
+    },
+    {
+        "codename": "view_orderitem",
+        "content_type_id": 7,
+        "id": 28,
+        "name": "Can view order item"
+    },
+    {
+        "codename": "add_menu",
+        "content_type_id": 8,
+        "id": 29,
+        "name": "Can add menu"
+    },
+    {
+        "codename": "change_menu",
+        "content_type_id": 8,
+        "id": 30,
+        "name": "Can change menu"
+    },
+    {
+        "codename": "delete_menu",
+        "content_type_id": 8,
+        "id": 31,
+        "name": "Can delete menu"
+    },
+    {
+        "codename": "view_menu",
+        "content_type_id": 8,
+        "id": 32,
+        "name": "Can view menu"
+    },
+    {
+        "codename": "add_logentry",
+        "content_type_id": 9,
+        "id": 33,
+        "name": "Can add log entry"
+    },
+    {
+        "codename": "change_logentry",
+        "content_type_id": 9,
+        "id": 34,
+        "name": "Can change log entry"
+    },
+    {
+        "codename": "delete_logentry",
+        "content_type_id": 9,
+        "id": 35,
+        "name": "Can delete log entry"
+    },
+    {
+        "codename": "view_logentry",
+        "content_type_id": 9,
+        "id": 36,
+        "name": "Can view log entry"
+    },
+    {
+        "codename": "add_permission",
+        "content_type_id": 10,
+        "id": 37,
+        "name": "Can add permission"
+    },
+    {
+        "codename": "change_permission",
+        "content_type_id": 10,
+        "id": 38,
+        "name": "Can change permission"
+    },
+    {
+        "codename": "delete_permission",
+        "content_type_id": 10,
+        "id": 39,
+        "name": "Can delete permission"
+    },
+    {
+        "codename": "view_permission",
+        "content_type_id": 10,
+        "id": 40,
+        "name": "Can view permission"
+    },
+    {
+        "codename": "add_group",
+        "content_type_id": 11,
+        "id": 41,
+        "name": "Can add group"
+    },
+    {
+        "codename": "change_group",
+        "content_type_id": 11,
+        "id": 42,
+        "name": "Can change group"
+    },
+    {
+        "codename": "delete_group",
+        "content_type_id": 11,
+        "id": 43,
+        "name": "Can delete group"
+    },
+    {
+        "codename": "view_group",
+        "content_type_id": 11,
+        "id": 44,
+        "name": "Can view group"
+    },
+    {
+        "codename": "add_contenttype",
+        "content_type_id": 12,
+        "id": 45,
+        "name": "Can add content type"
+    },
+    {
+        "codename": "change_contenttype",
+        "content_type_id": 12,
+        "id": 46,
+        "name": "Can change content type"
+    },
+    {
+        "codename": "delete_contenttype",
+        "content_type_id": 12,
+        "id": 47,
+        "name": "Can delete content type"
+    },
+    {
+        "codename": "view_contenttype",
+        "content_type_id": 12,
+        "id": 48,
+        "name": "Can view content type"
+    },
+    {
+        "codename": "add_session",
+        "content_type_id": 13,
+        "id": 49,
+        "name": "Can add session"
+    },
+    {
+        "codename": "change_session",
+        "content_type_id": 13,
+        "id": 50,
+        "name": "Can change session"
+    },
+    {
+        "codename": "delete_session",
+        "content_type_id": 13,
+        "id": 51,
+        "name": "Can delete session"
+    },
+    {
+        "codename": "view_session",
+        "content_type_id": 13,
+        "id": 52,
+        "name": "Can view session"
+    },
+    {
+        "codename": "add_user",
+        "content_type_id": 14,
+        "id": 53,
+        "name": "Can add user"
+    },
+    {
+        "codename": "change_user",
+        "content_type_id": 14,
+        "id": 54,
+        "name": "Can change user"
+    },
+    {
+        "codename": "delete_user",
+        "content_type_id": 14,
+        "id": 55,
+        "name": "Can delete user"
+    },
+    {
+        "codename": "view_user",
+        "content_type_id": 14,
+        "id": 56,
+        "name": "Can view user"
+    },
+    {
+        "codename": "add_gradecourse",
+        "content_type_id": 15,
+        "id": 57,
+        "name": "Can add gradecourse"
+    },
+    {
+        "codename": "change_gradecourse",
+        "content_type_id": 15,
+        "id": 58,
+        "name": "Can change gradecourse"
+    },
+    {
+        "codename": "delete_gradecourse",
+        "content_type_id": 15,
+        "id": 59,
+        "name": "Can delete gradecourse"
+    },
+    {
+        "codename": "view_gradecourse",
+        "content_type_id": 15,
+        "id": 60,
+        "name": "Can view gradecourse"
+    },
+    {
+        "codename": "add_teacher",
+        "content_type_id": 16,
+        "id": 61,
+        "name": "Can add teacher"
+    },
+    {
+        "codename": "change_teacher",
+        "content_type_id": 16,
+        "id": 62,
+        "name": "Can change teacher"
+    },
+    {
+        "codename": "delete_teacher",
+        "content_type_id": 16,
+        "id": 63,
+        "name": "Can delete teacher"
+    },
+    {
+        "codename": "view_teacher",
+        "content_type_id": 16,
+        "id": 64,
+        "name": "Can view teacher"
+    },
+    {
+        "codename": "add_teacher_course_assignment",
+        "content_type_id": 17,
+        "id": 65,
+        "name": "Can add teacher_ course_ assignment"
+    },
+    {
+        "codename": "change_teacher_course_assignment",
+        "content_type_id": 17,
+        "id": 66,
+        "name": "Can change teacher_ course_ assignment"
+    },
+    {
+        "codename": "delete_teacher_course_assignment",
+        "content_type_id": 17,
+        "id": 67,
+        "name": "Can delete teacher_ course_ assignment"
+    },
+    {
+        "codename": "view_teacher_course_assignment",
+        "content_type_id": 17,
+        "id": 68,
+        "name": "Can view teacher_ course_ assignment"
+    },
+    {
+        "codename": "add_student",
+        "content_type_id": 18,
+        "id": 69,
+        "name": "Can add student"
+    },
+    {
+        "codename": "change_student",
+        "content_type_id": 18,
+        "id": 70,
+        "name": "Can change student"
+    },
+    {
+        "codename": "delete_student",
+        "content_type_id": 18,
+        "id": 71,
+        "name": "Can delete student"
+    },
+    {
+        "codename": "view_student",
+        "content_type_id": 18,
+        "id": 72,
+        "name": "Can view student"
+    },
+    {
+        "codename": "add_principal_admin",
+        "content_type_id": 19,
+        "id": 73,
+        "name": "Can add principal_ admin"
+    },
+    {
+        "codename": "change_principal_admin",
+        "content_type_id": 19,
+        "id": 74,
+        "name": "Can change principal_ admin"
+    },
+    {
+        "codename": "delete_principal_admin",
+        "content_type_id": 19,
+        "id": 75,
+        "name": "Can delete principal_ admin"
+    },
+    {
+        "codename": "view_principal_admin",
+        "content_type_id": 19,
+        "id": 76,
+        "name": "Can view principal_ admin"
+    },
+    {
+        "codename": "add_director",
+        "content_type_id": 20,
+        "id": 77,
+        "name": "Can add director"
+    },
+    {
+        "codename": "change_director",
+        "content_type_id": 20,
+        "id": 78,
+        "name": "Can change director"
+    },
+    {
+        "codename": "delete_director",
+        "content_type_id": 20,
+        "id": 79,
+        "name": "Can delete director"
+    },
+    {
+        "codename": "view_director",
+        "content_type_id": 20,
+        "id": 80,
+        "name": "Can view director"
+    },
+    {
+        "codename": "add_team",
+        "content_type_id": 21,
+        "id": 81,
+        "name": "Can add team"
+    },
+    {
+        "codename": "change_team",
+        "content_type_id": 21,
+        "id": 82,
+        "name": "Can change team"
+    },
+    {
+        "codename": "delete_team",
+        "content_type_id": 21,
+        "id": 83,
+        "name": "Can delete team"
+    },
+    {
+        "codename": "view_team",
+        "content_type_id": 21,
+        "id": 84,
+        "name": "Can view team"
+    },
+    {
+        "codename": "add_blog",
+        "content_type_id": 22,
+        "id": 85,
+        "name": "Can add blog"
+    },
+    {
+        "codename": "change_blog",
+        "content_type_id": 22,
+        "id": 86,
+        "name": "Can change blog"
+    },
+    {
+        "codename": "delete_blog",
+        "content_type_id": 22,
+        "id": 87,
+        "name": "Can delete blog"
+    },
+    {
+        "codename": "view_blog",
+        "content_type_id": 22,
+        "id": 88,
+        "name": "Can view blog"
+    }
+]

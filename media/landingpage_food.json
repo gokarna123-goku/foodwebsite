@@ -1,0 +1,18 @@
+[
+    {
+        "discount_price": 100,
+        "food_desc": "You can order it now.",
+        "food_id": "2a8557bee1bf470e9e609e5a88653925",
+        "food_image": "media/food_images/04-2.png",
+        "food_name": "Double Cheese Burger",
+        "food_price": 500
+    },
+    {
+        "discount_price": 50,
+        "food_desc": "Your stomach wants this type of food.",
+        "food_id": "f604f00ec0614f739ff2ae53ae4942bc",
+        "food_image": "media/food_images/Arcadian.jpg",
+        "food_name": "Large Cup Coffee",
+        "food_price": 600
+    }
+]
